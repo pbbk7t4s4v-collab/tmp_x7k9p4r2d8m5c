@@ -1,0 +1,209 @@
+# Role
+你是一位专注于教育内容可视化的 Manim 代码专家。你的任务是将【原始代码】中的逻辑（背景、文字内容、数学公式、图形、动画顺序）无损地迁移到【四宫格动态布局模板】中。
+
+# Context
+我有一个【四宫格动态布局模板】。你需要分析【原始代码】，提取出 **图片** 和 **核心文字/公式**，填入模板的四个象限。
+
+⚠️ 必须严格遵守的修改规则 (CRITICAL)：
+
+1. 解决 TypeError (混合类型)：
+
+- Manim 中 ImageMobject 是位图，RoundedRectangle 是矢量。
+
+- **严禁** 将图片放入 VGroup。
+
+- 当组合图片和边框时，**必须且只能** 使用 Group() 类。
+
+2. 图片路径显式化：
+
+- 所有图片必须写成 ImageMobject("路径字符串.png")。
+
+- **禁止** 使用变量传递路径（如 ImageMobject(bg_path) ❌）。
+
+3. 内容筛选与忽略：
+
+- **只保留**：ImageMobject (图片), Text (文字), MathTex/Tex (公式)。
+
+- **忽略/丢弃**：复杂的几何作图（如 Circle, Square, Plot, NumberPlane 等）。如果原代码主要是在画几何图，请用一句 Text("几何演示") 代替。
+
+4. 布局填充逻辑：
+
+- 1 个元素：只填 q1_content，其余 None（模板会自动居中）。
+
+- 2 个元素：填 q1 (左上) 和 q2 (右上)。
+
+- 3 个元素：填 q1, q2, q3。
+
+- 4 个元素：填满 q1 - q4。
+
+# Input Data
+**【四宫格动态布局模板】**内容：
+from manim import *
+
+class FourQuadrantPolishedScene(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 全局配置
+        # ==========================================
+        FONT_MAIN = "AR PL UKai CN"
+        COLOR_ACCENT = "#4AF626"     # 科技绿
+        COLOR_TEXT = WHITE
+        COLOR_GRID = "#333333"       # 深灰色网格
+
+        # ==========================================
+        # 1. 背景层 (Background)
+        # ==========================================
+        # [LLM 填空]: 如果原代码有背景图，请在此处显式定义
+        try:
+            # 必须直接写字符串路径
+            bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+            bg.set_z_index(-100)
+            bg.scale(max(config.frame_width / bg.width, config.frame_height / bg.height))
+            bg.move_to(ORIGIN)
+            self.add(bg)
+            
+            # 遮罩层
+            overlay = Rectangle(
+                width=config.frame_width, height=config.frame_height,
+                fill_color=BLACK, fill_opacity=0.7, stroke_width=0
+            ).set_z_index(-99)
+            self.add(overlay)
+        except:
+            self.camera.background_color = "#111111"
+
+        # ==========================================
+        # 2. 标题与结构
+        # ==========================================
+        # [LLM 填空]: 标题内容
+        title_text = "在此处填入标题"
+        
+        # 标题生成
+        title = Text(title_text, font=FONT_MAIN, font_size=36, color=COLOR_TEXT)
+        title.to_edge(UP, buff=0.3)
+        
+        # [自适应下划线]: 长度跟随文字宽度
+        line_width = title.width + 1.2 # 比文字稍宽一点
+        title_line = Line(LEFT * (line_width/2), RIGHT * (line_width/2), color=COLOR_ACCENT)
+        title_line.next_to(title, DOWN, buff=0.15)
+        
+        self.play(FadeIn(title, shift=DOWN*0.3), Create(title_line), run_time=0.8)
+
+        # 调整中心点，稍微下移以避开标题
+        grid_center_y = -0.6 
+        
+        # 十字线
+        grid = VGroup(
+            Line(UP*2.0, DOWN*3.0, color=COLOR_GRID), 
+            Line(LEFT*6, RIGHT*6, color=COLOR_GRID)
+        ).move_to(UP * grid_center_y)
+        self.play(Create(grid), run_time=0.8)
+
+        # ==========================================
+        # 3. 内容定义 (Content Definition)
+        # ==========================================
+        # [LLM 指令]: 仅提取 ImageMobject, Text, MathTex。
+        
+        q1_content = None 
+        q2_content = None 
+        q3_content = None 
+        q4_content = None 
+
+        # [示例]
+        # q1_content = ImageMobject("assets/demo.png") 
+        # q2_content = Text("分析")
+
+        # ==========================================
+        # 4. 渲染引擎 (Render Engine)
+        # ==========================================
+        
+        # 布局参数
+        dx = 3.2
+        dy = 1.6
+        # 坐标映射
+        pos_map = {
+            0: UP * grid_center_y + UP * dy + LEFT * dx,    # Q1 (UL)
+            1: UP * grid_center_y + UP * dy + RIGHT * dx,   # Q2 (UR)
+            2: UP * grid_center_y + DOWN * dy + LEFT * dx,  # Q3 (DL)
+            3: UP * grid_center_y + DOWN * dy + RIGHT * dx  # Q4 (DR)
+        }
+        
+        raw_contents = [q1_content, q2_content, q3_content, q4_content]
+        active_items = [item for item in raw_contents if item is not None]
+        
+        # 动态布局逻辑
+        final_positions = []
+        count = len(active_items)
+        
+        if count == 1:
+            final_positions = [UP * grid_center_y] 
+        elif count == 2:
+            final_positions = [pos_map[0], pos_map[1]]
+        elif count == 3:
+            final_positions = [pos_map[0], pos_map[1], pos_map[2]]
+        else:
+            final_positions = [pos_map[0], pos_map[1], pos_map[2], pos_map[3]]
+
+        # 尺寸限制
+        limit_w = 5.5
+        limit_h = 2.1 
+
+        animations = []
+
+        for idx, content in enumerate(active_items):
+            if idx >= len(final_positions): break
+            
+            target_pos = final_positions[idx]
+            
+            # 1. 缩放
+            if content.width > limit_w or content.height > limit_h:
+                scale_factor = min(limit_w / content.width, limit_h / content.height)
+                content.scale(scale_factor)
+            
+            # 2. 包装逻辑
+            display_obj = None
+            
+            if isinstance(content, ImageMobject):
+                # === 图片特殊处理：加框 ===
+                padding = 0.15
+                fw = content.width + padding * 2
+                fh = content.height + padding * 2
+                
+                # 边框
+                border = RoundedRectangle(corner_radius=0.1, width=fw, height=fh, color=GREY_C, stroke_width=1)
+                
+                # 装饰角
+                corners = VGroup()
+                d = 0.3
+                for corner, v1, v2 in [(UL, DOWN, RIGHT), (UR, DOWN, LEFT), (DL, UP, RIGHT), (DR, UP, LEFT)]:
+                    p = border.get_corner(corner)
+                    corners.add(Line(p, p+v1*d, color=COLOR_ACCENT))
+                    corners.add(Line(p, p+v2*d, color=COLOR_ACCENT))
+                
+                # 定位
+                content.move_to(target_pos)
+                border.move_to(target_pos)
+                corners.move_to(target_pos)
+                
+                # [关键修正]: 使用 Group (通用组) 
+                display_obj = Group(border, corners, content)
+                
+            else:
+                # === 文字/公式：不加框 ===
+                content.move_to(target_pos)
+                display_obj = content
+
+            animations.append(FadeIn(display_obj, shift=UP*0.2))
+            
+        if animations:
+            self.play(*animations, run_time=1.5)
+
+        # ==========================================
+        # 5. 底部信息
+        # ==========================================
+        footer_text = ""
+        if footer_text:
+            footer = Text(footer_text, font=FONT_MAIN, font_size=20, color=GRAY)
+            footer.to_edge(DOWN, buff=0.2)
+            self.play(Write(footer))
+
+        self.wait(3)

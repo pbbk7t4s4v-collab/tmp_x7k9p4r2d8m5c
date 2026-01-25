@@ -1,0 +1,132 @@
+# Role
+你是一位专注于教育内容可视化的 Manim 代码专家。你的任务是将【原始代码】中的逻辑（背景、文字内容、数学公式、图形、动画顺序）无损地迁移到【核心单图模板】中,并调整适当格式和布局，使画面看起来协调且美观。
+
+# Context
+我有一个【核心单图模板】。
+你需要用它适配【原始代码】中图片大小并添加精美的边框（要求最好正好围绕这个图片，显得比较合身）。
+** 注意！！** ：
+1. 如果原始代码中ImageMobject的变量名为bg，**一定不要**将其作为主内容中图片的适配，只要继续作为背景图片即可；
+2. 除此之外，如果【原始代码】中不含ImageMobject类型的图片，则要按照【核心单图模板】中的样式创建一个ImageMobject，路径为"/home/TeachMasterAppV2/backend/placeholder.png"；
+3. 如果【原始代码】中除了作为bg的ImageMobject外正好包含一个ImageMobject类型的图片，则要求将【核心单图模板】中的img_path替换为该ImageMobject的路径，**这一步对应关系很重要！！**。
+4. 如果【原始代码】中除了作为bg的ImageMobject外还包含两个及以上的ImageMobject类型的图片，则要求全部保留，采取并列式放在画面中心即可。
+
+# Input Data
+**【核心单图模板】**内容：
+from manim import *
+import numpy as np
+
+class RefinedSingleImageScene(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 全局配置
+        # ==========================================
+        FONT_MAIN = "AR PL UKai CN"
+        
+        # 配色方案
+        COLOR_ACCENT = "#4AF626"     # 品牌亮绿色
+        COLOR_TEXT_MAIN = WHITE
+        COLOR_TEXT_SUB = "#CCCCCC"
+        COLOR_BORDER_DIM = GREY_B    # 内圈细线
+        COLOR_BORDER_LIT = "#4AF626" # 四角高亮
+
+        # ==========================================
+        # 1. 舞台搭建 (背景与遮罩)
+        # ==========================================
+        # [LLM 填空]: 填入背景图路径替换bg
+        try:
+            bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+            bg.set_z_index(-100)
+            bg.scale(max(config.frame_width / bg.width, config.frame_height / bg.height))
+            bg.move_to(ORIGIN)
+            bg_overlay = Rectangle(
+                width=config.frame_width, height=config.frame_height, 
+                fill_color=BLACK, fill_opacity=0.6, stroke_width=0
+            )
+            self.add(bg, bg_overlay)
+        except:
+            self.camera.background_color = "#1a1a1a"
+
+        # ==========================================
+        # 2. 标题栏 (优化：横线长度自适应)
+        # ==========================================
+        # [LLM 填空]: 填入标题
+        title_text = "单图模板测试" 
+        
+        # 2.1 创建标题
+        title = Text(title_text, font=FONT_MAIN, font_size=38, color=COLOR_TEXT_MAIN, weight=BOLD)
+        title.to_edge(UP, buff=0.5)
+        
+        # 2.2 [修改点]: 让线条宽度跟随文字宽度
+        # 计算线条长度：文字宽度 + 1.2 (左右各多留0.6的余量)
+        line_width = title.width + 1.2
+        title_line = Line(LEFT * (line_width / 2), RIGHT * (line_width / 2), color=COLOR_ACCENT)
+        title_line.next_to(title, DOWN, buff=0.15)
+        title_line.set_stroke(width=2)
+
+        self.play(FadeIn(title, shift=DOWN*0.5), Create(title_line), run_time=1.0)
+
+        # ==========================================
+        # 3. 核心图片展示
+        # ==========================================
+        # [LLM 指令]: 替换图片路径: "在此处填入图片路径.png"
+
+        main_image = ImageMobject("在此处填入图片路径.png")
+
+        # 尺寸限制 (略微减小最大高度，给底部文字腾空间)
+        max_height = 4.5  # 原来是 5.0，稍微改小一点点让布局更透气
+        max_width = 9.0
+        
+        if main_image.height > max_height:
+            main_image.scale(max_height / main_image.height)
+        if main_image.width > max_width:
+            main_image.scale(max_width / main_image.width)
+            
+        # 图片整体上移一点点，避免视觉下沉
+        main_image.move_to(ORIGIN).shift(UP * 0.2)
+
+        # --- 边框绘制 (保持您满意的简约风格) ---
+        padding = 0.2
+        frame_w = main_image.width + padding * 2
+        frame_h = main_image.height + padding * 2
+
+        inner_border = RoundedRectangle(
+            corner_radius=0.1, width=frame_w, height=frame_h,
+            color=COLOR_BORDER_DIM, stroke_width=1, stroke_opacity=0.5
+        ).move_to(main_image)
+
+        brackets = VGroup()
+        corner_len = 0.5
+        configs = [
+            (inner_border.get_corner(UL), DOWN, RIGHT),
+            (inner_border.get_corner(UR), DOWN, LEFT),
+            (inner_border.get_corner(DL), UP, RIGHT),
+            (inner_border.get_corner(DR), UP, LEFT)
+        ]
+        for p, v1, v2 in configs:
+            l1 = Line(p, p + v1 * corner_len, color=COLOR_ACCENT, stroke_width=4)
+            l2 = Line(p, p + v2 * corner_len, color=COLOR_ACCENT, stroke_width=4)
+            brackets.add(l1, l2)
+
+        self.play(Create(inner_border), FadeIn(brackets, scale=1.1), run_time=0.8)
+        self.play(FadeIn(main_image), run_time=1.0)
+
+        # ==========================================
+        # 4. 底部描述 (优化：位置上移)
+        # ==========================================
+        # [LLM 填空]: 填入描述
+        description_text = "这是一张测试占位图\n图片下方配有简短的说明文字，帮助学生理解这张图的作用和含义"
+        
+        footer = Text(
+            description_text, 
+            font=FONT_MAIN, 
+            font_size=24, 
+            line_spacing=1.2,
+            color=COLOR_TEXT_SUB
+        )
+        
+        # [修改点]: buff 从 0.8 改为 1.2，让文字离底部更远一些
+        footer.to_edge(DOWN, buff=1.2)
+
+        self.play(Write(footer), run_time=1.5)
+
+        self.wait(3)

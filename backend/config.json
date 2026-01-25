@@ -1,0 +1,36 @@
+{
+  "exa_api_key": "46a773c4-2077-42bc-83b0-ccd61ffaceeb",
+  "llm_key": "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR",
+  "search_settings": {
+    "default_type": "auto",
+    "include_text": true,
+    "max_results": 10
+  },
+  "llm_settings": {
+    "model": "gemini-3-pro-preview",
+    "base_url": "https://yeysai.com/v1/",
+    "max_tokens": 10000,
+    "temperature": 0.8,
+    "max_retries": 3,
+    "timeout": 1200
+  },
+  "pptx_settings": {
+    "model": "gemini-3-pro-preview",
+    "base_url": "https://yeysai.com/v1/",
+    "max_tokens": 10000,
+    "temperature": 0.8,
+    "max_retries": 3,
+    "timeout": 1200
+  },
+  "picture_settings": {
+    "model": "gemini-3-pro-image-preview"
+  },
+  "debug_settings": {
+    "model": "gemini-3-pro-preview",
+    "base_url": "https://yeysai.com/v1/",
+    "max_tokens": 10000,
+    "temperature": 0.8,
+    "max_retries": 3,
+    "timeout": 1200
+  }
+}

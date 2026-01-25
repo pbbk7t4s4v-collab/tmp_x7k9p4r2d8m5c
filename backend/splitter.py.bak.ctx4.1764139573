@@ -1,0 +1,126 @@
+#!/usr/bin/env python3
+"""
+Markdown切割器：将分页后的markdown文件按分页标记切割成独立文件
+根据 <!-- PAGE_BREAK --> 标记将 *_paginated.md 文件切割成 *_1.md, *_2.md 等
+"""
+
+import argparse
+import os
+import glob
+import re
+
+
+class MarkdownSplitter:
+    """Markdown文件切割器"""
+    
+    def __init__(self, verbose=False):
+        self.verbose = verbose
+        self.page_break_pattern = re.compile(r'<!--\s*PAGE_BREAK\s*-->', re.IGNORECASE)
+        # 识别 Markdown 标题行（最多 3 个前置空格，支持 1–6 级，忽略行尾多余 #）
+        self.heading_line_pattern = re.compile(r'^\s{0,3}(#{1,6})\s+(.+?)\s*#*\s*$', re.UNICODE)
+
+    # 提取文本中的所有标题 (level:int, title:str)
+    def _extract_headings(self, text):
+        headings = []
+        for line in text.splitlines():
+            m = self.heading_line_pattern.match(line)
+            if m:
+                level = len(m.group(1))
+                title = m.group(2).strip()
+                headings.append((level, title))
+        return headings
+
+    # 按 Markdown 层级规则更新“最近标题栈”
+    def _update_heading_stack(self, stack, headings):
+        cur = list(stack)
+        for level, title in headings:
+            # 确保长度足够
+            if level - 1 >= len(cur):
+                cur.extend([None] * (level - 1 - len(cur) + 1))
+            cur[level - 1] = title
+            # 更低级标题失效
+            del cur[level:]
+        return cur
+
+    # 生成上下文区块（用标准 Markdown #、##… 展示）
+    def _format_context_block(self, stack):
+        """生成上下文区块; 只包含上级(祖先)标题, 不含同级或当前级; 若无上级则不输出区块"""
+        # 仅保留非空级别; 若没有上级, 不写入任何上下文区块
+        lines = [f'{"#" * (i+1)} {t}' for i, t in enumerate(stack) if t]
+        if not lines:
+            return ""
+        header = "该部分所处的上下文位置（从最高级到当前）："
+        body = "
+".join(lines)
+        return '
+
+<!-- CONTEXT:BEGIN -->
+' + header + '
+' + body + '
+<!-- CONTEXT:END -->
+'
+
+
+    def pipeline(self, directory_path, clean=True, verbose=True):
+        """
+        简化的流水线接口
+        
+        Args:
+            directory_path: 目录路径
+            verbose: 是否显示详细过程
+        
+        Returns:
+            处理结果统计
+        """
+        if clean:
+            self.clean_split_files(directory_path, verbose=verbose)
+        return self.process_directory(directory_path, verbose=verbose)
+
+
+def main():
+    """主函数"""
+    parser = argparse.ArgumentParser(
+        description="Markdown切割器 - 将分页文件按分页标记切割成独立页面",
+        epilog="示例: python splitter.py scripts/KNN_5288_sections/"
+    )
+    parser.add_argument(
+        "directory",
+        help="包含 *_paginated.md 文件的目录路径"
+    )
+    parser.add_argument(
+        "--clean",
+        action="store_true",
+        help="在处理前清理目录中已存在的切割文件"
+    )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="静默模式，只显示结果摘要"
+    )
+    
+    args = parser.parse_args()
+    
+    try:
+        # 创建切割器
+        splitter = MarkdownSplitter()
+        
+        # 清理旧文件（如果指定）
+        if args.clean:
+            splitter.clean_split_files(args.directory, verbose=not args.quiet)
+        
+        # 处理目录
+        results = splitter.process_directory(args.directory, verbose=not args.quiet)
+        
+        # 显示结果摘要
+        splitter.print_summary(results)
+        
+    except Exception as e:
+        print(f"错误: {e}")
+        print("\n请确保:")
+        print("1. 目录路径正确")
+        print("2. 目录中包含 *_paginated.md 文件")
+        print("3. 有足够的文件读写权限")
+
+
+if __name__ == "__main__":
+    main()

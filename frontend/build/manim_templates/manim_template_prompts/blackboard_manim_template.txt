@@ -1,0 +1,111 @@
+# Role
+你是一位专注于教育内容可视化的 Manim 代码专家。你的任务是将【原始代码】中的逻辑（背景图片格式、文字内容、数学公式、图形、动画顺序），无损地迁移到【核心概念模板】中,并调整适当格式和布局，使画面看起来协调且美观。
+
+# Context
+我有一个简单的【核心概念模板】，用于展示单一的核心概念。
+界面中间有一张卡片，有一条金色的分割线，中间是一块黑板样式的界面。
+你需要把内容放在金色线下方，并保持全都在黑板范围内。
+
+# Input Data
+**【核心概念模板】**内容：
+from manim import *
+
+class PolishedHeroScene(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 视觉风格配置 (Visual Config)
+        # ==========================================
+        # 字体
+        FONT_MAIN = "AR PL UKai CN"
+        
+        # 配色 (更轻盈的玻璃质感)
+        COLOR_ACCENT = "#FFD700"     # 金色
+        COLOR_CARD_BG = "#2E2E2E"    # 略微提亮的深灰背景
+        COLOR_CARD_BORDER = WHITE    # 细白边框
+        COLOR_TEXT_MAIN = WHITE
+        
+        # 透明度设置
+        OPACITY_BG_OVERLAY = 0.8     # 背景压暗程度
+        OPACITY_CARD_FILL = 0.6      # 卡片透明度
+        OPACITY_CARD_STROKE = 0.3    # 边框透明度
+
+        # ==========================================
+        # 1. 背景与氛围 (Background)
+        # ==========================================
+        # 尝试加载背景图
+        try:
+            bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+            bg.set_z_index(-100)
+            bg.scale(max(config.frame_width/bg.width, config.frame_height/bg.height))
+            bg.move_to(ORIGIN)
+            self.add(bg)
+        except:
+            self.camera.background_color = "#111111"
+
+        # [关键修复]: 全局遮罩 (去掉了白边)
+        bg_overlay = Rectangle(
+            # 让遮罩比屏幕稍微大一点点 (0.1)，防止边缘有缝隙
+            width=config.frame_width + 0.1, 
+            height=config.frame_height + 0.1, 
+            fill_color=BLACK, 
+            fill_opacity=OPACITY_BG_OVERLAY,
+            stroke_width=0  # <--- [修复点] 这一行去掉了白边
+        ).set_z_index(-99)
+        self.add(bg_overlay)
+
+        # ==========================================
+        # 2. 布局容器：大尺寸英雄卡片
+        # ==========================================
+        # 卡片主体 (12x7)
+        hero_card = RoundedRectangle(
+            corner_radius=0.5, width=12.0, height=7.0,
+            fill_color=COLOR_CARD_BG, fill_opacity=OPACITY_CARD_FILL,
+            stroke_color=COLOR_CARD_BORDER, stroke_width=2, stroke_opacity=OPACITY_CARD_STROKE
+        ).move_to(ORIGIN)
+        
+        # 顶部装饰线 (位于标题下方)
+        # 计算线条宽度：比卡片略窄 (左右各留 1.0 的边距)
+        line_width = 12.0 - 2.0 
+        header_line = Line(LEFT * (line_width/2), RIGHT * (line_width/2), color=COLOR_ACCENT)
+        # 将线条放在卡片顶部向下一点的位置
+        header_line.next_to(hero_card.get_top(), DOWN, buff=1.2)
+
+        # 标题 (位于线条上方)
+        # [LLM 填空]
+        title_text = "在此处填入标题内容"
+        
+        title = Text(title_text, font=FONT_MAIN, font_size=42, color=COLOR_TEXT_MAIN, weight=BOLD)
+        title.next_to(header_line, UP, buff=0.25)
+
+        # 入场动画
+        self.play(
+            FadeIn(hero_card, scale=0.95),
+            Create(header_line),
+            Write(title),
+            run_time=1.5
+        )
+
+        # ==========================================
+        # 3. 内容填充区 (Content Area)
+        # ==========================================
+        # [LLM 填空区]: 
+        # 核心内容请放在 header_line 下方
+        # 推荐使用 content_group.next_to(header_line, DOWN, buff=0.5)
+        
+        # --- 示例数据 (Placeholder) ---
+        def_text = Text("核心内容占位符 (Main Concept)", font_size=60, color=COLOR_ACCENT)
+        sub_text = Text("此处填写具体的解释、公式或辅助说明", font_size=30, color=GREY_B)
+        
+        content_group = VGroup(def_text, sub_text).arrange(DOWN, buff=0.6)
+        content_group.next_to(header_line, DOWN, buff=0.5)
+        # ----------------
+
+        # ==========================================
+        # 4. 动画流 (Animation)
+        # ==========================================
+        # [LLM 填空区]
+        
+        # 默认播放占位符动画
+        self.play(Write(content_group))
+        
+        self.wait(2)

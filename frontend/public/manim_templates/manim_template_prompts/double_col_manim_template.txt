@@ -1,0 +1,136 @@
+# Role
+你是一位精通 Manim 动画引擎的 Python 专家。你的任务是将提供的【原始 Manim 代码】中的内容逻辑（背景图片格式、文字内容、数学公式、图形、动画顺序），无损地迁移并适配到【双栏模板】中。
+
+# Context
+我有一个标准的双栏布局模板：
+- 左侧面板 (`panel_left`)：专门放置文字、列表、公式推导。
+- 右侧面板 (`panel_right`)：专门放置几何图形、坐标系、函数图像、演示动画。
+
+# Input Data
+【双栏模板】内容：
+from manim import *
+import numpy as np
+
+class ModernSplitLayoutScene(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 全局视觉配置 (Visual Theme)
+        # ==========================================
+        # 字体 (保持您的环境设置)
+        FONT_MAIN = "AR PL UKai CN"
+        
+        # 配色方案 (专业教学风格)
+        COLOR_BG_OVERLAY = "#1a1a1a" # 极深的遮罩层，增加文字对比度
+        COLOR_ACCENT = "#4AF626"     # 亮绿色强调色 (呼应您的LOGO风格)
+        COLOR_TEXT_MAIN = WHITE
+        COLOR_TEXT_SUB = "#CCCCCC"
+        COLOR_PANEL_BORDER = BLUE_E
+        COLOR_SEPARATOR = GREY_B
+
+        # ==========================================
+        # 1. 舞台搭建 (Stage Setup)
+        # ==========================================
+        # 1.1 背景图 (保留原逻辑)
+        bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+        bg.set_z_index(-100)
+        # 保持比例铺满屏幕
+        bg.scale(max(config.frame_width / bg.width, config.frame_height / bg.height))
+        bg.move_to(ORIGIN)
+        # 添加一层黑色半透明遮罩，防止背景过花干扰文字
+        bg_overlay = Rectangle(
+            width=config.frame_width, height=config.frame_height, 
+            fill_color=BLACK, fill_opacity=0.6, stroke_width=0
+        )
+        self.add(bg, bg_overlay)
+
+        # 1.2 标题栏 (Header)
+        # [LLM 填空]: 填入标题
+        title_text = "在此处填入标题内容" 
+        
+        title = Text(title_text, font=FONT_MAIN, font_size=36, color=COLOR_TEXT_MAIN, weight=BOLD)
+        title.to_edge(UP, buff=0.3)
+        # 标题下方的装饰线条 (中间向两边生长)
+        title_line = Line(LEFT*4, RIGHT*4, color=COLOR_ACCENT).next_to(title, DOWN, buff=0.15)
+        title_line.set_stroke(width=2)
+
+        # 1.3 双栏布局容器 (The Layout Panels)
+        # 左侧面板区 (文本)
+        panel_left = RoundedRectangle(
+            corner_radius=0.2, height=6.0, width=6.0,
+            fill_color=BLACK, fill_opacity=0.3, stroke_color=COLOR_PANEL_BORDER, stroke_width=1
+        ).to_edge(LEFT, buff=0.5).shift(DOWN * 0.3)
+
+        # 右侧面板区 (图示)
+        panel_right = RoundedRectangle(
+            corner_radius=0.2, height=6.0, width=6.0,
+            fill_color=BLACK, fill_opacity=0.3, stroke_color=COLOR_PANEL_BORDER, stroke_width=1
+        ).to_edge(RIGHT, buff=0.5).shift(DOWN * 0.3)
+
+        # 1.4 中间精致分隔线 (The Separator)
+        # 创建一条垂直线
+        separator = Line(UP*2.5, DOWN*2.5, color=COLOR_SEPARATOR)
+        separator.set_opacity(0.5) # 半透明
+        # 加上下的装饰点
+        sep_dot_up = Dot(color=COLOR_ACCENT, radius=0.06).move_to(separator.get_start())
+        sep_dot_down = Dot(color=COLOR_ACCENT, radius=0.06).move_to(separator.get_end())
+        separator_group = VGroup(separator, sep_dot_up, sep_dot_down)
+        # 居中放置
+        separator_group.move_to(ORIGIN).shift(DOWN * 0.3)
+
+        # 区域标记 (可选，增加精致感)
+        label_left = Text("KNOWLEDGE / 知识点", font="Arial", font_size=16, color=BLUE_C)
+        label_left.next_to(panel_left, UP, aligned_edge=LEFT, buff=0.1)
+        
+        label_right = Text("VISUALIZATION / 演示", font="Arial", font_size=16, color=BLUE_C)
+        label_right.next_to(panel_right, UP, aligned_edge=RIGHT, buff=0.1)
+
+        # 初始化场景动画 (先画出框架)
+        self.play(
+            FadeIn(title, shift=DOWN),
+            Create(title_line),
+            FadeIn(panel_left), FadeIn(panel_right),
+            Create(separator_group),
+            FadeIn(label_left), FadeIn(label_right),
+            run_time=1.5
+        )
+
+        # ==========================================
+        # 2. 左侧内容填充 (Left Content)
+        # ==========================================
+        # [LLM 指令]: 
+        # 将原代码中的文字列表提取到这里。
+        # 关键: 使用 .move_to(panel_left.get_center()) 或 .next_to(panel_left.get_top(), DOWN)
+        # 推荐使用 VGroup(...).arrange(DOWN, aligned_edge=LEFT)
+        
+        # --- 示例占位符 ---
+        # content_group = VGroup(
+        #    Text("1. 第一条文字内容", font=FONT_MAIN, font_size=24),
+        #    Text("2. 第二条文字内容", font=FONT_MAIN, font_size=24)
+        # ).arrange(DOWN, aligned_edge=LEFT, buff=0.4)
+        # content_group.move_to(panel_left.get_center())
+        # ------------------
+
+        # ==========================================
+        # 3. 右侧内容填充 (Right Content)
+        # ==========================================
+        # [LLM 指令]: 
+        # 将原代码中的 Axes, Graphs, Geometry 提取到这里。
+        # 关键: 确保视觉元素不要超出 panel_right 的范围。
+        # 使用 visual_group.move_to(panel_right.get_center())
+        
+        # --- 示例占位符 ---
+        # ax = Axes(x_length=4, y_length=3).move_to(panel_right.get_center())
+        # ------------------
+
+        # ==========================================
+        # 4. 动画执行流 (Animation Sequence)
+        # ==========================================
+        # [LLM 指令]:
+        # 复制原代码中的 self.play / self.wait 逻辑。
+        # 保留所有 #BREAKPOINT。
+        
+        # self.play(Write(content_group))
+        # self.wait(2)
+        # self.play(Create(ax))
+
+        self.wait(2)

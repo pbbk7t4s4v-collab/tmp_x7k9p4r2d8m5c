@@ -1,0 +1,1 @@
+Definition square (x : Z) : Z := x * x.

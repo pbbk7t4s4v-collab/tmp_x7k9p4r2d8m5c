@@ -1,0 +1,21 @@
+# .dockerignore
+
+# 忽略所有依赖包
+node_modules
+
+# 忽略本地构建产物
+build
+.DS_Store
+
+# 忽略 git 相关文件
+.git
+.gitignore
+
+# 忽略 docker 相关文件
+Dockerfile
+.dockerignore
+
+# 忽略日志文件
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*

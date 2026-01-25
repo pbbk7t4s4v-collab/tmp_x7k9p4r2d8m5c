@@ -1,0 +1,278 @@
+#!/usr/bin/env python3
+"""
+讲义分割器：将生成的Markdown讲义按照##标题分割成多个文件
+- 新增：若原文包含一级标题（# 标题），在每个切分后的文件开头补上该一级标题。
+"""
+
+import argparse
+import os
+import re
+from pathlib import Path
+
+
+class ScriptSplitter:
+    """讲义分割器类"""
+    
+    def __init__(self, verbose=False):
+        self.verbose = verbose
+        # 兼容的 H2、H1 标题匹配（最多 3 个前置空格，忽略行尾多余 #）
+        self.h2_pattern = re.compile(r'^\s{0,3}##\s+(.+?)\s*#*\s*$')
+        self.h1_pattern = re.compile(r'^\s{0,3}#\s+(.+?)\s*#*\s*$')
+    
+    def read_markdown_file(self, filepath):
+        """读取Markdown文件内容"""
+        try:
+            with open(filepath, 'r', encoding='utf-8') as f:
+                content = f.read()
+            return content
+        except FileNotFoundError:
+            raise FileNotFoundError(f"找不到文件: {filepath}")
+        except Exception as e:
+            raise Exception(f"读取文件时出错: {e}")
+    
+    def _extract_first_h1(self, content):
+        """提取文档中的第一个一级标题文本，找不到则返回None"""
+        for line in content.splitlines():
+            m = self.h1_pattern.match(line)
+            if m:
+                return m.group(1).strip()
+        return None
+    
+    def split_by_headers(self, content):
+        """按照##标题分割内容"""
+        lines = content.split('\n')
+        
+        sections = []
+        current_section = {
+            'title': '',
+            'content': '',
+            'start_line': 0
+        }
+        
+        for i, line in enumerate(lines):
+            match = self.h2_pattern.match(line)
+            
+            if match:  # 找到了##标题
+                # 如果当前section有内容，保存它
+                if current_section['title'] or current_section['content'].strip():
+                    sections.append(current_section.copy())
+                
+                # 开始新的section
+                current_section = {
+                    'title': match.group(1).strip(),
+                    'content': line + '\n',
+                    'start_line': i
+                }
+            else:
+                # 添加到当前section
+                current_section['content'] += line + '\n'
+        
+        # 添加最后一个section
+        if current_section['title'] or current_section['content'].strip():
+            sections.append(current_section)
+        
+        return sections
+    
+    
+    def save_sections(self, sections, output_path, h1_title=None):
+        """保存分割后的章节到文件; 如提供 h1_title, 在每个文件头部补上 # 标题"""
+        saved_files = []
+        
+        # 预构建 H1 前缀文本
+        h1_prefix = f"# {h1_title}\n\n" if h1_title else ''
+        
+        for i, section in enumerate(sections, 1):
+            # 创建文件名
+            filename = f"{i}.md"
+            filepath = os.path.join(output_path, filename)
+            
+            # 组装写入内容（在每个分段前加 H1 标题）
+            # 若分段首行已包含与全局相同的 H1，则不再重复添加，避免出现双重标题。
+            section_content = section['content']
+            already_has_h1 = False
+            if h1_title:
+                first_non_blank = None
+                for line in section_content.splitlines():
+                    if line.strip():
+                        first_non_blank = line
+                        break
+                if first_non_blank:
+                    m = self.h1_pattern.match(first_non_blank)
+                    if m and m.group(1).strip() == h1_title:
+                        already_has_h1 = True
+
+            if h1_title and not already_has_h1:
+                content_to_write = f"{h1_prefix}{section_content}"
+            else:
+                content_to_write = section_content
+            
+            # 保存文件
+            with open(filepath, 'w', encoding='utf-8') as f:
+                f.write(content_to_write)
+            
+            saved_files.append({
+                'filename': filename,
+                'filepath': str(filepath),
+                'title': section['title'],
+                'lines': len(content_to_write.splitlines())
+            })
+        
+        # 删除第一个文件并重命名后续文件
+        #saved_files = self._remove_first_and_rename(output_path, saved_files)
+        
+        # 创建章节标题文件
+        self._create_chapter_list(output_path, saved_files)
+        
+        return saved_files
+    
+    def _remove_first_and_rename(self, output_path, saved_files):
+        """删除第一个文件（1.md）并将后续文件重命名"""
+        if len(saved_files) <= 1:
+            # 如果只有一个或没有文件，直接返回
+            return saved_files
+        
+        # 删除第一个文件（1.md）
+        first_file_path = os.path.join(output_path, "1.md")
+        if os.path.exists(first_file_path):
+            os.remove(first_file_path)
+        
+        # 重命名后续文件：2.md -> 1.md, 3.md -> 2.md, ...
+        new_saved_files = []
+        for i, file_info in enumerate(saved_files[1:], 1):  # 从第二个文件开始
+            old_filepath = Path(file_info['filepath'])
+            new_filename = f"{i}.md"
+            new_filepath = os.path.join(output_path, new_filename)
+            
+            # 重命名文件
+            if old_filepath.exists():
+                old_filepath.rename(new_filepath)
+            
+            # 更新文件信息
+            new_saved_files.append({
+                'filename': new_filename,
+                'filepath': str(new_filepath),
+                'title': file_info['title'],
+                'lines': file_info['lines']
+            })
+        
+        return new_saved_files
+    
+    def _create_chapter_list(self, output_path, saved_files):
+        """创建章节标题列表文件"""
+        chapter_list_path = os.path.join(output_path, "chapter.txt")
+        
+        with open(chapter_list_path, 'w', encoding='utf-8') as f:
+            for i, file_info in enumerate(saved_files, 1):
+                title = file_info['title'] if file_info['title'] else f"章节{i}"
+                # 清理标题中的markdown格式符号
+                clean_title = title.replace('**', '').replace('*', '').strip()
+                f.write(f"{i}.{clean_title}\n")
+    
+    def split_script(self, input_file, output_dir="scripts", page=0):
+        """
+        分割讲义脚本的主要方法
+        
+        Args:
+            input_file: 输入的Markdown文件路径
+            output_dir: 输出目录
+            page: 返回的文件元信息数量限制（0 表示不限制；仅影响返回值，不限制实际生成数量）
+        
+        Returns:
+            保存的文件信息列表
+        """
+        if self.verbose:
+            print(f"正在分割文件: {input_file}")
+            print("="*60)
+        
+        # 1. 读取文件
+        content = self.read_markdown_file(input_file)
+        if self.verbose:
+            print(f"✓ 文件读取完成，共 {len(content.splitlines())} 行")
+        
+        # 1.1 提取全局 H1 标题（若有）
+        h1_title = self._extract_first_h1(content)
+        if self.verbose and h1_title:
+            print(f"✓ 检测到一级标题: {h1_title}")
+        
+        # 2. 按##标题分割
+        sections = self.split_by_headers(content)
+        if self.verbose:
+            print(f"✓ 找到 {len(sections)} 个章节")
+        
+        # 3. 创建输出目录
+        os.makedirs(output_dir, exist_ok=True)
+        if self.verbose:
+            print(f"✓ 创建输出目录: {output_dir}")
+        
+        # 4. 保存分割后的文件（在每个文件开头补上 H1）
+        saved_files = self.save_sections(sections, output_path=output_dir, h1_title=h1_title)
+    
+        # 根据传入的page字段决定返回的page数量,page为0时不限制
+        if page > 0:
+            saved_files = saved_files[:page]
+        
+        if self.verbose:
+            print(f"✓ 保存分割后的文件")
+            if len(sections) > 1:
+                print(f"✓ 删除第一个文件（课程大纲）并重新编号")
+            print(f"✓ 创建章节标题列表文件 (chapter.txt)")
+            print(f"✓ 分割完成！共保存 {len(saved_files)} 个章节文件 + 1个标题列表文件")
+        
+        return saved_files
+    
+    def pipeline(self, input_file, output_dir="scripts/splitted", page=0):
+        """简化的流水线接口"""
+        script_splitted_files = self.split_script(input_file, output_dir=output_dir, page=page)
+        return output_dir
+
+
+def main():
+    """主函数"""
+    parser = argparse.ArgumentParser(
+        description="讲义分割器 - 将Markdown讲义按##标题分割成多个文件",
+        epilog="示例: python script_splitter.py scripts/KNN_8813.md"
+    )
+    parser.add_argument(
+        "input_file",
+        help="要分割的Markdown文件路径"
+    )
+    parser.add_argument(
+        "--output-dir",
+        type=str,
+        default="scripts",
+        help="输出目录 (默认: scripts)"
+    )
+    parser.add_argument(
+        "--quiet",
+        action="store_true",
+        help="静默模式，不显示过程信息"
+    )
+    
+    args = parser.parse_args()
+    
+    try:
+        # 检查输入文件是否存在
+        if not os.path.exists(args.input_file):
+            print(f"错误: 文件 '{args.input_file}' 不存在")
+            return
+        
+        # 创建分割器并执行分割（把 quiet 映射到 verbose）
+        splitter = ScriptSplitter(verbose=not args.quiet)
+        splitter.split_script(
+            args.input_file,
+            output_dir=args.output_dir,
+        )
+        
+        if not args.quiet:
+            print("分割完成！所有章节文件和标题列表 (chapter.txt) 已保存。")
+        
+    except Exception as e:
+        print(f"错误: {e}")
+        print("\n请确保:")
+        print("1. 输入文件路径正确")
+        print("2. 文件格式为Markdown (.md)")
+        print("3. 文件包含##级别的标题")
+
+
+if __name__ == "__main__":
+    main()

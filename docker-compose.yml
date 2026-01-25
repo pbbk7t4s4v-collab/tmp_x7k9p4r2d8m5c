@@ -1,0 +1,45 @@
+# Docker Compose 文件版本
+version: '3.8'
+
+# 定义所有服务
+services:
+
+  # 1. MySQL 数据库服务 (已修改)
+  db:
+    image: mysql:8.0-debian  # 使用一个稳定且轻量的 MySQL 8 镜像
+    container_name: tm_db # 给容器一个固定的名字
+    environment:
+      # !! 警告：请在 .env 文件中设置这些值，或使用更安全的密码 !!
+      MYSQL_ROOT_PASSWORD: tm_root # Root 密码
+      MYSQL_DATABASE: tm_db     # 你的应用数据库
+      MYSQL_USER: tm_root           # 你的应用用户名
+      MYSQL_PASSWORD: tm_user # 你的应用密码
+    ports:
+      # 将你本机的 3306 端口映射到容器的 3306 端口
+      # 这样你的 FastAPI 应用 (在主机上运行) 才能通过 "localhost:3306" 访问它
+      - "3306:3306"
+    volumes:
+      # 挂载一个命名的卷来持久化存储数据库数据
+      - mysql_data:/var/lib/mysql
+    restart: unless-stopped # 除非手动停止，否则容器总会重启
+    # 添加 MySQL 8 的默认身份验证插件
+    command: --default-authentication-plugin=mysql_native_password
+
+  # 2. Redis 服务 
+  redis:
+    image: redis:7-alpine  # 使用一个轻量的 Redis 7 镜像
+    container_name: tm_redis # 给容器一个固定的名字
+    ports:
+      # 将你本机的 6379 端口映射到容器的 6379 端口
+      # 你的 FastAPI 和 ARQ Worker 才能通过 "localhost:6379" 访问它
+      - "6379:6379"
+    volumes:
+      # 挂载一个命名的卷来持久化 Redis 数据 (可选，但推荐)
+      - redis_data:/data
+    restart: unless-stopped
+
+# 声明在上面 'volumes:' 中使用的命名卷
+# Docker 会自动管理这些卷的生命周期
+volumes:
+  mysql_data: {}
+  redis_data: {}

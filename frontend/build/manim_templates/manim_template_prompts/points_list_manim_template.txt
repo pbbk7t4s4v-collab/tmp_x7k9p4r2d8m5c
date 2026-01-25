@@ -1,0 +1,166 @@
+
+# Role
+你是一位专注于教育内容可视化的 Manim 代码专家。你的任务是将【原始代码】中的逻辑（背景图片格式、文字内容、数学公式、图形、动画顺序）无损地迁移到【美化版列表模板】中,并调整适当格式和布局，使画面看起来协调且美观。
+
+# Context
+我提供了一个视觉效果经过专门设计的【美化版列表模板】。
+这个模板专门用于将复杂的原始逻辑归纳为清晰的列表（Point 1, Point 2...）。
+
+# Input Data
+**【美化版列表模板】**内容：
+from manim import *
+import numpy as np
+
+class AdaptiveListSceneV4(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 全局配置 (Global Config)
+        # ==========================================
+        FONT_MAIN = "AR PL UKai CN"
+        FONT_BOLD = "AR PL UKai CN"
+        
+        # 配色方案 (复刻小黑板的通透质感)
+        COLOR_ACCENT = "#00E5FF"     # 亮青色
+        COLOR_ITEM_BG = "#2E2E2E"    # 提亮的深灰 (配合透明度)
+        COLOR_BORDER = WHITE         # 细白边框
+        COLOR_TEXT_MAIN = WHITE
+        COLOR_TEXT_SUB = "#DDDDDD"   # 稍微亮一点的灰色
+        
+        # 透明度控制
+        OPACITY_BG_OVERLAY = 0.8     # 背景压暗
+        OPACITY_CARD_FILL = 0.6      # 卡片半透明 (关键)
+        OPACITY_CARD_STROKE = 0.3    # 边框若隐若现
+        
+        # --- 布局约束常量 ---
+        LIST_WIDTH = 10.5            # 稍微加宽，大气一点
+        CARD_HEIGHT = 1.2            # 稍微压扁，显得精致
+        MAX_LIST_HEIGHT = 5.5        # 限制最大高度
+        MAX_TEXT_WIDTH = LIST_WIDTH - 2.8 
+
+        # ==========================================
+        # 1. 背景与氛围 (Fix White Border)
+        # ==========================================
+        try:
+            bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+            bg.set_z_index(-100)
+            bg.scale(max(config.frame_width/bg.width, config.frame_height/bg.height))
+            bg.move_to(ORIGIN)
+            self.add(bg)
+        except:
+            self.camera.background_color = "#111111"
+
+        # [修复]: 去除白边，同时保留压暗效果
+        bg_overlay = Rectangle(
+            width=config.frame_width + 0.1, 
+            height=config.frame_height + 0.1, 
+            fill_color=BLACK, 
+            fill_opacity=OPACITY_BG_OVERLAY, 
+            stroke_width=0 # 关键修复
+        ).set_z_index(-99)
+        self.add(bg_overlay)
+
+        # ==========================================
+        # 2. 标题 (Header) - 整体上移
+        # ==========================================
+        # [修改]: 使用通用占位符
+        title_text = "在此处填入标题内容" 
+        
+        title = Text(title_text, font=FONT_BOLD, font_size=38, color=COLOR_TEXT_MAIN)
+        # [修改]: buff=0.4 (原0.5)，让标题离顶部更近，带动整体上移
+        title.to_edge(UP, buff=0.4) 
+        
+        title_underline = Line(LEFT*4, RIGHT*4, color=COLOR_ACCENT)
+        title_underline.set_stroke(width=2)
+        title_underline.next_to(title, DOWN, buff=0.2)
+        
+        self.play(FadeIn(title, shift=DOWN*0.5), Create(title_underline))
+
+        # ==========================================
+        # 3. 数据定义 (Data)
+        # ==========================================
+        # [修改]: 所有内容替换为无意义占位符，避免产生歧义
+        items_data = [
+            ("01", "占位标题内容 1", "此处填写该步骤的简短描述文本，不宜过长"),
+            ("02", "占位标题内容 2", "这是一个用于测试长文本自动缩放功能的占位句子"),
+            ("03", "占位标题内容 3", "此处填写该步骤的简短描述文本"),
+            ("04", "占位标题内容 4", "此处填写该步骤的简短描述文本"),
+        ]
+
+        # ==========================================
+        # 4. 构建列表 (Building the List)
+        # ==========================================
+        list_group = VGroup()
+        
+        for idx, main_txt, sub_txt in items_data:
+            # --- A. 容器 (小黑板质感) ---
+            card = RoundedRectangle(
+                corner_radius=0.15, width=LIST_WIDTH, height=CARD_HEIGHT,
+                fill_color=COLOR_ITEM_BG, 
+                fill_opacity=OPACITY_CARD_FILL,       # 半透明
+                stroke_color=COLOR_BORDER, 
+                stroke_width=1.5, 
+                stroke_opacity=OPACITY_CARD_STROKE    # 细边框
+            )
+            
+            # --- B. 左侧装饰条 (精致胶囊) ---
+            bar = RoundedRectangle(
+                corner_radius=0.05, width=0.1, height=CARD_HEIGHT * 0.5,
+                fill_color=COLOR_ACCENT, fill_opacity=1, stroke_width=0
+            )
+            bar.move_to(card.get_left() + RIGHT * 0.4)
+            
+            # --- C. 序号 (精致水印) ---
+            num = Text(idx, font="Arial", font_size=52, color=WHITE, weight=BOLD)
+            num.set_opacity(0.08) # 极淡
+            # 移到右下角，不干扰视线
+            num.move_to(card.get_right() + LEFT * 0.8 + DOWN * 0.15)
+
+            # --- D. 文本内容 ---
+            t_main = Text(main_txt, font=FONT_BOLD, font_size=26, color=COLOR_TEXT_MAIN)
+            t_sub = Text(sub_txt, font=FONT_MAIN, font_size=18, color=COLOR_TEXT_SUB)
+            
+            text_block = VGroup(t_main, t_sub).arrange(DOWN, aligned_edge=LEFT, buff=0.12)
+            
+            if text_block.width > MAX_TEXT_WIDTH:
+                scale_factor = MAX_TEXT_WIDTH / text_block.width
+                text_block.scale(scale_factor)
+            
+            text_block.next_to(bar, RIGHT, buff=0.5)
+            text_block.set_y(card.get_y())
+            
+            # --- E. 组合 ---
+            item_group = VGroup(card, bar, num, text_block)
+            list_group.add(item_group)
+
+        # ==========================================
+        # 5. 整体排版 (Global Layout) - 关键调整
+        # ==========================================
+        list_group.arrange(DOWN, buff=0.25, aligned_edge=LEFT)
+        
+        if list_group.height > MAX_LIST_HEIGHT:
+            list_group.scale(MAX_LIST_HEIGHT / list_group.height)
+            
+        # [修改]: buff=0.3 (原0.5)，让列表紧贴标题下方
+        # 标题已经上移了，列表再跟紧一点，底部空间就非常大了
+        list_group.next_to(title_underline, DOWN, buff=0.3)
+
+        # ==========================================
+        # 6. 动画播放
+        # ==========================================
+        self.play(
+            LaggedStart(
+                *[
+                    AnimationGroup(
+                        FadeIn(item[0], scale=0.95), # 卡片微缩放浮现
+                        GrowFromCenter(item[1]),     # 装饰条生长
+                        Write(item[3]),              # 文字书写
+                        lag_ratio=0.1
+                    ) 
+                    for item in list_group
+                ],
+                lag_ratio=0.3
+            ),
+            run_time=2.5
+        )
+        
+        self.wait(2)

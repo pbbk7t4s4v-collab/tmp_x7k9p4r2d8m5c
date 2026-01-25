@@ -1,0 +1,1115 @@
+{
+  "404": {
+    "T9HJGUh-IAnFcPDM4LxMW": "Sorry, the page you are trying to access does not exist.",
+    "TpVLmvzAw1ImSqxY_NyGt": "Return to Homepage"
+  },
+  "common": {
+    "buttons": {
+      "confirm": "Confirm",
+      "cancel": "Cancel",
+      "delete": "Delete",
+      "download": "Download",
+      "downloadAll": "Download All",
+      "edit": "Edit",
+      "save": "Save",
+      "regenerate": "Regenerate",
+      "reprocess": "Reprocess",
+      "skip": "Skip",
+      "backToHome": "Back to Home",
+      "continueGeneration": "Continue Generation",
+      "applySpeed": "Apply & Save Speed",
+      "convertToPPT": "Convert to PPT",
+      "pptGenerated": "PPT Generated",
+      "submitComment": "Submit Comment",
+      "submit": "Submit",
+      "BL3nbFV2rvLFk74_KwhK3": "Confirm the modification and continue",
+      "xTs8PirNzpzgxSJ1Kh5C_": "Confirm",
+      "Pn6bv-2IhML0BkZttUlvT": "Reuse Configuration",
+      "4VFqNAsk_31VWzmqIyr10": "Clear Configuration",
+      "_kXTkwJHxb55lHVHenwhY": "I understand",
+      "eprWIDoRmQkvI_uAT0vry": "Return to Preview",
+      "close": "cancel",
+      "downloadOutline": "Download Video",
+      "collapse": "collapse",
+      "expand": "expand",
+      "backToCourseList": "Back To Course List"
+    },
+    "labels": {
+      "keyword": "Keyword",
+      "creationTime": "Creation Time",
+      "fileSize": "File Size",
+      "duration": "Mode",
+      "courseLibrary": "Course Library",
+      "jobId": "Job ID",
+      "courseTitle": "Course Title",
+      "feedback": "Your Feedback/Advice",
+      "courseDir": "Course Catalog",
+      "pleaseSelectVideo": "Please select a video",
+      "videoSelect": "Select video",
+      "type": "Type",
+      "size": "Size"
+    },
+    "states": {
+      "processing": "Processing...",
+      "upload": "Start Upload"
+    },
+    "form": {
+      "rule": {
+        "feedback": "Feedback"
+      }
+    }
+  },
+  "home": {
+    "pageTitle": "TeachMaster Education Platform",
+    "pageSubtitle": "Enter keywords or upload an outline file, AI will automatically generate content",
+    "inputMode": {
+      "keyword": "PPT Mode",
+      "outline": "Outline Mode",
+      "ppt": "PPT Mode"
+    },
+    "inputHint": "Timo can also make mistakes. Please verify the generated content.",
+    "advancedOptions": {
+      "title": "Configuration Options",
+      "professorName": "Professor's Name",
+      "courseName": "Course Name",
+      "accessToken": "Access Token",
+      "useTokenButton": "Use Access Token",
+      "uploadAvatar": "Teacher's Avatar",
+      "uploadAvatarDesc": "Used for cover and end pages",
+      "coverBackground": "School Emblem",
+      "coverBackgroundDesc": "For the design of the first and last pages",
+      "backgroundImage": "Background Image",
+      "backgroundImageDesc": "As the global background",
+      "referenceAudio": "Teacher Audio",
+      "referenceAudioDesc": "For vocal simulation",
+      "enableSubtitles": "Subtitles",
+      "contentLanguage": "Language",
+      "longVideo": "Standard",
+      "shortVideo": "Simplified",
+      "schoolAndCollege": "School | College",
+      "schoolPlaceholder": "School",
+      "collegePlaceholder": "College",
+      "ueVo2s5pL-aIMxlkIYTA8": "Advanced Config",
+      "ueVo2s5pL-aIMxlkIYTGH": "Example Outline"
+    },
+    "previewChoice": {
+      "title": "Video Rendering Complete!",
+      "subtitle": "You can preview each video segment or skip to continue the final generation",
+      "previewButton": "Preview Segments"
+    },
+    "results": {
+      "title": "Content Generation Complete!",
+      "speedChangeNote": "This will permanently change the playback speed of this video"
+    },
+    "steps": [
+      {
+        "title": "Pre-review Outline",
+        "desc": "Check and tweak the outline to make sure the next steps turn out well"
+      },
+      {
+        "title": "Analyze Core Themes",
+        "desc": "Understand and build the core knowledge framework of the course"
+      },
+      {
+        "title": "Build Content Outline",
+        "desc": "Organize the knowledge framework into an orderly chapter structure"
+      },
+      {
+        "title": "Course Planning Page",
+        "desc": "Design corresponding demonstration pages for each knowledge point"
+      },
+      {
+        "title": "Design page elements",
+        "desc": "Arrange specific text and content for each page"
+      },
+      {
+        "title": "Generate Visual Animation",
+        "desc": "Transform static page content into dynamic visual effects"
+      },
+      {
+        "title": "Write a lecture script",
+        "desc": "Generate professional voiceover scripts for course content"
+      },
+      {
+        "title": "Generate course voiceover",
+        "desc": "Convert the voiceover script into clear and fluent speech"
+      },
+      {
+        "title": "Set the scene rhythm",
+        "desc": "Intelligently arrange pauses and transitions for video content"
+      },
+      {
+        "title": "Optimize viewing experience",
+        "desc": "Automatically adjust the synchronization rhythm of animation and explanation"
+      },
+      {
+        "title": "Synchronize Audio and Video",
+        "desc": "Ensure that each frame of the picture is precisely matched with the sound"
+      },
+      {
+        "title": "Synthetic Background Elements",
+        "desc": "Add professional backgrounds and decorations to video content"
+      },
+      {
+        "title": "Generate video clip",
+        "desc": "Output the processed visual elements as independent video clips"
+      },
+      {
+        "title": "Series Course Content",
+        "desc": "Seamlessly connect all segments into a complete course"
+      },
+      {
+        "title": "Complete the final synthesis",
+        "desc": "Integrate the cover, content, and end credits into a complete course video"
+      }
+    ],
+    "audioRecord": {
+      "start": "Start Recording",
+      "stop": "Stop Recording",
+      "auth": "Please allow microphone permission in your browser and try again.",
+      "upload": "Upload Recording",
+      "uploading": "Uploading",
+      "uploadSuccess": "Uploaded Successfully",
+      "uploadFailed": "Upload Failed",
+      "delete": "Delete Audio",
+      "none": "No audio uploaded or recorded yet",
+      "preview": "Please complete the recording and preview first",
+      "error": {
+        "audioTooShort": "Recording is too short, please record again",
+        "format": "Encountered an issue with format conversion, the original recording format will be used",
+        "canotPlay": "Audio cannot be played, please record or upload again"
+      }
+    },
+    "other": {
+      "expected": "Expected"
+    },
+    "attachment": {
+      "title": "Upload Attachment"
+    },
+    "l7DEkV7pcfOVmkLgX5OgZ": "Hello {{name}}. Welcome to the TeachMaster platform!",
+    "Q9PPws5TWHVCornog0m4o": "Welcome to use TeachMaster",
+    "YbgYu0RL7r-g5UBbtEDRS": "I'm Timo, ready to vibe teaching with me?",
+    "-8gZRyYE4xrb5aNmPWtAf": "Course Creation",
+    "1VO3z9p3Wzxwrl8FxAOZ0": "Timo will work with you to create teaching materials such as videos, slides, handouts, test papers, etc.",
+    "YJMdOSMqWYKIwOkXmC10W": "Start creating",
+    "PK5m9ERVJFIW5iBidvpn0": "My Courses",
+    "YEej0wYff1pa7E2qTj-h4": "View, edit, and download the teaching materials co-created by Timo and you.",
+    "f5tyCvpRhY0oHLGZVXhik": "View Courses",
+    "bT95AiOiML9kWQ9JWa-yr": "Course Hall",
+    "p_PTRsXPX3XdjTNzp1qHc": "Browse and download high-quality teaching materials recommended by Timo for you.",
+    "vjvJU3PYzVKTuTzUMw2tK": "Browse Courses"
+  },
+  "preview": {
+    "header": {
+      "title": "Video Preview - {{count}} Segments"
+    },
+    "messages": {
+      "continuingGeneration": "Continue generation"
+    },
+    "confirm":{
+      "regenerateVideo": "Confirm to regenerate the video? This will consume 2 T-coins",
+      "deleteSegmentTitle": "Delete this segment?",
+      "deleteSegmentContent": "This action can't be undone. Continue?"
+    },
+    "plusIcon": "+",
+    "error": {
+      "readVideoBackupFailed": "Failed to read video backup from IndexedDB:",
+      "deleteVideoBackupFailed": "Failed to delete video from IndexedDB:",
+      "saveChatFailed": "Failed to save chat messages:",
+      "loadChatFailed": "Failed to load chat messages:",
+      "videoToBase64Failed": "Failed to convert video to base64",
+      "saveVideoBackupFailed": "Failed to save video backup:",
+      "loadHelpDocFailed": "Failed to load help documents:",
+      "operationFailed": "Operation failed",
+      "voteFailed": "Voting operation failed",
+      "commentFailed": "Commenting operation failed",
+      "syncFailed": "Synchronization failed",
+      "continueGenerationFailed": "Failed to continue generation",
+      "rollbackFailed": "Rollback failed",
+      "refreshPreviewFailed": "Failed to refresh preview data",
+      "refreshPreviewAndRollbackSuccess": "Failed to refresh preview data, but rollback completed",
+      "rollbackOperationFailed": "Rollback operation failed:",
+      "saveCodeFailed": "Failed to save code",
+      "imageUploadFailed": "Image upload failed",
+      "videoRegenerationFailed": "Video regeneration failed",
+      "segmentReprocessFailed": "Segment reprocessing failed",
+      "scriptSaveFailed": "Script save failed",
+      "readTemplateFailed": "Failed to read template file",
+      "manimCodeEmpty": "Manim code content cannot be empty",
+      "submitFailed": "Submission failed",
+      "applyAISuggestionFailed": "Failed to apply AI suggestion:",
+      "imageLoadFailed": "Image loading failed:",
+      "loadFailedTitle": "Failed to Load",
+      "loadFailedSubtitle": "Could not fetch preview data",
+      "codeEmptyCannotSave": "Code content is empty, cannot save as template",
+      "cannotExtractFrame": "Cannot extract video frame, preview image loading failed",
+      "extractFrameFailed": "Failed to extract video frame, preview image loading failed",
+      "templateLimitReached": "Custom template limit reached, please go to management",
+      "duplicateTemplateName": "A custom template with the same name already exists",
+      "deleteTemplateFailed": "Failed to delete template",
+      "saveTemplateFailed": "Failed to save template",
+      "unfavoriteTemplateFailed": "Failed to unfavorite template",
+      "loadUserTemplatesFailed": "Failed to load user templates",
+      "updateTemplateNameFailed": "Failed to update template name",
+      "noSegmentSelected": "No segment selected",
+      "pleaseSelectSegment": "Please select a segment first",
+      "cannotGetVideoElement": "Cannot get video element, please ensure video is loaded",
+      "videoNotLoaded": "Video not loaded yet, please wait",
+      "cannotGetVideoDuration": "Cannot get video duration, preview image loading failed"
+    },
+    "loading": {
+      "loadingDoc": "Loading documentation...",
+      "submitLoading": "Submitting...",
+      "syncing": "Syncing...",
+      "savingCode": "Saving code...",
+      "regeneratingVideo": "Regenerating video...",
+      "rollingBack": "Rolling back...",
+      "uploading": "Uploading...",
+      "reprocessingSegment": "Reprocessing segment...",
+      "applying": "Applying...",
+      "message": "Loading preview data...",
+      "checkingBalance": "Checking balance...",
+      "savingTemplate": "Saving template...",
+      "unfavoritingTemplate": "Unfavoriting template...",
+      "loadingCurrentSegment": "Loading current segment...",
+      "savingTemplatePleaseWait": "Saving template, please wait"
+    },
+    "success": {
+      "operationSuccess": "Operation successful",
+      "syncSuccess": "Synchronization successful",
+      "saveNoChange": "Save successful (code unchanged)",
+      "saveAndApplySuccess": "Save and Apply Successful",
+      "rollbackSuccess": "Rollback successful",
+      "codeSaved": "Code saved",
+      "uploadComplete": "Upload complete",
+      "imageApplied": "Generated image applied",
+      "videoRegenerated": "Video successfully regenerated",
+      "scriptSaved": "Script saved",
+      "manimCodeUpdated": "Manim code updated",
+      "templateSaved": "Template saved successfully",
+      "templateDeleted": "Template deleted successfully",
+      "templateUnfavorited": "Unfavorited successfully",
+      "templateNameUpdated": "Template name updated successfully"
+    },
+    "warning": {
+      "atLeastOneSegment": "At least one segment must be kept.",
+      "renderFailedRolledBack": "Render failed. The code has been rolled back to the previous version.",
+      "renderFailedRollbackFailed": "Render failed. Automatic rollback failed; please roll back manually.",
+      "videoBackupFailed": "Video backup failed, continuing code save:",
+      "noBackupAvailable": "No backup available",
+      "jobIdRequired": "Job ID does not exist. Please refresh and try again.",
+      "modifyCodeRequired": "Please enter your modification request",
+      "selectedSegmentRequired": "Please select a segment first",
+      "videoLoadFailedRetry": "Video loading failed, retrying once after delay:",
+      "videoLoadFailedFinal": "Video loading failed (still failing after retry, log only):",
+      "videoLoadStart": "Starting video load:"
+    },
+    "chat": {
+      "welcomeMessage": "Hi, I'm Timo! Please tell me your revision requirements and I will adjust immediately.",
+      "applyDoubleColTemplate": "Apply double column template",
+      "applyTemplate": "🎨 Apply '{{templateName}}' template",
+      "thinking": "Thinking...",
+      "suggestionTitle": "Optimization Suggestion:",
+      "applyConfirm": "Apply changes?",
+      "status": {
+        "applied": "Applied",
+        "rejected": "Application Cancelled"
+      },
+      "placeholder": "Ask Timo...",
+      "palette": {
+        "templateButton": "Page Templates"
+      }
+    },
+    "sidebar": {
+      "headerTitle": "Video Segment List ({{count}} total)",
+      "title": "Video Segment Directory",
+      "segment": "Segment {{index}}",
+      "copySuffix": " (Copy)",
+      "empty": "No video segments available"
+    },
+    "codeOverlay": {
+      "tooltip": "Click to replace this image asset",
+      "clickToReplace": "Click to replace image",
+      "clickToUpload": "Click to upload image"
+    },
+    "imageMobject": {
+      "defaultName": "Image"
+    },
+    "layout": {
+      "dragHint": "Drag elements to adjust position ({{count}} modifications)",
+      "undo": "Undo",
+      "redo": "Redo",
+      "reset": "Reset",
+      "resetConfirmTitle": "Confirm reset layout?",
+      "resetConfirmContent": "Resetting will clear all drag modification records. Continue?",
+      "resetSuccess": "Layout reset successful",
+      "resetFailed": "Layout reset failed: {{error}}",
+      "applyFailed": "Layout application failed, please adjust and retry",
+      "noUndo": "No operations to undo",
+      "noRedo": "No operations to redo",
+      "loadFailed": "Failed to load layout: {{error}}",
+      "missingInfo": "Missing required information",
+      "noChanges": "No modifications to save",
+      "generatingCode": "Saving layout modifications...",
+      "getCodeFailed": "Failed to save layout modifications, please adjust and retry"
+    },
+    "main": {
+      "videoEditTitle": "Edit Video",
+      "feedbackTitle": "User Feedback",
+      "commentCount": "Comments",
+      "commentDateFormat": "YYYY-MM-DD HH:mm:ss",
+      "commentRequired": "Comment content cannot be empty",
+      "commentPlaceholder": "Add your comment...",
+      "videoPreviewTitle": "Page Preview",
+      "videoNotSupported": "Your browser does not support the video tag.",
+      "videoPathDebug": "Video Path",
+      "manimCodeTitle": "Page Code",
+      "noCodeContent": "No code content available",
+      "scriptTitle": "Page Script",
+      "noScriptContent": "No original script content available",
+      "scriptSourceNote": "Source: Original Script (speech/ directory)",
+      "emptyState": "Please select a video segment from the left directory to preview"
+    },
+    "imageManager": {
+      "selectSegmentPlaceholder": "Please select a video segment on the left first",
+      "noImageDetected": "No image elements detected on the current page",
+      "title": "Image Management",
+      "clickThumbnailTip": "Click 'Preview' to view the original image",
+      "background": "Background",
+      "defaultFileType": "IMG",
+      "status": {
+        "readyToUpload": "Ready to upload",
+        "originalAsset": "Original image"
+      },
+      "replaceButton": "Replace",
+      "generateButton": "Generate",
+      "previewTip": "Preview",
+      "displayName": {
+        "avatar": "Teacher Avatar",
+        "background": "Page Background",
+        "logo": "Left Logo"
+      },
+      "backgroundLabel": "bg"
+    },
+    "modal": {
+      "cancelText": "Cancel",
+      "imageGen": {
+        "apply": "Apply to Current Image",
+        "generate": "Generate",
+        "promptRequired": "Please enter a description first",
+        "generating": "Generating...",
+        "generateFailed": "Generation failed",
+        "generateSuccess": "Generation successful, preview below",
+        "timoPrompt": "Describe the image you want to create to Timo.",
+        "placeholder": "E.g.: An orange cat in a spacesuit drinking milk tea on the moon",
+        "previewResult": "Generated result preview:",
+        "previewResultAlt": "Generated result"
+      },
+      "editPath": {
+        "title": "Edit Image Path",
+        "currentPath": "Current Path",
+        "newPath": "New Path",
+        "placeholder": "Enter new image path"
+      },
+      "template": {
+        "title": "Page Template",
+        "applyButton": "Apply",
+        "doubleColLabel": "Double Column Template",
+        "doubleColAlt": "Double column template example",
+        "noExample": "No example diagram available",
+        "doubleColDesc1": "The double column template converts your Manim code into a two-column layout. The left side displays key concepts and text content, while the right side showcases graphics, formulas, or animated demonstrations.",
+        "doubleColDesc2": "This template automatically preserves all logic from your original code (text content, mathematical formulas, graphics, animation sequence, waiting time, etc.), adjusting only the layout and formatting to make the presentation more harmonious and aesthetically pleasing.",
+        "doubleColDesc3": "Suitable for educational scenarios requiring simultaneous presentation of theoretical explanations and visual demonstrations.",
+        "noDescription": "No description available",
+        "selectStyle":"Choose template style",
+        "popoverContent": "Templates only adjust layout and format, preserving all original content (text, formulas, graphics, animation sequence).",
+        "opdisc":"Template Function Description",
+        "clickLarge":"Click to enlarge",
+        "comingSoon": "Coming soon"
+      },
+      "modifyCode": {
+        "AIsuggestion": "AI Suggestion",
+        "confirmButton": "Confirm and Apply",
+        "aiExplanationTitle": "AI's Explanation:",
+        "newCodeTitle": "New Code to be Applied (will overwrite editor):"
+      },
+      "cancelEdit": {
+        "title": "Notice",
+        "yesButton": "Yes",
+        "noButton": "No",
+        "message": "Your code changes have not been saved. Do you want to exit?",
+        "layoutMessage": "Your layout changes have not been saved. Do you want to exit?"
+      },
+      "cancelScriptEdit": {
+        "title": "Notice",
+        "yesButton": "Yes",
+        "noButton": "No",
+        "message": "Your script changes have not been saved. Do you want to exit?"
+      },
+      "rollback": {
+        "title": "Confirm Rollback?",
+        "warning": "(Please note: This rollback operation is irreversible)",
+        "message": "Will revert to the previous code version",
+        "collapseDetail": "Collapse Details",
+        "showDetail": "Show Details",
+        "noButton": "No",
+        "yesButton": "Yes"
+      },
+      "codeHelp": {
+        "title": "Video Editing Operation Guide",
+        "tutorialTab": "Operation Tutorial",
+        "syntaxTab": "Manim Syntax"
+      },
+      "scriptHelp": {
+        "title": "Script Editing Guide"
+      },
+      "saveTemplate": {
+        "title": "Save as Template",
+        "message": "Save the current page as a template? After saving, you can use it in <strong>Page Templates</strong> → <strong>Custom</strong>.",
+        "templateNameLabel": "Template Name:",
+        "previewImageAlt": "Template Preview",
+        "clickToPreview": "Click to preview large image",
+        "cancelButton": "Cancel",
+        "saveButton": "Save"
+      },
+      "unfavoriteTemplate": {
+        "title": "Unfavorite",
+        "message": "Are you sure you want to unfavorite this template? It will be removed from custom templates.",
+        "cancelButton": "Cancel",
+        "confirmButton": "Confirm"
+      },
+      "deleteTemplate": {
+        "title": "Confirm Delete",
+        "message": "Are you sure you want to delete this template?",
+        "cancelButton": "Cancel",
+        "confirmButton": "Confirm"
+      }
+    },
+    "labels": {
+      "duration": "Duration",
+      "fileSize": "File Size"
+    },
+    "buttons": {
+      "backToHome": "Back to Home",
+      "continueGeneration": "Export full video",
+      "rollback": "⇠ Rollback",
+      "image": "Image",
+      "code": "Code",
+      "layout": "Layout",
+      "saveAndApply": "Save & Apply",
+      "cancel": "Cancel",
+      "edit": "Edit",
+      "reprocessAudio": "Reprocess Audio",
+      "save": "Save",
+      "submitComment": "Submit Comment",
+      "favoriteTemplate": "Favorite as Template",
+      "unfavoriteTemplate": "Unfavorite"
+    },
+    "tooltips": {
+      "copySegment": "Duplicate Segment",
+      "deleteSegment": "Delete Segment",
+      "codeGuide": "Video Operation Guide",
+      "scriptGuide": "Script Operation Guide",
+      "like": "Good Generation Quality",
+      "likeButton": "Like",
+      "dislike": "Poor Generation Quality",
+      "dislikeButton": "Dislike"
+    },
+    "placeholders": {
+      "LLMModifyCode": "Describe your desired code modification in natural language",
+      "manimCode": "Manim Code Content",
+      "scriptContent": "Script Content"
+    },
+    "voiceRecognition":{
+      "noSpeech":"No speech detected, please try again",
+      "notAllowed":"Please allow microphone permission",
+      "error":"Speech recognition error, please try again",
+      "notInitialized":"Speech recognition not initialized",
+      "startFailed": "Failed to start speech recognition, please try again",
+      "stop": "Click to stop recording",
+      "start": "Click to start voice input",
+      "notSupported": "Speech recognition is not supported in this browser"
+    },
+    "templateTabs": {
+      "official": "Official",
+      "custom": "Custom"
+    },
+    "customTemplateEmpty": {
+      "title": "No Custom Templates",
+      "description": "You can click the ⭐ icon in the segment list to save the current page as a template"
+    },
+    "customTemplateName": {
+      "prefix": "Custom Template"
+    },
+    "templateName": {
+      "empty": "Template name cannot be empty"
+    }
+  },
+  "placeholders": {
+    "professorName": "e.g., Prof. Siheng Chen",
+    "courseName": "e.g., Deep Learning Basics",
+    "enterToken": "Please enter the course generation token",
+    "enterKeyword": "Describe your learning needs, and the AI companion will guide you",
+    "uploadOutline": "Click to upload the course syllabus (.txt)",
+    "uploadPPT": "Click to upload a PPT file",
+    "manimCode": "Enter Manim code here...",
+    "scriptContent": "Enter script content here...",
+    "uploadAttachments": "Click or drag files to this area",
+    "uploadAttachmentsDesc": "Supports multiple files.",
+    "LLMModifyCode": "Modify Code with LLM",
+    "contentComment": "Add a comment for the content...",
+    "PPTComment": "Add a comment for the PPT...",
+    "feedback": "problems or suggestions for improvement..."
+  },
+  "tooltips": {
+    "documentation": "Handbook",
+    "validateToken": "Validate Token",
+    "replaceImage": "Click to replace image",
+    "copySegment": "Duplicate Segment",
+    "deleteSegment": "Delete Segment",
+    "contactUs": "Contact Us"
+  },
+  "list": {
+    "selectedFiles": "Selected {{count}} files"
+  },
+  "messages": {
+    "info": {
+      "continueGeneration": "Continuing generation process...",
+      "loadingPreview": "Loading preview data...",
+      "skippingPreview": "Skipping preview, continuing to final video generation...",
+      "configNotFound": "Local configuration not found. Please fill it out and save for easy reuse next time.",
+      "W5cJEQlK_SX3vgVb9fniX": "Generation is in progress, please do not click repeatedly"
+    },
+    "confirm": {
+      "deleteSegmentTitle": "Confirm deletion?",
+      "deleteSegmentContent": "Delete Segment {{index}}? This action cannot be undone."
+    },
+    "success": {
+      "renderComplete": "Video rendering complete! You can now preview or continue.",
+      "generationComplete": "Content generation complete!",
+      "tokenValid": "Validation Successful",
+      "audioUploadSuccess": "Reference audio uploaded successfully",
+      "downloadStarted": "Download for {{fileName}} has started.",
+      "downloadAllStarted": "Download for all files has started.",
+      "syncSuccess": "Changes synchronized successfully!",
+      "codeSaved": "Code saved successfully",
+      "scriptSaved": "Script saved successfully",
+      "imageUploadSuccess": "Image uploaded successfully!",
+      "videoRegenerated": "Video regenerated successfully!",
+      "segmentReprocessed": "Segment reprocessed successfully!",
+      "continueGeneration": "Generation has resumed, returning to the main page to view progress.",
+      "uploadSuccess": "File uploaded successfully: {{filename}}",
+      "batchUploadSuccess": "Successfully uploaded {{count}} files",
+      "usedLastConfig": "has reused the previous configuration",
+      "cleardLastConfig": "Last configuration has been cleared",
+      "submitSuccess": "Submit success",
+      "gbzbRfhtG4Pqjv_9lYCHL": "The handout has been confirmed, and generation is in progress...",
+      "wEtcH28K-7zqI5MVxwceM": "Please continue your creation"
+    },
+    "warning": {
+      "accessTokenRequired": "Please configure a valid access token",
+      "keywordRequired": "Please enter a course topic or keyword",
+      "markdownRequired": "Please upload a Markdown outline file",
+      "pptRequired": "Please upload a PPT file",
+      "jobIdMissing": "Job ID not found, cannot download file",
+      "noFilesToDownload": "No files available for download",
+      "atLeastOneSegment": "At least one segment must be kept",
+      "taskNotCompleted": "This task has not been completed",
+      "UefGpzS7c9qEcJ8jGl9cQ": "Please upload a file",
+      "KSsJyVe7sReugl6tTaHrY": "The file is being uploaded, please wait a moment before generating",
+      "rpa2iIEIWc8oRExlc3ely": "The file has not been uploaded yet, please try again later",
+      "Q12OXKYXYMMeUYMKwDTi9": "The attachment is being uploaded, please wait a moment",
+      "WNxJ1XvKVI8GfnUZsR1Cg": "User's T Coin balance is insufficient"
+    },
+    "error": {
+      "pptFailed": "Failed to generate PPT",
+      "tokenRequired": "Please enter a token!",
+      "tokenInvalid": "Validation Failed",
+      "requestFailed": "Request Error",
+      "wavRequired": "Please upload a .wav format file",
+      "audioUploadFailed": "Reference audio upload failed",
+      "taskFailed": "Task failed: {{error}}",
+      "taskTimeout": "Task timed out",
+      "generationFailed": "Generation failed: {{error}}",
+      "downloadFailed": "Failed to download {{fileName}}, please try again",
+      "downloadAllFailed": "Failed to download all files, please try again",
+      "markdownOnly": "Only Markdown files can be uploaded!",
+      "fileSizeExceeded": "File size cannot exceed 50MB!",
+      "getPreviewFailed": "Failed to get preview data",
+      "continueGenerationFailed": "Failed to continue generation",
+      "syncFailed": "Failed to synchronize changes",
+      "codeSaveFailed": "Failed to save code",
+      "scriptSaveFailed": "Failed to save script",
+      "imageUploadFailed": "Image upload failed",
+      "videoRegenerationFailed": "Video regeneration failed",
+      "segmentReprocessFailed": "Segment reprocessing failed",
+      "pleaseUploadImageFile": "Please upload an image file",
+      "pleaseUploadWavFile": "Please upload a wav format audio file",
+      "pleaseUploadMarkdownFile": "Please upload a markdown format outline file",
+      "uploadFailed": "File upload failed: {{error}}",
+      "invalidFileType": "Please upload a {{format}} format file",
+      "noFilesSelected": "Please select at least one file",
+      "courseNotFound": "Course not found",
+      "submitFailed": "Submit failed",
+      "loadFailedTitle": "Load failed",
+      "speedChangeFailed": "Failed to apply playback speed",
+      "h4lRwsHrrY4A02WX7iz_z": "File format error, please upload a Markdown or PPT file",
+      "J8_6LwJ0g0f9KYTo-4AN2": "File upload failed, please try again",
+      "JOTTrYvjbj0ndwxu2gryS": "File upload failed, please try again",
+      "uTVZqBF9C-9YLpfhWm_1V": "Failed to obtain the lecture notes to be reviewed, retrying...",
+      "getTaskFailed": "Failed to obtain task",
+      "8iOfnYGx02VVRZ6U3hmkA": "Return failed",
+      "continueGeneration": "Continue generate"
+    },
+    "loading": {
+      "ppt": "Generating PPT... This may take some time",
+      "downloadingFile": "Preparing to download file: {{fileName}}",
+      "downloadingAll": "Preparing to download all files...",
+      "syncing": "Synchronizing changes...",
+      "uploadingImage": "Uploading image...",
+      "regeneratingVideo": "Rerendering video...",
+      "reprocessingSegment": "Reprocessing segment (generating audio, breakpoints, rendering)...",
+      "continuingGeneration": "Continuing generation...",
+      "loadingRate": "Loading {{rate}}x speed...",
+      "continueGeneration": "Continue Generation",
+      "applyingSpeed": "Applying speed...",
+      "generatingPPT": "PPT is being generated",
+      "generatingPPTHint": "You can safely exit and check the PPT file later.",
+      "hideMessage": "Hide"
+    },
+    "other": {
+      "commentNotEmpty": "Comments cannot be empty"
+    }
+  },
+  "modals": {
+    "confirmPpt": {
+      "title": "Confirm to convert to a presentation (PPT)?",
+      "content": "This process may take some time. Please wait patiently.",
+      "additionalHint": "You can safely exit and check the PPT file later."
+    },
+    "feedback": {
+      "title": "Submit System Feedback/Advice",
+      "content": "Please enter your feedback or advice, we will appreciate it."
+    },
+    "modifyCode": {
+      "AIsuggestion": "AI's Suggestion"
+    },
+    "k1ctYFAtlLCaKNGXt-Knw": "Check and edit the lecture outline",
+    "BKtNkbPoevLppYrMQ2UjW": "Closing the window will stop editing.If it times out, the system will automatically continue generation using the current version.",
+    "QiOLnoUCTuzFYu_wWi84M": "Are you sure you want to close?"
+  },
+  "notifications": {
+    "success": {
+      "tokenValid": {
+        "message": "Validation Successful",
+        "description": "The token is valid. You can now proceed."
+      }
+    },
+    "error": {
+      "tokenInvalid": {
+        "message": "Validation Failed",
+        "description": "The token is invalid or has expired. Please check and try again."
+      },
+      "requestFailed": {
+        "message": "Request Error",
+        "description": "Could not connect to the server for validation."
+      }
+    }
+  },
+  "feedback": {
+    "dislike": "dislike",
+    "like": "like"
+  },
+  "error": {
+    "wavRequired": "Only wav format can be uploaded",
+    "audioUploadFailed": "Audio upload failed"
+  },
+  "ui": {
+    "imPbJdkjU466CioVo7Y2y": "Tip: You have enough time to edit; just keep the window open.",
+    "hdIZz1ERcRV7ixudFu-jo": "The AI has generated a preliminary set of lecture notes.Please review the content below. You can directly edit the Markdown text.After clicking 'Confirm,' the system will generate the subsequent video based on your edits.",
+    "MOV5pU07Df4CdRqB5_1hR": "Timo has something to say about your outline",
+    "DukH9FFQ6dwyBI1BYS0QU": "No review comments available (possibly due to review failure or not yet generated).",
+    "fUtE9UkLW91XhXRgDouVV": "Waiting to load the lecture content...",
+    "YMfXOLrJ5P6AeRg1X_71L": "A previous configuration has been detected, which can be directly reused or updated.",
+    "AWtE6FgNnjo7xrtY6hipB": "Local configuration not found. Please fill it out and save for easy reuse next time.",
+    "EZ5MX2e8b4H5uZgfsmRlV": "Click to view high-quality audio examples",
+    "g7Qg-cgVGSE8HJzv-sLkd": "High-quality reference audio example",
+    "xsJg1TA9UwR3G-bkHi-FQ": "Audio Content:",
+    "ZqPpPmCoMsXyCa0dBG0Tt": "Listening Experience:",
+    "OIOsUnMI-XpFditiKNjM5": "💡 Tip: Please ensure that the uploaded audio has a clean background, clear vocals, and no echo.This will make the generated voice cloning effect optimal.",
+    "X50nPxrM0o1cAaGxe0mpT": "￼ Save as the default configuration for the next time",
+    "dk8PO4vBpJz6PQgo49RCL": "TeachMaster Mascot",
+    "4i6KptPyuSmGRWnb_Jad3": "Attachment",
+    "BZapIWThrCm8F-N6CzQii": "DD/MM/YYYY HH:mm:ss",
+    "0BVZnIFQON2n6Rp79J-IN": "￼ Opinions on the generated content",
+    "j9S8BSCL9SAOCmzLrsZh1": "Comments",
+    "fwN227PP_32tgUVsiiIEl": "e.g., Binary Tree",
+    "efXPc1Ci8Mpfx--IlBj3p": "Lite",
+    "yapKttB50wICMURqSfUbp": "Standard",
+    "-hWfjojCWHzlWEsDX-Z0k": "e.g., Timo"
+  },
+  "courseDetail": {
+    "outlinePreview": "Outline Preview",
+    "X9YmRv6wh5FWk1FQ5dCy7": "(In Creation)",
+    "keyword": "Source Keywords",
+    "previewOutline": "Preview Outline"
+  },
+  "dash": {
+    "C-4eMro2wdkwe4ifv49JE": "Completed",
+    "WH7BuAAlWqhYSw-JJ-W4E": "Generating",
+    "WH7BuAAlWqhYSw-JJ-W4A": "Awaiting Checking",
+    "mW4rshU403RH2miYKKKiX": "Failed",
+    "mW4rshU403RH2miYKKKiJ": "Review by pages",
+    "D3TwZhJSJ04-53qOgA68J": "To be verified",
+    "5-0tA62SDLwwO-XBT3gvK": "Queuing",
+    "K8IfdIuzJrk0NvJhAS_T6": "Failed to load task list",
+    "TDI4ROFW4yAwp_JqBdh8I": "Deleting...",
+    "1QUb0LwPns_7Hx-MkGDBm": "Deleted successfully",
+    "zoaHLMnsM_PPyWKepY6zV": "Deletion failed",
+    "u-QRNlsrgn17mzBc0opZa": "Task ID",
+    "StTXXNaslOJMHZS7OgoGv": "Creation Time",
+    "HDNdooJ-CAnkdkZSpxxRF": "Course Name",
+    "kC0nynjLOifc4n64QJER5": "Status",
+    "K2l-jelUIiJaenh2-xZ2N": "Progress",
+    "NvJfOokcy7b0pngJG8DBL": "Operation",
+    "q5Bt4_y2letgNFwebC-54": "Details",
+    "mDClRqtGyEnaL6wBOm37": "Are you sure you want to delete this task?",
+    "qf9Fbyblibdb_E9I2Nisl": "Yes",
+    "Z2Q4QlOVnGSlj201lbS0a": "No",
+    "ZLaM6lqn_TuwipmPb-S9w": "Delete",
+    "OAYqnMC1DLxyAqC8g1KzW": "Dashboard",
+    "KCQ0H-zwyXV0jgvDCCrFP": "Total number of tasks"
+  },
+  "jobdt": {
+    "dbNkForXopG7HNXBxvjJ_": "Task execution failed",
+    "0Ohu81ZO6kdXl64E4GJdj": "Failed to load task details",
+    "lzuBode7nGvvAl4B6gJ1u": "Submitting...",
+    "rSkZEzII-VZNVbnYvn8e4": "The task has been submitted, and the final video is being merged...",
+    "DJR0VkWvbTb1iJxDholO_": "Submission failed",
+    "qHqavya-IxPZRWTnt-uXG": "Loading failed",
+    "JnNl9W0d3cgc8Rt2EAXHB": "Return to Content Library",
+    "jP22w62visKdMhLTrj9Bk": "Task not found",
+    "RbIn7C75V9luU6D6S73Pp": "Waiting for your action",
+    "Z1ZUyzvatIoSH6qPfdOw-": "Preview has been generated. You can check the snippet below, make edits, or directly proceed to generate the final video.",
+    "FUlZkv1NqcNDnR-cjHuMN": "The final document has not been generated yet.",
+    "jT7OKLM-XlUJOTrcJYxuV": "Task ID:",
+    "yV95vtvaswx-zT3yTxUcF": "View generation details",
+    "t4OR4eti5AWzQPkll9BDi": "Task Details",
+    "BDG61KMVkTlQ5M9ZzLkJ3": "Status",
+    "UvxZnaxDmzx0fGcSCwhRu": "Progress",
+    "BJPdRMsZnGGDCWCrLNOKE": "Message",
+    "zarm_chpU7zX2XOfpfwZY": "Creation Time",
+    "-HdycnNETtUTmzu2mULYt": "Keywords",
+    "6dcrm2CcpNAwy99TXeyyd": "Prompt",
+    "rPo2ilEdEJg4P30xVXjqx": "Final matirials",
+    "aGCSymBZBM8FSClj0UU7L": "Your payment process has been cancelled, and we have not charged any fees.You can return to your wallet at any time to try recharging again.",
+    "gCVsLyxkmZm6nRY6T0uHP": "Return to My Wallet",
+    "vPirFj84Z9LPtpENMdxVQ": "Return to Dashboard"
+  },
+  "pay": {
+    "-LPXi5zB_sYts5nbU8lB2": "Payment has been cancelled",
+    "settings": "Settings",
+    "personal_profile": "Personal Profile",
+    "full_name": "Full Name",
+    "your_name": "Your Name",
+    "email": "Email",
+    "your_email": "Your Email",
+    "update_profile": "Update Profile",
+    "change_password": "Change Password",
+    "current_password": "Current Password",
+    "new_password": "New Password",
+    "confirm_new_password": "Confirm New Password",
+    "api_key_placeholder": "API Key (Placeholder)",
+    "manage_api_keys": "Manage your API keys here..."
+  },
+  "settings": {
+    "message": {
+      "success": "Password successfully modified!",
+      "error": "Password reset failed. The link might have expired."
+    },
+    "validating": {
+      "text": "Securely validating your link..."
+    },
+    "invalid": {
+      "title": "Invalid or Expired Link",
+      "subtitle": "The reset link is invalid, incomplete, or has already been used. Please request a new password reset.",
+      "button": "Return to Login"
+    },
+    "success": {
+      "title": "Password Reset Successful",
+      "subtitle": "You can now log in to the system with your new password.",
+      "button": "Log in Now"
+    },
+    "form": {
+      "title": "Set New Password",
+      "subtitle": "For account security, please set a strong password.",
+      "newPassword": {
+        "label": "New Password",
+        "required": "Please input your new password!",
+        "minlength": "Password must be at least 6 characters long.",
+        "placeholder": "Enter new password"
+      },
+      "confirmPassword": {
+        "label": "Confirm Password",
+        "required": "Please confirm your new password!",
+        "mismatch": "The two passwords that you entered do not match!",
+        "placeholder": "Enter new password again"
+      },
+      "submitButton": "Confirm Change"
+    }
+  },
+  "tcoin": {
+    "title": "T-Coin Wallet",
+    "message": {
+      "fetchBalanceError": "Failed to fetch balance",
+      "fetchHistoryError": "Failed to fetch transaction history",
+      "fetchPackageError": "Failed to fetch recharge packages",
+      "getPaymentLinkError": "Could not get payment link",
+      "createOrderError": "Failed to create recharge order",
+      "codeRequired": "Please enter the redemption code",
+      "redeemSuccess": "Successfully recharged {{tcoins}} T-Coins",
+      "redeemError": "Redemption failed. Please check if the code is correct."
+    },
+    "type": {
+      "recharge": "Recharge",
+      "consumption": "Consumption",
+      "refund": "Refund",
+      "award": "Award",
+      "redeemCode": "Redeem Code"
+    },
+    "balanceCard": {
+      "title": "T-Coin Balance",
+      "currentBalance": "Current T-Coin Balance",
+      "rechargeButton": "Recharge Now",
+      "redeemButton": "Use Redeem Code"
+    },
+    "rechargeCard": {
+      "title": "T-Coin Recharge",
+      "bestValueRibbon": "Best Value",
+      "coinUnit": "T-Coins",
+      "buyButton": "Buy Now"
+    },
+    "history": {
+      "title": "Payment History",
+      "col": {
+        "time": "Time",
+        "type": "Type",
+        "change": "Change (T-Coins)",
+        "balanceAfter": "Balance After",
+        "notes": "Notes"
+      }
+    },
+    "modal": {
+      "title": "Use Redemption Code",
+      "inputLabel": "Please enter the redemption code:",
+      "placeholder": "Enter redemption code",
+      "okText": "Redeem",
+      "cancelText": "Cancel"
+    }
+  },
+  "templates": {
+    "double_col": {
+      "name": "Classic Two-Column",
+      "description": "Points and text content on the left, graphics, formulas, or animations on the right.",
+      "tags": ["Text", "Animation"]
+    },
+    "single_image": {
+      "name": "Central Image",
+      "description": "Single image template, content centered around the core image with text description below.",
+      "tags": ["Image & Text", "Single Image"]
+    },
+    "double_image": {
+      "name": "Side-by-Side Images",
+      "description": "Two images side-by-side template, suitable for comparison and analogy scenarios.",
+      "tags": ["Image & Text", "Double Image"]
+    },
+    "points_list": {
+      "name": "Key Points List",
+      "description": "List-style layout, suitable for step-by-step explanations or listing important content.",
+      "tags": ["Clear Structure"]
+    },
+    "blackboard": {
+      "name": "Blackboard",
+      "description": "Blackboard-style template, highlighting a single core concept or problem-solving process.",
+      "tags": ["Focused"]
+    },
+    "code_explanation": {
+      "name": "Code Annotation",
+      "description": "Complete code on the left, corresponding annotation content on the right.",
+      "tags": ["Code"]
+    },
+    "four_grid": {
+      "name": "Four-Grid",
+      "description": "Four-part template, suitable for displaying four sections of content.",
+      "tags": ["Image & Text", "Four-Part"]
+    },
+    "coming_soon": {
+      "name": "More Templates",
+      "description": "More layout styles coming soon, feedback welcome.",
+      "tags": ["Coming Soon"]
+    }
+  },
+  "courseShare": {
+    "4h3A2VMfNF": "No tasks found",
+    "VuyWdV5bH6": "You haven't created any content generation tasks",
+    "KUaSnjTfju": "Shared with Me",
+    "accepted": "Accepted",
+    "rejected": "Rejected",
+    "accept": "Accept",
+    "reject": "Reject",
+    "anoCourse": "Untitled Course",
+    "teacher": "Teacher",
+    "university": "University",
+    "category": "Category",
+    "shareAuthor": "Shared by",
+    "shareTime": "Shared at",
+    "checkCourse": "View Course",
+    "tooltip1": "Publish your course to the Hub for others to learn",
+    "shareCourse": "Publish Course",
+    "shareCourseText": "Publish your course to the Hub",
+    "select": "Select users to share with",
+    "completedShare": "Shared with {{successCount}} users, {{failCount}} failed",
+    "shareFailed": "Sharing failed",
+    "getListF": "Failed to get user list",
+    "shareCourse1": "Share Course",
+    "share": "Share",
+    "cancel": "Cancel",
+    "seU": "Search users",
+    "seCom": "Share message (optional)",
+    "addCom": "Add a message...",
+    "publishing": "Publishing",
+    "suc": "Success",
+    "fai": "Failed",
+    "anoErr": "Unknown error",
+    "loTF": "Failed to load tasks",
+    "loAF": "Failed to load applications",
+    "listOneV": "Select at least one video",
+    "apSu": "Submitted. Pending review.",
+    "apFa": "Submission failed",
+    "ching": "Reviewing",
+    "passed": "Approved",
+    "rejed": "Rejected",
+    "annSt": "Unknown status",
+    "noNaCou": "Untitled Course",
+    "pub2Cohub": "Publish to Course Hub",
+    "appPubCo": "Apply to Publish",
+    "seV": "Select videos to share",
+    "seVN": "Select videos ({{cnt}} selected)",
+    "noCou": "No courses available. Complete a task first.",
+    "courseTitle": "Course Title",
+    "enterCourseTitle": "Enter course title",
+    "exCourseTitle": "e.g., Intro to AI",
+    "courseDesc": "Course Description",
+    "enterCourseDesc": "Enter course description",
+    "descPlaceholder": "Briefly describe the content and target audience",
+    "teacherName": "Teacher Name",
+    "enterTeacherName": "Enter teacher name",
+    "exTeacherName": "e.g., Prof. Zhang",
+    "enterSchool": "Enter school name",
+    "exSchool": "e.g., SJTU",
+    "college": "College",
+    "enterCollege": "Enter college name",
+    "exCollege": "e.g., School of AI",
+    "courseCategory": "Category",
+    "selectCategory": "Select a category",
+    "catSmartSci": "080907T Smart Science",
+    "catPhysics": "070200 Physics",
+    "catCS": "081200 Computer Science",
+    "catBioMed": "071000 Bio-Med Engineering",
+    "catMechanics": "080100 Mechanics",
+    "other": "Other",
+    "submitApply": "Submit Application",
+    "myAppHistory": "Application History",
+    "noAppHistory": "No records found",
+    "completeTaskHint": "Complete a task to apply for Hub sharing",
+    "applyTime": "Applied at: ",
+    "rejectReason": "Reason: ",
+    "selectChapterVideo": "Select Chapter Videos",
+    "confirmSelected": "Confirm ({{count}} selected)",
+    "noKeyword": "No keywords",
+    "selectedChapters": "Selected Chapters",
+    "enterChapterTitle": "Enter chapter title",
+    "dragHint": "💡 Drag to reorder. Click title to rename.",
+    "noAvailableVideos": "No videos available",
+    "finishGenTaskFirst": "Please complete a generation task first",
+    "sortSaved": "Order saved",
+    "sortFail": "Failed to save order",
+    "logSortFail": "Failed to save chapter order",
+    "loVF": "Failed to load videos",
+    "addVSuc": "Video added",
+    "addVFa": "Failed to add",
+    "saveTitleSuc": "Title saved",
+    "saveFa": "Failed to save",
+    "saveCourseSuc": "Course info saved",
+    "saveSuc": "Saved successfully",
+    "delVSuc": "Video deleted",
+    "delFa": "Failed to delete",
+    "logRecErr": "Speech recognition error",
+    "noSpeech": "No speech detected",
+    "micNotAllowed": "Microphone access denied",
+    "recErr": "Speech recognition failed",
+    "recNotSupp": "Browser not supported",
+    "recNotInit": "Not initialized",
+    "startRecFa": "Failed to start recognition",
+    "noAvailV": "No available videos",
+    "noAvailVDesc": "All videos are in use or no tasks completed",
+    "add": "Add",
+    "createTime": "Created at",
+    "save": "Save",
+    "cancelEdit": "Cancel",
+    "editCourse": "Edit Course",
+    "dragToSort": "Drag to reorder",
+    "addVideo": "Add Video",
+    "scenClass": "Scenario Class",
+    "thinking": "Thinking...",
+    "likeAnswer": "Like",
+    "dislikeAnswer": "Dislike",
+    "copyAnswer": "Copy",
+    "getVIdFa": "Video ID missing, ",
+    "likeFa": "Like failed",
+    "dislikeFa": "Dislike failed",
+    "recordFa": "Record failed",
+    "copySuc": "Copied to clipboard",
+    "copyFa": "Copy failed. Please select text manually.",
+    "chatPlaceholder": "Ask Timo anything...",
+    "stopVoice": "Stop listening",
+    "startVoice": "Start listening",
+    "answerFinished": "Answer finished. Resuming in {{count}}s",
+    "resumeNow": "Resume Now"
+  },
+  "menu": {
+    "home": "Home",
+    "dashboard": "Dashboard",
+    "courses": "Course Hub",
+    "tcoin": "My Tcoin",
+    "myCourseStatus": "My Course Status",
+    "admin": "Admin",
+    "users": "Users",
+    "jobs": "Jobs",
+    "package": "Package",
+    "wallets": "Wallets",
+    "redeemCodes": "Redeem Codes",
+    "courseManagement": "Course Management",
+    "profile": "Profile",
+    "settings": "Settings",
+    "logout": "Logout",
+    "manualTitle": "TeachMaster User Manual"
+  },
+  "personalSettings": {
+      "accountSettings": "Account Settings",
+      "saveChanges": "Save Changes",
+      "cancel": "Cancel",
+      "username": "Username",
+      "enterUsername": "Please enter your username",
+      "usernameDisabledHint": "Username is usually not editable",
+      "fullName": "Full Name",
+      "enterFullName": "Please enter your full name",
+      "email": "Email",
+      "enterEmail": "Please enter your email",
+      "invalidEmail": "Please enter a valid email format",
+      "confirmLogout": "Confirm Logout",
+      "logoutContent": "Are you sure you want to log out?",
+      "confirm": "Confirm",
+      "logoutSuccess": "Logged out successfully"
+  }
+}

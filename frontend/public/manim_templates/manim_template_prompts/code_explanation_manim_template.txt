@@ -1,0 +1,221 @@
+# Role
+你是一位专注于教育内容可视化的 Manim 代码专家。你的任务是将【原始代码】中的代码内容（这个是重点！）和逻辑（背景图片格式、文字内容（**务必和代码对应行对齐**）、数学公式、图形、动画顺序）无损地迁移到【代码注解模板】中,并调整适当格式和布局，使画面看起来协调且美观。
+
+# Context
+我有一个【代码注解模板】。
+你需要用它适配【原始代码】中的代码内容和文字注解，并保证对应行的注解与该行代码内容对齐。
+
+# Requirements
+**以下很重要！！**
+代码元素Code()中 **只能** 包含：code_string, tab_width, language, background, formatter_style, add_line_numbers, paragraph_config(并不是所有版本都支持，为了稳妥最好不带)。
+如果出于画面布局 **必需**，需要修改如font, font_size, line_spacing等参数，**一定要**添加在**paragraph_config**这个参数中（参考以下模板代码中的格式），否则会导致manim代码报错。
+
+
+# Input Data
+**【代码注解模板】**内容：
+from manim import *
+import textwrap
+import numpy as np
+
+class ModernSplitLayoutScene(Scene):
+    def construct(self):
+        # ==========================================
+        # 0. 全局视觉配置 (Updated to match Template)
+        # ==========================================
+        FONT_MAIN = "AR PL UKai CN"
+        
+        # 配色方案 (From Template)
+        COLOR_BG_OVERLAY = "#1a1a1a" 
+        COLOR_ACCENT = "#4AF626"     
+        COLOR_TEXT_MAIN = WHITE
+        COLOR_TEXT_SUB = "#CCCCCC"
+        COLOR_PANEL_BORDER = BLUE_E
+        COLOR_SEPARATOR = GREY_B
+        
+        # 字体大小 (From Original Content)
+        FONT_SIZE_CODE = 20            
+        FONT_SIZE_NOTE = 18    
+
+        # ==========================================
+        # 1. 数据准备 (Content Preserved)   [LLM] 替换为【原始代码】中的内容
+        # ==========================================
+        title_text = "请输入标题内容"
+
+        code_str = textwrap.dedent("""
+            def placeholder_func(data):
+                # 1. Check Input
+                if not data:
+                    return None
+                
+                # 2. Initialize Variables
+                count = 0
+                total = 0
+                
+                # 3. Process Data Loop
+                for val in data:
+                    if val > 0:
+                        total += val
+                        count += 1
+                        
+                # 4. Final Output
+                if count == 0:
+                    return 0
+                return total / count
+        """).strip("\n")
+
+        annotations_data = {
+            1: "...第1行注解内容...",
+            3: "...第3行注解内容...",
+            7: "...第7行注解内容...",
+            11: "...第11行注解内容...",
+            12: "...第12行注解内容...",
+            17: "...第17行注解内容...",
+            19: "...第19行注解内容..."
+        }
+
+        # ==========================================
+        # 2. 舞台搭建 (Updated to match Template)
+        # ==========================================
+        # 1.1 背景图 (Template Style)
+        # Note: Ensuring we use the specific path and logic from the template
+        try:
+            bg = ImageMobject("/home/TeachMasterAppV2/backend/placeholder.png")
+            bg.set_z_index(-100)
+            bg.scale(max(config.frame_width / bg.width, config.frame_height / bg.height))
+            bg.move_to(ORIGIN)
+            self.add(bg)
+        except:
+            # Fallback if image not found, but trying to keep dark theme
+            self.camera.background_color = "#111111"
+
+        bg_overlay = Rectangle(
+            width=config.frame_width, height=config.frame_height, 
+            fill_color=BLACK, fill_opacity=0.6, stroke_width=0
+        )
+        self.add(bg_overlay)
+
+        # 1.2 标题栏 (Template Style)
+        title = Text(title_text, font=FONT_MAIN, font_size=36, color=COLOR_TEXT_MAIN, weight=BOLD)
+        title.to_edge(UP, buff=0.3)
+        
+        title_line = Line(LEFT*4, RIGHT*4, color=COLOR_ACCENT).next_to(title, DOWN, buff=0.15)
+        title_line.set_stroke(width=2)
+
+        # 1.3 双栏布局容器 (Template Style - Fixed Height 6.0, Shift Down 0.3)
+        # 左侧面板区
+        panel_left = RoundedRectangle(
+            corner_radius=0.2, height=6.0, width=6.0,
+            fill_color=BLACK, fill_opacity=0.3, stroke_color=COLOR_PANEL_BORDER, stroke_width=1
+        ).to_edge(LEFT, buff=0.5).shift(DOWN * 0.3)
+
+        # 右侧面板区
+        panel_right = RoundedRectangle(
+            corner_radius=0.2, height=6.0, width=6.0,
+            fill_color=BLACK, fill_opacity=0.3, stroke_color=COLOR_PANEL_BORDER, stroke_width=1
+        ).to_edge(RIGHT, buff=0.5).shift(DOWN * 0.3)
+
+        # 1.4 中间精致分隔线 (Template Style)
+        separator = Line(UP*2.5, DOWN*2.5, color=COLOR_SEPARATOR)
+        separator.set_opacity(0.5) 
+        sep_dot_up = Dot(color=COLOR_ACCENT, radius=0.06).move_to(separator.get_start())
+        sep_dot_down = Dot(color=COLOR_ACCENT, radius=0.06).move_to(separator.get_end())
+        separator_group = VGroup(separator, sep_dot_up, sep_dot_down)
+        separator_group.move_to(ORIGIN).shift(DOWN * 0.3)
+
+        # 区域标记 (Template Style but keeping "Source Code/Annotation" text)
+        label_left = Text("SOURCE CODE / 源代码", font="Arial", font_size=16, color=BLUE_C)
+        label_left.next_to(panel_left, UP, aligned_edge=LEFT, buff=0.1)
+        
+        label_right = Text("ANNOTATION / 注解", font="Arial", font_size=16, color=BLUE_C)
+        label_right.next_to(panel_right, UP, aligned_edge=RIGHT, buff=0.1)
+
+        self.play(
+            FadeIn(title, shift=DOWN),
+            Create(title_line),
+            FadeIn(panel_left), FadeIn(panel_right),
+            Create(separator_group),
+            FadeIn(label_left), FadeIn(label_right),
+            run_time=1.5
+        )
+
+        # ==========================================
+        # 3. 左侧内容 (Code Logic - Preserved)
+        # ==========================================
+        code_obj = Code(
+            code_string=code_str,
+            tab_width=4,
+            language="python",
+            background="window", 
+            formatter_style="monokai",  
+            add_line_numbers=True,
+        )
+
+        # 字体调整
+        code_obj[-1].set_font_size(FONT_SIZE_CODE)
+        if len(code_obj) >= 2: 
+            code_obj[-2].set_font_size(FONT_SIZE_CODE)
+
+        # 隐藏自带背景
+        if hasattr(code_obj, 'background_mobject'):
+            code_obj.background_mobject.set_opacity(0)
+            code_obj.background_mobject.set_stroke(width=0)
+
+        # 缩放与定位 (Logic fits into new panel_left automatically)
+        max_h = panel_left.height - 0.4
+        max_w = panel_left.width - 0.4
+        
+        if code_obj.height > max_h:
+            code_obj.scale_to_fit_height(max_h)
+        if code_obj.width > max_w:
+            code_obj.scale_to_fit_width(max_w)
+
+        code_obj.move_to(panel_left.get_center())
+
+        # ==========================================
+        # 4. 右侧内容 (Annotations Logic - Preserved)
+        # ==========================================
+        annotations_group = VGroup()
+        
+        valid_code_lines = code_obj[-1] 
+
+        # Note: dynamic anchor based on new panel_right position
+        note_anchor_x = panel_right.get_left()[0] + 0.3
+
+        for line_num, note_text in annotations_data.items():
+            idx = line_num - 1
+            if 0 <= idx < len(valid_code_lines):
+                target_line = valid_code_lines[idx]
+                
+                note = Text(note_text, font=FONT_MAIN, font_size=FONT_SIZE_NOTE, color=COLOR_TEXT_MAIN)
+                
+                # Align logic
+                target_y = target_line.get_center()[1]
+                
+                note.move_to(np.array([0, target_y, 0])) 
+                note.to_edge(LEFT, buff=0) 
+                note.set_x(note_anchor_x + note.width/2)
+                note.set_y(target_y)
+                
+                note.move_to(np.array([note_anchor_x, target_y, 0]), aligned_edge=LEFT)
+
+                max_note_w = panel_right.width - 0.6
+                if note.width > max_note_w:
+                    note.scale_to_fit_width(max_note_w)
+                    note.move_to(np.array([note_anchor_x, target_y, 0]), aligned_edge=LEFT)
+
+                annotations_group.add(note)
+
+        # ==========================================
+        # 5. 动画 (Preserved)
+        # ==========================================
+        self.play(Write(code_obj), run_time=2)
+        self.wait(0.5)
+
+        for note in annotations_group:
+            self.play(
+                FadeIn(note, shift=RIGHT * 0.3), 
+                run_time=0.6
+            )
+            self.wait(0.1)
+
+        self.wait(3)

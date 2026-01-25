@@ -1,0 +1,1120 @@
+{
+  "404": {
+    "T9HJGUh-IAnFcPDM4LxMW": "抱歉，您访问的页面不存在。",
+    "TpVLmvzAw1ImSqxY_NyGt": "返回首页"
+  },
+  "common": {
+    "buttons": {
+      "confirm": "确认",
+      "cancel": "取消",
+      "delete": "删除",
+      "download": "下载",
+      "downloadAll": "下载全部文件",
+      "edit": "编辑",
+      "save": "保存",
+      "regenerate": "重新渲染",
+      "reprocess": "重新渲染",
+      "skip": "直接跳过",
+      "backToHome": "返回主页",
+      "continueGeneration": "继续生成",
+      "applySpeed": "应用倍速并保存",
+      "convertToPPT": "转为PPT",
+      "pptGenerated": "PPT已生成",
+      "submitComment": "提交评论",
+      "submit": "提交",
+      "BL3nbFV2rvLFk74_KwhK3": "确认修改并继续",
+      "xTs8PirNzpzgxSJ1Kh5C_": "确定",
+      "Pn6bv-2IhML0BkZttUlvT": "复用配置",
+      "4VFqNAsk_31VWzmqIyr10": "清除配置",
+      "_kXTkwJHxb55lHVHenwhY": "我知道了",
+      "eprWIDoRmQkvI_uAT0vry": "返回预览",
+      "close": "取消",
+      "downloadOutline": "下载视频",
+      "collapse": "收起",
+      "expand": "展开",
+      "backToCourseList": "返回课程列表"
+    },
+    "labels": {
+      "keyword": "关键词",
+      "creationTime": "生成时间",
+      "fileSize": "文件大小",
+      "duration": "模式",
+      "courseLibrary": "课程馆",
+      "jobId": "任务ID",
+      "courseTitle": "课程名",
+      "courseDir": "课程目录",
+      "feedback": "您的反馈",
+      "pleaseSelectVideo": "请选择视频",
+      "videoSelect": "选择视频",
+      "type": "类型",
+      "size": "大小"
+    },
+    "states": {
+      "processing": "处理中...",
+      "upload": "开始上传"
+    },
+    "form": {
+      "rule": {
+        "feedback": "反馈"
+      }
+    }
+  },
+  "home": {
+    "pageTitle": "TeachMaster",
+    "pageSubtitle": "输入关键词或上传大纲文件，AI 自动生成教学内容",
+    "inputMode": {
+      "ppt": "PPT模式",
+      "outline": "大纲模式",
+      "keyword": "PPT模式"
+    },
+    "inputHint": "Timo也会犯错，请校验生成内容。",
+    "advancedOptions": {
+      "title": "进阶配置",
+      "professorName": "教师姓名",
+      "courseName": "课程名称",
+      "accessToken": "访问密钥 (Token)",
+      "useTokenButton": "使用访问密钥",
+      "uploadAvatar": "教师头像",
+      "uploadAvatarDesc": "用于首尾页设计",
+      "coverBackground": "学校校徽",
+      "coverBackgroundDesc": "用于首尾页设计",
+      "backgroundImage": "视频背景",
+      "backgroundImageDesc": "作为全局背景",
+      "referenceAudio": "教师音频",
+      "referenceAudioDesc": "用于人声模拟",
+      "enableSubtitles": "字幕",
+      "contentLanguage": "语言",
+      "longVideo": "标准版",
+      "shortVideo": "精简版",
+      "schoolAndCollege": "学校 | 学院",
+      "schoolPlaceholder": "学校",
+      "collegePlaceholder": "学院",
+      "ueVo2s5pL-aIMxlkIYTA8": "进阶配置",
+      "ueVo2s5pL-aIMxlkIYTGH": "示例课纲"
+    },
+    "previewChoice": {
+      "title": "视频渲染完成！",
+      "subtitle": "您可以选择预览每个视频片段，或直接跳过继续生成最终视频",
+      "previewButton": "预览视频片段"
+    },
+    "results": {
+      "title": "内容生成完成！",
+      "speedChangeNote": "这会永久改变该视频的播放速度"
+    },
+    "steps": [
+      {
+        "title": "预审大纲内容",
+        "desc": "检查并优化大纲以确保后续生成质量"
+      },
+      {
+        "title": "分析核心主题",
+        "desc": "理解并构建课程的核心知识框架"
+      },
+      {
+        "title": "构建内容大纲",
+        "desc": "将知识框架整理为有序的章节结构"
+      },
+      {
+        "title": "规划课程页面",
+        "desc": "为每个知识点设计对应的演示页面"
+      },
+      {
+        "title": "设计页面元素",
+        "desc": "为每个页面安排具体的文字和内容"
+      },
+      {
+        "title": "生成视觉动画",
+        "desc": "将静态的页面内容转化为动态视觉效果"
+      },
+      {
+        "title": "撰写讲解讲稿",
+        "desc": "为课程内容生成专业的旁白文稿"
+      },
+      {
+        "title": "生成课程配音",
+        "desc": "将旁白文稿转化为清晰流畅的语音"
+      },
+      {
+        "title": "设定场景节奏",
+        "desc": "为视频内容智能安排停顿与过渡"
+      },
+      {
+        "title": "优化观看体验",
+        "desc": "自动调整动画与讲解的同步节奏"
+      },
+      {
+        "title": "同步声音画面",
+        "desc": "确保每一帧画面都与声音精准匹配"
+      },
+      {
+        "title": "合成背景元素",
+        "desc": "为视频内容添加专业的背景与装饰"
+      },
+      {
+        "title": "生成视频片段",
+        "desc": "将处理好的视觉元素输出为独立的视频片段"
+      },
+      {
+        "title": "串联课程内容",
+        "desc": "将所有片段无缝衔接为完整课程"
+      },
+      {
+        "title": "完成最终合成",
+        "desc": "将封面、内容和片尾整合成完整的课程视频"
+      }
+    ],
+    "audioRecord":{
+      "start": "开始录制",
+      "stop": "停止录制",
+      "auth": "请在浏览器允许麦克风权限后重试。",
+      "upload": "上传录音",
+      "uploading":"上传中",
+      "uploadSuccess": "已上传",
+      "uploadFailed": "上传失败",
+      "delete": "删除音频",
+      "none": "尚未上传或录制音频",
+      "preview":"请先完成录音并预览",
+      "error": {
+        "audioTooShort": "录音时间太短，请重新录制",
+        "format":"格式转换遇到问题，将使用原始录音格式",
+        "canotPlay": "音频无法播放，请重新录制或上传"
+      }
+    },
+    "attachment": {
+      "title": "上传附件"
+    },
+    "other": {
+      "expected": "预计"
+    },
+    "steps[15]": {
+      "desc": "将封面、内容和片尾字幕整合为完整的课程视频",
+      "title": "完成最终合成"
+    },
+    "l7DEkV7pcfOVmkLgX5OgZ": "您好{{name}}，欢迎来到TeachMaster平台！",
+    "Q9PPws5TWHVCornog0m4o": "欢迎使用TeachMaster",
+    "YbgYu0RL7r-g5UBbtEDRS": "我是Timo，准备好和我一起Vibe Teaching了吗？",
+    "-8gZRyYE4xrb5aNmPWtAf": "课程创作",
+    "1VO3z9p3Wzxwrl8FxAOZ0": "Timo将和您一起生成视频、幻灯片、讲义、试卷等教学素材",
+    "YJMdOSMqWYKIwOkXmC10W": "开始创作",
+    "PK5m9ERVJFIW5iBidvpn0": "我的课程",
+    "YEej0wYff1pa7E2qTj-h4": "查看、编辑和下载Timo和您共创的教学素材",
+    "f5tyCvpRhY0oHLGZVXhik": "查看课程",
+    "bT95AiOiML9kWQ9JWa-yr": "课程馆",
+    "p_PTRsXPX3XdjTNzp1qHc": "浏览和下载Timo为您推荐的优质教学素材",
+    "vjvJU3PYzVKTuTzUMw2tK": "浏览课程"
+  },
+  "preview": {
+    "header": {
+      "title": "视频预览 - 共 {{count}} 个片段"
+    },
+    "messages": {
+      "continuingGeneration": "继续生成"
+    },
+    "confirm":{
+      "regenerateVideo": "确认重新生成视频？这将会消耗2T币",
+      "deleteSegmentTitle": "确认删除该片段？",
+      "deleteSegmentContent": "删除后无法恢复，确定继续吗？"
+    },
+    "plusIcon": "＋",
+    "error": {
+      "readVideoBackupFailed": "从 IndexedDB 读取视频失败:",
+      "deleteVideoBackupFailed": "从 IndexedDB 删除视频失败:",
+      "saveChatFailed": "保存聊天消息失败:",
+      "loadChatFailed": "加载聊天消息失败:",
+      "videoToBase64Failed": "转换视频为 base64 失败",
+      "saveVideoBackupFailed": "保存视频备份失败:",
+      "loadHelpDocFailed": "加载帮助文档失败:",
+      "operationFailed": "操作失败",
+      "voteFailed": "投票操作失败",
+      "commentFailed": "评论操作失败",
+      "syncFailed": "同步失败",
+      "continueGenerationFailed": "继续生成失败",
+      "rollbackFailed": "回退失败",
+      "refreshPreviewFailed": "刷新预览数据失败",
+      "refreshPreviewAndRollbackSuccess": "刷新预览数据失败，但回退操作已完成",
+      "rollbackOperationFailed": "回退操作失败:",
+      "saveCodeFailed": "保存代码失败",
+      "imageUploadFailed": "图片上传失败",
+      "videoRegenerationFailed": "视频重新生成失败",
+      "segmentReprocessFailed": "片段重新处理失败",
+      "scriptSaveFailed": "讲稿保存失败",
+      "readTemplateFailed": "读取模板文件失败",
+      "manimCodeEmpty": "Manim代码内容不能为空",
+      "submitFailed": "提交失败",
+      "applyAISuggestionFailed": "应用AI建议失败:",
+      "imageLoadFailed": "图片加载失败:",
+      "loadFailedTitle": "加载失败",
+      "loadFailedSubtitle": "无法获取预览数据",
+      "codeEmptyCannotSave": "代码内容为空，无法保存为模板",
+      "cannotExtractFrame": "无法提取视频帧，预览图加载失败",
+      "extractFrameFailed": "提取视频帧失败，预览图加载失败",
+      "templateLimitReached": "自定义收藏模板数量达到上限，请前往管理",
+      "duplicateTemplateName": "已存在同名的自定义模板",
+      "deleteTemplateFailed": "删除模板失败",
+      "saveTemplateFailed": "保存模板失败",
+      "unfavoriteTemplateFailed": "取消收藏失败",
+      "loadUserTemplatesFailed": "加载用户模板失败",
+      "updateTemplateNameFailed": "更新模板名称失败",
+      "noSegmentSelected": "未选择片段",
+      "pleaseSelectSegment": "请先选择一个片段",
+      "cannotGetVideoElement": "无法获取视频元素，请确保视频已加载",
+      "videoNotLoaded": "视频尚未加载，请稍候再试",
+      "cannotGetVideoDuration": "无法获取视频时长，预览图加载失败"
+    },
+    "loading": {
+      "loadingDoc": "加载文档中...",
+      "submitLoading": "正在提交...",
+      "syncing": "正在同步...",
+      "savingCode": "正在保存代码...",
+      "regeneratingVideo": "正在重新生成视频...",
+      "rollingBack": "正在回退...",
+      "uploading": "正在上传...",
+      "reprocessingSegment": "正在重新处理片段...",
+      "applying": "正在应用...",
+      "message": "正在加载预览数据...",
+      "checkingBalance": "正在检查余额...",
+      "savingTemplate": "正在保存模板...",
+      "unfavoritingTemplate": "正在取消收藏...",
+      "loadingCurrentSegment": "正在加载当前片段...",
+      "savingTemplatePleaseWait": "正在保存模板，请稍后"
+    },
+    "success": {
+      "operationSuccess": "操作成功",
+      "syncSuccess": "同步成功",
+      "saveNoChange": "保存成功（代码未修改）",
+      "saveAndApplySuccess": "保存并应用成功",
+      "rollbackSuccess": "回退成功",
+      "codeSaved": "代码已保存",
+      "uploadComplete": "上传完成",
+      "imageApplied": "已应用生成的图片",
+      "videoRegenerated": "视频重新生成成功",
+      "scriptSaved": "讲稿已保存",
+      "manimCodeUpdated": "Manim代码已更新",
+      "templateSaved": "模板保存成功",
+      "templateDeleted": "模板删除成功",
+      "templateUnfavorited": "已取消收藏",
+      "templateNameUpdated": "模板名称已更新"
+    },
+    "warning": {
+      "atLeastOneSegment": "至少需要保留一个片段",
+      "renderFailedRolledBack": "渲染失败，代码已自动回退到修改前版本。",
+      "renderFailedRollbackFailed": "渲染失败，自动回退失败，请手动点击回退。",
+      "videoBackupFailed": "视频备份失败，将继续保存代码:",
+      "noBackupAvailable": "暂无可用备份",
+      "jobIdRequired": "任务ID不存在，请刷新页面重试",
+      "modifyCodeRequired": "请输入您的修改要求",
+      "selectedSegmentRequired": "未选择片段，请先选择一个片段",
+      "videoLoadFailedRetry": "视频加载失败，延迟重试一次:",
+      "videoLoadFailedFinal": "视频加载失败（重试后依然失败，仅日志）:",
+      "videoLoadStart": "开始加载视频:"
+    },
+    "chat": {
+      "welcomeMessage": "Hi，我是Timo！\n请告诉我您的修改要求，我会立即调整",
+      "applyDoubleColTemplate": "应用双栏模板",
+      "applyTemplate": "🎨 应用“{{templateName}}”模板",
+      "thinking": "正在思考中...",
+      "suggestionTitle": "优化方案：",
+      "applyConfirm": "是否应用？",
+      "status": {
+        "applied": "已应用",
+        "rejected": "已取消应用"
+      },
+      "placeholder": "问问Timo吧",
+      "palette": {
+        "templateButton": "页面模板"
+      }
+    },
+    "sidebar": {
+      "headerTitle": "视频片段列表 (共 {{count}} 个)",
+      "title": "视频片段目录",
+      "segment": "页面 {{index}}",
+      "copySuffix": " (副本)",
+      "empty": "没有可用的视频片段"
+    },
+    "codeOverlay": {
+      "tooltip": "点击替换此图片素材",
+      "clickToReplace": "点击替换图片",
+      "clickToUpload": "点击上传图片"
+    },
+    "imageMobject": {
+      "defaultName": "图像"
+    },
+    "layout": {
+      "dragHint": "拖动元素调整位置 ({{count}} 次修改)",
+      "undo": "撤销",
+      "redo": "恢复",
+      "reset": "重置",
+      "resetConfirmTitle": "确认重置布局？",
+      "resetConfirmContent": "重置后将清除所有拖动修改记录，是否继续？",
+      "resetSuccess": "重置布局成功",
+      "resetFailed": "重置布局失败: {{error}}",
+      "applyFailed": "布局应用失败，请调整后重试",
+      "noUndo": "没有可撤销的操作",
+      "noRedo": "没有可恢复的操作",
+      "loadFailed": "加载布局失败: {{error}}",
+      "missingInfo": "缺少必要信息",
+      "noChanges": "没有需要保存的修改",
+      "generatingCode": "正在保存布局修改...",
+      "getCodeFailed": "保存布局修改失败，请调整后重试"
+    },
+    "main": {
+      "videoEditTitle": "视频编辑",
+      "feedbackTitle": "用户反馈",
+      "commentCount": "条评论",
+      "commentDateFormat": "YYYY年MM月DD日 HH:mm:ss",
+      "commentRequired": "评论内容不能为空",
+      "commentPlaceholder": "添加您的评论...",
+      "videoPreviewTitle": "页面预览",
+      "videoNotSupported": "您的浏览器不支持视频播放。",
+      "videoPathDebug": "视频路径",
+      "manimCodeTitle": "页面代码",
+      "noCodeContent": "暂无代码内容",
+      "scriptTitle": "页面讲稿",
+      "noScriptContent": "暂无原始讲稿内容",
+      "scriptSourceNote": "来源: 原始讲稿 (speech/目录)",
+      "emptyState": "请从左侧目录选择要预览的视频片段"
+    },
+    "imageManager": {
+      "selectSegmentPlaceholder": "请先选择左侧的一个视频片段",
+      "noImageDetected": "当前页面中未检测到图片元素",
+      "title": "图片素材管理",
+      "clickThumbnailTip": "点击缩略图可查看大图",
+      "background": "背景",
+      "defaultFileType": "IMG",
+      "status": {
+        "readyToUpload": "准备上传",
+        "originalAsset": "原始素材"
+      },
+      "replaceButton": "替换",
+      "generateButton": "生成",
+      "previewTip": "预览",
+      "displayName": {
+        "avatar": "教师头像",
+        "background": "页面背景",
+        "logo": "左侧Logo"
+      },
+      "backgroundLabel": "背景"
+    },
+    "modal": {
+      "cancelText": "取消",
+      "imageGen": {
+        "apply": "应用到当前图片",
+        "generate": "生成",
+        "promptRequired": "请先输入描述",
+        "generating": "生成中...",
+        "generateFailed": "生成失败",
+        "generateSuccess": "生成成功，预览如下",
+        "timoPrompt": "把你想创造的图片尽情描述给Timo吧",
+        "placeholder": "例如：一只穿宇航服的橘猫在月球上喝奶茶",
+        "previewResult": "生成结果预览：",
+        "previewResultAlt": "生成结果"
+      },
+      "editPath": {
+        "title": "编辑图片路径",
+        "currentPath": "当前路径",
+        "newPath": "新路径",
+        "placeholder": "请输入新的图片路径"
+      },
+      "template": {
+        "title": "页面模板",
+        "applyButton": "应用",
+        "doubleColLabel": "双栏模板",
+        "doubleColAlt": "双栏模板示例",
+        "noExample": "暂无示例图",
+        "doubleColDesc1": "双栏模板将您的Manim代码转换为左右分栏的布局样式。左侧显示知识点和文字内容，右侧展示图形、公式或动画演示。",
+        "doubleColDesc2": "该模板会自动保留您原始代码中的所有逻辑（文字内容、数学公式、图形、动画顺序、等待时间等），仅调整布局和格式，使画面更加协调美观。",
+        "doubleColDesc3": "适用于需要同时展示理论说明和可视化演示的教学场景。",
+        "noDescription": "暂无描述",
+        "selectStyle":"选择布局风格",
+        "popoverContent": "我们提供多种页面模板，会保留您原始页面中的所有内容（文字、数学公式、图形、动画顺序等），仅调整布局和格式，使画面更加协调美观。",
+        "opdisc":"模板功能说明",
+        "clickLarge":"点击放大",
+        "comingSoon": "敬请期待"
+      },
+      "modifyCode": {
+        "AIsuggestion": "AI的建议",
+        "confirmButton": "确认并应用",
+        "aiExplanationTitle": "AI的解释：",
+        "newCodeTitle": "即将应用的新代码 (将覆盖编辑框)："
+      },
+      "cancelEdit": {
+        "title": "提示",
+        "yesButton": "是",
+        "noButton": "否",
+        "message": "您所做的代码改动尚未保存，是否退出？",
+        "layoutMessage": "您所做的布局改动尚未保存，是否退出？"
+      },
+      "cancelScriptEdit": {
+        "title": "提示",
+        "yesButton": "是",
+        "noButton": "否",
+        "message": "您所做的讲稿改动尚未保存，是否退出？"
+      },
+      "rollback": {
+        "title": "确认回退更改吗？",
+        "warning": "(请注意：该回退操作不可逆)",
+        "message": "将回退至之前的代码",
+        "collapseDetail": "收起详情",
+        "showDetail": "显示详情",
+        "noButton": "否",
+        "yesButton": "是"
+      },
+      "codeHelp": {
+        "title": "视频编辑操作指南",
+        "tutorialTab": "操作教学",
+        "syntaxTab": "Manim 语法"
+      },
+      "scriptHelp": {
+        "title": "讲稿编辑指南"
+      },
+      "saveTemplate": {
+        "title": "保存为模板",
+        "message": "是否将当前页面存为模板？保存后可以在<strong>页面模板</strong> → <strong>自定义模板</strong>中使用。",
+        "templateNameLabel": "模板名称：",
+        "previewImageAlt": "模板预览",
+        "clickToPreview": "点击预览大图",
+        "cancelButton": "取消",
+        "saveButton": "保存"
+      },
+      "unfavoriteTemplate": {
+        "title": "取消收藏",
+        "message": "确定要取消收藏这个模板吗？取消后将从自定义模板中删除。",
+        "cancelButton": "取消",
+        "confirmButton": "确定"
+      },
+      "deleteTemplate": {
+        "title": "确认删除",
+        "message": "是否删除该模板？",
+        "cancelButton": "取消",
+        "confirmButton": "确定"
+      }
+    },
+    "labels": {
+      "duration": "时长",
+      "fileSize": "文件大小"
+    },
+    "buttons": {
+      "backToHome": "返回首页",
+      "continueGeneration": "导出完整视频",
+      "rollback": "⇠ 回退",
+      "image": "图片",
+      "code": "代码",
+      "layout": "布局",
+      "saveAndApply": "保存并应用",
+      "cancel": "取消",
+      "edit": "编辑",
+      "reprocessAudio": "重处理音频",
+      "save": "保存",
+      "submitComment": "提交评论",
+      "favoriteTemplate": "收藏为模板",
+      "unfavoriteTemplate": "取消收藏"
+    },
+    "tooltips": {
+      "copySegment": "复制片段",
+      "deleteSegment": "删除片段",
+      "codeGuide": "代码操作指引",
+      "scriptGuide": "讲稿操作指引",
+      "like": "生成效果好",
+      "likeButton": "点赞",
+      "dislike": "生成效果差",
+      "dislikeButton": "踩"
+    },
+    "placeholders": {
+      "LLMModifyCode": "请用自然语言描述您想要对代码进行的修改，例如“把方块换成圆形”",
+      "manimCode": "Manim代码内容",
+      "scriptContent": "讲稿内容"
+    },
+    "voiceRecognition":{
+      "noSpeech":"未检测到语音，请重试",
+      "notAllowed":"请允许使用麦克风权限",
+      "error":"语音识别出错，请重试",
+      "notInitialized":"语音识别未初始化",
+      "startFailed": "启动语音识别失败，请重试",
+      "stop": "点击停止录音",
+      "start": "点击开始语音输入",
+      "notSupported": "当前浏览器不支持语音识别"
+    },
+    "templateTabs": {
+      "official": "官方",
+      "custom": "自定义"
+    },
+    "customTemplateEmpty": {
+      "title": "暂无自定义模板",
+      "description": "您可以在片段列表中点击⭐图标保存当前页面为模板"
+    },
+    "customTemplateName": {
+      "prefix": "自定义模板"
+    },
+    "templateName": {
+      "empty": "模板名称不能为空"
+    }
+  },
+  "placeholders": {
+    "professorName": "如：Prof. Siheng Chen",
+    "courseName": "如：二叉树",
+    "enterToken": "请输入课程生成密钥",
+    "enterKeyword": "请描述您的学习需求，AI教伴将带您智能搜索",
+    "uploadOutline": "点击上传课程大纲（.txt）",
+    "uploadPPT": "点击上传PPT文件",
+    "manimCode": "请输入Manim代码...",
+    "scriptContent": "请输入讲稿内容...",
+    "uploadAttachments": "点击或拖拽文件到此区域",
+    "uploadAttachmentsDesc": "支持多个文件。",
+    "LLMModifyCode": "请输入指令，Timo将为您修改代码，或者您可以自行修改下方代码。",
+    "contentComment": "输入您对生成内容的见解...",
+    "PPTComment": "输入您对PPT的见解...",
+    "feedback": "请详细描述您遇到的问题或改进建议..."
+  },
+  "tooltips": {
+    "documentation": "使用手册",
+    "validateToken": "验证令牌",
+    "replaceImage": "点击替换图片",
+    "copySegment": "复制片段",
+    "deleteSegment": "删除片段",
+    "contactUs": "联系我们"
+  },
+  "list": {
+    "selectedFiles": "已选择 {{count}} 个文件"
+  },
+  "messages": {
+    "info": {
+      "continueGeneration": "继续生成流程...",
+      "loadingPreview": "正在加载预览数据...",
+      "skippingPreview": "跳过预览，继续生成最终视频...",
+      "configNotFound": "未发现本地配置，请填写后保存，方便下次复用。",
+      "W5cJEQlK_SX3vgVb9fniX": "正在启动生成，请勿重复点击"
+    },
+    "confirm": {
+      "deleteSegmentTitle": "确认删除？",
+      "deleteSegmentContent": "确认删除页面 {{index}} 吗？删除后无法恢复。"
+    },
+    "success": {
+      "renderComplete": "视频渲染完成！可以选择预览或直接继续",
+      "generationComplete": "内容生成完成!",
+      "tokenValid": "验证成功",
+      "audioUploadSuccess": "参考音频上传成功",
+      "downloadStarted": "文件 {{fileName}} 下载已开始",
+      "downloadAllStarted": "所有文件下载已开始",
+      "syncSuccess": "同步成功!",
+      "codeSaved": "代码保存成功",
+      "scriptSaved": "讲稿保存成功",
+      "imageUploadSuccess": "图片上传成功!",
+      "videoRegenerated": "视频重新生成成功！",
+      "segmentReprocessed": "片段重新处理完成！",
+      "continueGeneration": "已继续生成，返回主页面查看进度",
+      "uploadSuccess": "文件上传成功: {{filename}}",
+      "batchUploadSuccess": "成功上传 {{count}} 个文件",
+      "usedLastConfig": "已复用上次配置",
+      "cleardLastConfig": "已清除上次配置",
+      "submitSuccess": "提交成功",
+      "gbzbRfhtG4Pqjv_9lYCHL": "讲义已确认，继续生成中...",
+      "wEtcH28K-7zqI5MVxwceM": "请继续您的创作"
+    },
+    "warning": {
+      "accessTokenRequired": "请配置有效的访问密钥",
+      "keywordRequired": "请输入课程主题或关键词",
+      "markdownRequired": "请上传markdown大纲文件",
+      "pptRequired": "请上传ppt文件",
+      "jobIdMissing": "任务ID不存在，无法下载文件",
+      "noFilesToDownload": "没有可下载的文件",
+      "atLeastOneSegment": "至少需要保留一个片段",
+      "taskNotCompleted": "该任务尚未完成",
+      "UefGpzS7c9qEcJ8jGl9cQ": "请上传文件",
+      "KSsJyVe7sReugl6tTaHrY": "文件正在上传，请稍候再生成",
+      "rpa2iIEIWc8oRExlc3ely": "文件尚未上传完成，请稍后再试",
+      "Q12OXKYXYMMeUYMKwDTi9": "附件正在上传，请稍候",
+      "WNxJ1XvKVI8GfnUZsR1Cg": "用户T币余额不足"
+    },
+    "error": {
+      "pptFailed": "生成PPT失败",
+      "tokenRequired": "请输入令牌！",
+      "tokenInvalid": "验证失败",
+      "requestFailed": "请求错误",
+      "wavRequired": "请上传wav格式的文件",
+      "audioUploadFailed": "参考音频上传失败",
+      "taskFailed": "任务失败: {{error}}",
+      "taskTimeout": "任务超时",
+      "generationFailed": "生成失败: {{error}}",
+      "downloadFailed": "下载文件 {{fileName}} 失败，请重试",
+      "downloadAllFailed": "下载全部文件失败",
+      "markdownOnly": "只能上传markdown文件!",
+      "fileSizeExceeded": "文件大小不能超过50MB!",
+      "getPreviewFailed": "获取预览数据失败",
+      "continueGenerationFailed": "继续生成失败",
+      "syncFailed": "同步更改失败",
+      "codeSaveFailed": "代码保存失败",
+      "scriptSaveFailed": "讲稿保存失败",
+      "imageUploadFailed": "图片上传失败",
+      "videoRegenerationFailed": "视频重新生成失败",
+      "segmentReprocessFailed": "片段重新处理失败",
+      "pleaseUploadImageFile": "请上传图片文件",
+      "pleaseUploadWavFile": "请上传wav格式的音频文件",
+      "pleaseUploadMarkdownFile": "请上传markdown格式的大纲文件",
+      "uploadFailed": "文件上传失败: {{error}}",
+      "invalidFileType": "请上传{{format}}格式的文件",
+      "noFilesSelected": "请至少选择一个文件",
+      "continueGeneration": "继续生成",
+      "courseNotFound": "课程未发现",
+      "submitFailed": "提交失败",
+      "loadFailedTitle": "加载失败",
+      "speedChangeFailed": "应用倍速失败",
+      "h4lRwsHrrY4A02WX7iz_z": "文件格式错误，请上传Markdown或PPT文件",
+      "J8_6LwJ0g0f9KYTo-4AN2": "文件上传失败，请重试",
+      "JOTTrYvjbj0ndwxu2gryS": "文件上传失败，请重试",
+      "uTVZqBF9C-9YLpfhWm_1V": "获取待审核讲义失败，正在重试...",
+      "getTaskFailed": "获取任务失败",
+      "8iOfnYGx02VVRZ6U3hmkA": "返回失败"
+    },
+    "loading": {
+      "ppt": "生成PPT中... 这可能需要一些时间",
+      "downloadingFile": "正在准备下载文件: {{fileName}}",
+      "downloadingAll": "正在准备下载所有文件...",
+      "syncing": "正在同步更改...",
+      "uploadingImage": "正在上传图片...",
+      "regeneratingVideo": "正在重新渲染视频...",
+      "reprocessingSegment": "正在重新处理片段（生成语音、断点、渲染）...",
+      "continuingGeneration": "正在继续生成...",
+      "loadingRate": "应用 {{rate}}x 倍速... 这可能需要一些时间",
+      "applyingSpeed": "正在应用速度...",
+      "continueGeneration": "继续生成",
+      "generatingPPT": "正在生成PPT...",
+      "generatingPPTHint": "您可以放心退出，稍后可查看PPT文件。",
+      "hideMessage": "隐藏"
+    },
+    "other": {
+      "commentNotEmpty": "评论不能为空"
+    }
+  },
+  "modals": {
+    "confirmPpt": {
+      "title": "确认转换为演示文稿(PPT)吗?",
+      "content": "这个过程可能需要一些时间，请您耐心等待。",
+      "additionalHint": "您可以放心退出，稍后可查看PPT文件。"
+    },
+    "modifyCode": {
+      "AIsuggestion": "AI的建议"
+    },
+    "feedback": {
+      "title": "提交系统反馈/建议",
+      "content": "请输入您的反馈或建议，我们将不胜感激。"
+    },
+    "k1ctYFAtlLCaKNGXt-Knw": "检查并编辑讲义大纲",
+    "QiOLnoUCTuzFYu_wWi84M": "确定关闭吗？",
+    "BKtNkbPoevLppYrMQ2UjW": "关闭窗口将停止编辑，如果超时系统将自动使用当前版本继续生成。"
+  },
+  "notifications": {
+    "success": {
+      "tokenValid": {
+        "message": "验证成功",
+        "description": "密钥有效，您可以继续操作。"
+      }
+    },
+    "error": {
+      "tokenInvalid": {
+        "message": "验证失败",
+        "description": "密钥无效或已过期，请检查后重试。"
+      },
+      "requestFailed": {
+        "message": "请求错误",
+        "description": "无法连接到服务器进行验证。"
+      }
+    }
+  },
+  "feedback": {
+    "like": "赞",
+    "dislike": "踩"
+  },
+  "error": {
+    "wavRequired": "只能上传wav格式",
+    "audioUploadFailed": "音频上传失败"
+  },
+  "ui": {
+    "imPbJdkjU466CioVo7Y2y": "提示: 您有足够的时间进行编辑，保持窗口打开即可。",
+    "hdIZz1ERcRV7ixudFu-jo": "AI 已生成初步讲义。请检查下方内容，您可以直接修改Markdown文本。点击“确认”后系统将根据您的修改生成后续视频。",
+    "MOV5pU07Df4CdRqB5_1hR": "对于您的大纲，Timo有话说",
+    "DukH9FFQ6dwyBI1BYS0QU": "暂无审核意见（可能审核失败或尚未生成）。",
+    "fUtE9UkLW91XhXRgDouVV": "等待加载讲义内容...",
+    "YMfXOLrJ5P6AeRg1X_71L": "检测到上次配置，可直接复用或更新配置。",
+    "AWtE6FgNnjo7xrtY6hipB": "未发现本地配置，请填写后保存，方便下次复用。",
+    "EZ5MX2e8b4H5uZgfsmRlV": "点击查看优质音频示例",
+    "g7Qg-cgVGSE8HJzv-sLkd": "优质参考音频示例",
+    "xsJg1TA9UwR3G-bkHi-FQ": "音频内容：",
+    "ZqPpPmCoMsXyCa0dBG0Tt": "试听效果：",
+    "OIOsUnMI-XpFditiKNjM5": "💡 提示：请确保上传的音频背景干净、人声清晰且无回声，这样生成的克隆效果最佳。",
+    "X50nPxrM0o1cAaGxe0mpT": "保存为下次默认配置",
+    "dk8PO4vBpJz6PQgo49RCL": "TeachMaster 吉祥物",
+    "4i6KptPyuSmGRWnb_Jad3": "附件",
+    "BZapIWThrCm8F-N6CzQii": "YYYY年MM月DD日 HH:mm:ss",
+    "0BVZnIFQON2n6Rp79J-IN": "对生成内容的看法",
+    "j9S8BSCL9SAOCmzLrsZh1": "条评论",
+    "fwN227PP_32tgUVsiiIEl": "如：二叉树",
+    "efXPc1Ci8Mpfx--IlBj3p": "精简版",
+    "yapKttB50wICMURqSfUbp": "标准版",
+    "-hWfjojCWHzlWEsDX-Z0k": "如：Timo"
+  },
+  "courseDetail": {
+    "outlinePreview": "大纲预览",
+    "X9YmRv6wh5FWk1FQ5dCy7": "（创作中）",
+    "keyword": "来源关键词",
+    "previewOutline": "预览大纲"
+  },
+  "dash": {
+    "C-4eMro2wdkwe4ifv49JE": "完成",
+    "WH7BuAAlWqhYSw-JJ-W4E": "生成中",
+    "WH7BuAAlWqhYSw-JJ-W4A": "待校验",
+    "mW4rshU403RH2miYKKKiX": "失败",
+    "mW4rshU403RH2miYKKKiJ": "分页审阅",
+    "D3TwZhJSJ04-53qOgA68J": "待校验",
+    "5-0tA62SDLwwO-XBT3gvK": "排队中",
+    "K8IfdIuzJrk0NvJhAS_T6": "加载任务列表失败",
+    "TDI4ROFW4yAwp_JqBdh8I": "正在删除...",
+    "1QUb0LwPns_7Hx-MkGDBm": "删除成功",
+    "zoaHLMnsM_PPyWKepY6zV": "删除失败",
+    "u-QRNlsrgn17mzBc0opZa": "任务ID",
+    "StTXXNaslOJMHZS7OgoGv": "创建时间",
+    "HDNdooJ-CAnkdkZSpxxRF": "课程名称",
+    "kC0nynjLOifc4n64QJER5": "状态",
+    "K2l-jelUIiJaenh2-xZ2N": "进度",
+    "NvJfOokcy7b0pngJG8DBL": "操作",
+    "q5Bt4_y2letgNFwebC-54": "详情",
+    "mDClRqtGyEnaL6wBOm37": "确定删除这个任务吗？",
+    "qf9Fbyblibdb_E9I2Nisl": "是",
+    "Z2Q4QlOVnGSlj201lbS0a": "否",
+    "ZLaM6lqn_TuwipmPb-S9w": "删除",
+    "OAYqnMC1DLxyAqC8g1KzW": "仪表盘",
+    "KCQ0H-zwyXV0jgvDCCrFP": "总任务数",
+    "vSjkrFytz0FsLlOAVGOkp": "已完成"
+  },
+  "jobdt": {
+    "dbNkForXopG7HNXBxvjJ_": "任务执行失败",
+    "0Ohu81ZO6kdXl64E4GJdj": "无法加载任务详情",
+    "lzuBode7nGvvAl4B6gJ1u": "正在提交...",
+    "rSkZEzII-VZNVbnYvn8e4": "任务已提交，正在合并最终视频...",
+    "DJR0VkWvbTb1iJxDholO_": "提交失败",
+    "qHqavya-IxPZRWTnt-uXG": "加载失败",
+    "JnNl9W0d3cgc8Rt2EAXHB": "返回内容库",
+    "jP22w62visKdMhLTrj9Bk": "未找到该任务",
+    "RbIn7C75V9luU6D6S73Pp": "等待您的操作",
+    "Z1ZUyzvatIoSH6qPfdOw-": "预览已生成。您可以检查下面的片段，进行编辑，或直接继续生成最终视频。",
+    "FUlZkv1NqcNDnR-cjHuMN": "最终文件尚未生成。",
+    "jT7OKLM-XlUJOTrcJYxuV": "任务ID:",
+    "yV95vtvaswx-zT3yTxUcF": "查看生成详情",
+    "t4OR4eti5AWzQPkll9BDi": "任务详情",
+    "BDG61KMVkTlQ5M9ZzLkJ3": "状态",
+    "UvxZnaxDmzx0fGcSCwhRu": "进度",
+    "BJPdRMsZnGGDCWCrLNOKE": "消息",
+    "zarm_chpU7zX2XOfpfwZY": "创建时间",
+    "-HdycnNETtUTmzu2mULYt": "关键词",
+    "6dcrm2CcpNAwy99TXeyyd": "提示词",
+    "rPo2ilEdEJg4P30xVXjqx": "最终素材",
+    "aGCSymBZBM8FSClj0UU7L": "您的支付流程已取消，我们未收取任何费用。您可以随时返回钱包尝试重新充值。",
+    "gCVsLyxkmZm6nRY6T0uHP": "返回我的钱包",
+    "vPirFj84Z9LPtpENMdxVQ": "返回仪表盘"
+  },
+  "pay": {
+    "-LPXi5zB_sYts5nbU8lB2": "支付已取消",
+    "settings": "设置",
+    "personal_profile": "个人资料",
+    "full_name": "全名",
+    "your_name": "您的姓名",
+    "email": "邮箱",
+    "your_email": "您的邮箱",
+    "update_profile": "更新资料",
+    "change_password": "更改密码",
+    "current_password": "当前密码",
+    "new_password": "新密码",
+    "confirm_new_password": "确认新密码",
+    "api_key_placeholder": "API 密钥 (占位符)",
+    "manage_api_keys": "在此管理您的API密钥..."
+  },
+  "settings": {
+    "message": {
+      "success": "密码修改成功！",
+      "error": "密码重置失败，链接可能已过期"
+    },
+    "validating": {
+      "text": "正在安全验证您的链接..."
+    },
+    "invalid": {
+      "title": "链接无效或已过期",
+      "subtitle": "该重置链接已失效、不完整或已被使用。请重新申请密码重置。",
+      "button": "返回登录"
+    },
+    "success": {
+      "title": "密码重置成功",
+      "subtitle": "您现在可以使用新密码登录系统了。",
+      "button": "立即登录"
+    },
+    "form": {
+      "title": "设置新密码",
+      "subtitle": "为了账号安全，请设置一个强密码",
+      "newPassword": {
+        "label": "新密码",
+        "required": "请输入新密码!",
+        "minlength": "密码长度不能少于6位",
+        "placeholder": "请输入新密码"
+      },
+      "confirmPassword": {
+        "label": "确认密码",
+        "required": "请确认新密码!",
+        "mismatch": "两次输入的密码不一致!",
+        "placeholder": "请再次输入新密码"
+      },
+      "submitButton": "确认修改"
+    }
+  },
+  "tcoin": {
+    "title": "T币钱包",
+    "message": {
+      "fetchBalanceError": "获取余额失败",
+      "fetchHistoryError": "获取交易历史失败",
+      "fetchPackageError": "获取充值套餐失败",
+      "getPaymentLinkError": "无法获取支付链接",
+      "createOrderError": "创建充值订单失败",
+      "codeRequired": "请输入兑换码",
+      "redeemSuccess": "成功充值{{tcoins}}个T币",
+      "redeemError": "兑换失败，请检查兑换码是否正确"
+    },
+    "type": {
+      "recharge": "充值",
+      "consumption": "消耗",
+      "refund": "退款",
+      "award": "奖励",
+      "redeemCode": "兑换码"
+    },
+    "balanceCard": {
+      "title": "T币余额",
+      "currentBalance": "当前T币余额",
+      "rechargeButton": "立即充值",
+      "redeemButton": "使用兑换码"
+    },
+    "rechargeCard": {
+      "title": "T币充值",
+      "bestValueRibbon": "最佳价值",
+      "coinUnit": "T币",
+      "buyButton": "立即购买"
+    },
+    "history": {
+      "title": "交易历史",
+      "col": {
+        "time": "时间",
+        "type": "类型",
+        "change": "变动 (T币)",
+        "balanceAfter": "变动后余额",
+        "notes": "备注"
+      }
+    },
+    "modal": {
+      "title": "使用兑换码",
+      "inputLabel": "请输入兑换码：",
+      "placeholder": "请输入兑换码",
+      "okText": "兑换",
+      "cancelText": "取消"
+    }
+  },
+  "templates": {
+    "double_col": {
+      "name": "经典双栏",
+      "description": "左侧显示知识点和文字内容，右侧展示图形、公式或动画演示。",
+      "tags": ["文字", "动画"]
+    },
+    "single_image": {
+      "name": "核心单图",
+      "description": "单张图片模板，围绕核心图片展开内容,下方配有文字说明。",
+      "tags": ["图文结合", "单图"]
+    },
+    "double_image": {
+      "name": "并列双图",
+      "description": "双图片并列模板，适合对比、类比等场景。",
+      "tags": ["图文结合", "双图"]
+    },
+    "points_list": {
+      "name": "要点列表",
+      "description": "突出关键要点的列表式布局，适合分步骤讲解或罗列重点内容。",
+      "tags": ["结构清晰"]
+    },
+    "blackboard": {
+      "name": "小黑板",
+      "description": "黑板风格模板，突出单一核心概念或习题的解题过程。",
+      "tags": ["精讲"]
+    },
+    "code_explanation": {
+      "name": "代码注解",
+      "description": "左侧展示完整代码，右侧对应注解内容。",
+      "tags": ["Code"]
+    },
+    "four_grid": {
+      "name": "四宫格",
+      "description": "四分式模板，适合展示四个部分的内容。",
+      "tags": ["图文结合", "四分式"]
+    },
+    "coming_soon": {
+      "name": "更多模板",
+      "description": "更多布局风格即将上线，欢迎反馈需求。",
+      "tags": ["即将上线"]
+    }
+  },
+  "courseShare":{
+    "4h3A2VMfNF":"暂无生成任务",
+    "VuyWdV5bH6":"您还没有创建过内容生成任务",
+    "KUaSnjTfju":"共享给我的课程",
+    "accepted":"已接受",
+    "rejected":"已拒绝",
+    "accept":"接受",
+    "reject":"拒绝",
+    "anoCourse":"未命名课程",
+    "teacher":"教师",
+    "university":"学校",
+    "category":"分类",
+    "shareAuthor":"共享者",
+    "shareTime":"共享时间",
+    "checkCourse":"查看课程",
+    "tooltip1":"将您生成的完整课程发布到课程馆，让更多人学习您的内容",
+    "shareCourse":"发布课程",
+    "shareCourseText":"将您的课程发布到课程馆",
+    "select":"请选择要共享的用户",
+    "completedShare":"成功共享给{{successCount}}个用户, {{failCount}}个失败",
+    "shareFailed": "共享失败",
+    "getListF": "获取用户列表失败",
+    "shareCourse1":"共享课程",
+    "share":"共享",
+    "cancel": "取消",
+    "seU":"搜索用户",
+    "seCom": "共享留言（可选）",
+    "addCom": "添加一条留言...",
+    "publishing": "发布中",
+    "suc":"成功",
+    "fai":"失败",
+    "anoErr":"未知错误",
+    "loTF":"加载任务列表失败",
+    "loAF":"加载申请列表失败",
+    "listOneV":"请至少选择一个章节视频",
+    "apSu":"申请提交成功，等待管理员审核",
+    "apFa":"申请提交失败",
+    "ching":"审核中",
+    "passed":"已通过",
+    "rejed":"已拒绝",
+    "annSt":"未知状态",
+    "noNaCou":"未命名课程",
+    "pub2Cohub":"发布课程到课程馆",
+    "appPubCo":"申请发布课程",
+    "seV":"选择要分享的章节视频",
+    "seVN":"选择章节视频（{{cnt}} 个已选)",
+    "noCou":"暂无可分享的课程，请先完成内容生成任务",
+    "courseTitle": "课程标题",
+    "enterCourseTitle": "请输入课程标题",
+    "exCourseTitle": "例如：人工智能导论",
+    "courseDesc": "课程描述",
+    "enterCourseDesc": "请输入课程描述",
+    "descPlaceholder": "简要描述课程内容、特点和适用对象",
+    "teacherName": "教师姓名",
+    "enterTeacherName": "请输入教师姓名",
+    "exTeacherName": "例如：张教授",
+    "enterSchool": "请输入学校名称",
+    "exSchool": "例如：上海交通大学",
+    "college": "学院",
+    "enterCollege": "请输入学院名称",
+    "exCollege": "例如：人工智能学院",
+    "courseCategory": "课程分类",
+    "selectCategory": "请选择课程分类",
+    "catSmartSci": "080907T 智能科学与技术",
+    "catPhysics": "070200 物理学",
+    "catCS": "081200 计算机科学与技术",
+    "catBioMed": "071000 生物医学工程",
+    "catMechanics": "080100 力学",
+    "other": "其他",
+    "submitApply": "提交申请",
+    "myAppHistory": "我的申请记录",
+    "noAppHistory": "暂无申请记录",
+    "completeTaskHint": "完成内容生成任务后，即可申请分享到课程馆",
+    "applyTime": "申请时间：",
+    "rejectReason": "拒绝原因：",
+    "selectChapterVideo": "选择章节视频",
+    "confirmSelected": "确定 ({{count}} 个视频已选)",
+    "noKeyword": "无关键词",
+    "selectedChapters": "已选章节",
+    "enterChapterTitle": "输入章节标题",
+    "dragHint": "💡 拖拽调整章节顺序，点击标题可重命名",
+    "noAvailableVideos": "暂无可用的章节视频",
+    "finishGenTaskFirst": "请先完成内容生成任务",
+    "sortSaved": "章节排序已保存",
+    "sortFail": "保存排序失败",
+    "logSortFail": "保存章节排序失败",
+    "loVF": "加载可用视频失败",
+    "addVSuc": "视频添加成功",
+    "addVFa": "添加失败",
+    "saveTitleSuc": "视频标题保存成功",
+    "saveFa": "保存失败",
+    "saveCourseSuc": "课程信息保存成功",
+    "saveSuc": "课程保存成功",
+    "delVSuc": "视频删除成功",
+    "delFa": "删除失败",
+    "logRecErr": "语音识别错误",
+    "noSpeech": "未检测到语音",
+    "micNotAllowed": "未授权使用麦克风",
+    "recErr": "语音识别出错",
+    "recNotSupp": "您的浏览器不支持语音识别",
+    "recNotInit": "语音识别未初始化",
+    "startRecFa": "启动语音识别失败",
+    "noAvailV": "暂无可用的视频",
+    "noAvailVDesc": "所有已完成的视频都已在课程中，或暂无已完成的内容生成任务",
+    "add": "添加",
+    "createTime": "创建时间",
+    "save": "保存",
+    "cancelEdit": "取消编辑",
+    "editCourse": "编辑课程",
+    "dragToSort": "拖拽排序章节视频",
+    "addVideo": "添加视频",
+    "scenClass": "情景课堂",
+    "thinking": "正在思考中...",
+    "likeAnswer": "点赞该回答",
+    "dislikeAnswer": "踩该回答",
+    "copyAnswer": "复制回答内容",
+    "getVIdFa": "无法获取视频ID，",
+    "likeFa": "点赞失败",
+    "dislikeFa": "点踩失败",
+    "recordFa": "记录失败",
+    "copySuc": "已复制到剪贴板",
+    "copyFa": "复制失败，请手动选择文本复制",
+    "chatPlaceholder": "请输入问题，Timo将为你解答",
+    "stopVoice": "停止语音输入",
+    "startVoice": "开始语音输入",
+    "answerFinished": "大模型回答已完成，{{count}} 秒后自动继续播放视频",
+    "resumeNow": "立即继续播放"
+  },
+  "menu": {
+    "home": "首页",
+    "dashboard": "控制台",
+    "courses": "课程馆",
+    "tcoin": "我的T币",
+    "myCourseStatus": "我的课程状态",
+    "admin": "管理后台",
+    "users": "用户管理",
+    "jobs": "任务管理",
+    "package": "套餐管理",
+    "wallets": "钱包管理",
+    "redeemCodes": "兑换码管理",
+    "courseManagement": "课程管理",
+    "profile": "个人资料",
+    "settings": "设置",
+    "logout": "退出登录",
+    "manualTitle": "TeachMaster 使用手册"
+  },
+  "personalSettings": {
+    "accountSettings": "账户设置",
+    "saveChanges": "保存更改",
+    "cancel": "取消",
+    "username": "用户名",
+    "enterUsername": "请输入用户名",
+    "usernameDisabledHint": "用户名通常不可修改",
+    "fullName": "全名",
+    "enterFullName": "请输入您的全名",
+    "email": "电子邮箱",
+    "enterEmail": "请输入邮箱",
+    "invalidEmail": "请输入有效的邮箱格式",
+    "confirmLogout": "确认退出",
+    "logoutContent": "您确定要退出登录吗？",
+    "confirm": "确定",
+    "logoutSuccess": "已安全退出登录"
+  }
+}
