@@ -47,7 +47,7 @@ class MergedLayoutScene2(Scene):
         course_title = Text("Machine Learning", font_size=45, weight=BOLD)
         class_title = Text(self.class_title_text, font_size=30, slant=ITALIC)
         subtitle = Text("School of Artificial Intelligence", font_size=25, color=GREY_B)
-        university = Text("Shanghai Jiao Tong University", font_size=25, color=GREY_B)
+        university = Text("Anonymous University", font_size=25, color=GREY_B)
         left_content = VGroup(course_title, class_title, subtitle, university)
         left_content.arrange(DOWN, buff=0.3, aligned_edge=LEFT)
         

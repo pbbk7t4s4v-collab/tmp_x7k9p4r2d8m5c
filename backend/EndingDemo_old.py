@@ -47,7 +47,7 @@ class EndingScene(Scene):
         thank_you = Text("Thank you for listening", font_size=35, weight=BOLD)
         course_name = Text(self.class_title_text, font_size=30, slant=ITALIC)
         subtitle = Text("School of Artificial Intelligence", font_size=25, color=GREY_B)
-        university = Text("Shanghai Jiao Tong University", font_size=25, color=GREY_B)
+        university = Text("Anonymous University", font_size=25, color=GREY_B)
         left_content = VGroup(thank_you, course_name, subtitle, university)
         left_content.arrange(DOWN, buff=0.3, aligned_edge=LEFT)
         
