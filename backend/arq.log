@@ -89,7 +89,7 @@ Job [63979fd6-4dbb-4da5-9430-1a9f7477003a]: ▶️ 发现状态变为 CONFIRMED
 [DB Update] Job 63979fd6-4dbb-4da5-9430-1a9f7477003a: pre_processing (8%) - 分析核心主题...
 同步操作完成，正在提交...
 关闭同步数据库 session。
-[01/19/26 14:44:12] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:44:12] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 创建了一个新的 *同步* session。
 [DB Update] Job 63979fd6-4dbb-4da5-9430-1a9f7477003a: script_splitting (16%) - 构建内容大纲...
@@ -99,7 +99,7 @@ Job [63979fd6-4dbb-4da5-9430-1a9f7477003a]: ▶️ 发现状态变为 CONFIRMED
 [DB Update] Job 63979fd6-4dbb-4da5-9430-1a9f7477003a: pagination (24%) - 规划课程页面...
 同步操作完成，正在提交...
 关闭同步数据库 session。
-[01/19/26 14:44:37] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:44:37] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 创建了一个新的 *同步* session。
 [DB Update] Job 63979fd6-4dbb-4da5-9430-1a9f7477003a: awaiting_pagination_review (27%) - 课程页面规划完成，等待用户确认...
@@ -151,29 +151,29 @@ Files to be processed:
    3. 2_2.md
 Starting parallel processing with 4 workers...
 📤 Submitted 3 tasks to thread pool (max 4 concurrent workers)
-[01/19/26 14:45:05] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:45:05] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:45:10] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:45:10] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:45:25] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:45:25] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:45:38] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:45:38] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:45:48] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:45:48] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:46:06] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:46:06] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:46:13] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:46:13] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/manim_codes/2_1.py
 🔄 Progress: 1/3 completed, 2 remaining, ~3 active workers
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/manim_codes/1_1.py
 🔄 Progress: 2/3 completed, 1 remaining, ~2 active workers
-[01/19/26 14:46:44] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:46:44] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:47:28] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:47:28] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
-[01/19/26 14:48:17] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:48:17] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/manim_codes/2_2.py
 🔄 Progress: 3/3 completed, 0 remaining, ~0 active workers
@@ -199,7 +199,7 @@ Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5
 [OK] 1_1.py 调试完成
 [OK] 初次渲染成功
 [OK] 2_1.py 调试完成
-[01/19/26 14:49:41] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:49:41] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 [OK] 修复成功（已覆盖原文件）：generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/manim_codes/2_2.py
 [OK] 2_2.py 调试完成
@@ -227,7 +227,7 @@ Files to be processed:
 [1/3] Processing: 1_1
   Loaded MD: 76 chars, PY: 2729 chars
   Calling LLM API...
-[01/19/26 14:50:57] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:50:57] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/speech/1_1.txt
   Generated speech: 218 chars
@@ -236,7 +236,7 @@ Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5
 [2/3] Processing: 2_1
   Loaded MD: 101 chars, PY: 2896 chars
   Calling LLM API...
-[01/19/26 14:51:17] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:51:17] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/speech/2_1.txt
   Generated speech: 294 chars
@@ -245,7 +245,7 @@ Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5
 [3/3] Processing: 2_2
   Loaded MD: 248 chars, PY: 3563 chars
   Calling LLM API...
-[01/19/26 14:51:51] INFO     HTTP Request: POST https://yeysai.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
+[01/19/26 14:51:51] INFO     HTTP Request: POST https://xxx.com/v1/chat/completions "HTTP/1.1 200  _client.py:1027
                              OK"                                                                                     
 Saved: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/speech/2_2.txt
   Generated speech: 254 chars
@@ -312,12 +312,16 @@ Manim断点插入工具
 
 开始处理 3 对文件...
 ------------------------------------------------------------
-断点插入:   0%|          | 0/3 [00:00<?, ?pair/s]处理 1_1.py:   0%|          | 0/3 [00:00<?, ?pair/s]  正在处理: 1_1.py ↔ 1_1.txt
+
+断点插入:   0%|          | 0/3 [00:00<?, ?pair/s]
+处理 1_1.py:   0%|          | 0/3 [00:00<?, ?pair/s]  正在处理: 1_1.py ↔ 1_1.txt
 [01/19/26 14:55:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(7) | 文稿(7) ✓
-处理 1_1.py:  33%|███▎      | 1/3 [00:39<01:18, 39.25s/pair]处理 2_1.py:  33%|███▎      | 1/3 [00:41<01:18, 39.25s/pair]  正在处理: 2_1.py ↔ 2_1.txt
+
+处理 1_1.py:  33%|███▎      | 1/3 [00:39<01:18, 39.25s/pair]
+处理 2_1.py:  33%|███▎      | 1/3 [00:41<01:18, 39.25s/pair]  正在处理: 2_1.py ↔ 2_1.txt
 14:55:53:   0.47s → 4908ae3776ec41fe8d74f4a4611bbd4f:generate_content_task(GenerationJob(id='cd89780b-2f1b-47be-b3aa-451e744688bb', progress=0, error_mess…)
 [01/19/26 14:55:53] INFO       0.47s →                               worker.py:589
                              4908ae3776ec41fe8d74f4a4611bbd4f:genera              
@@ -406,15 +410,19 @@ Success: /home/TeachMasterAppV2/backend/uploads/md/43491d0e-802c-4f03-9a57-38ba8
 Job [cd89780b-2f1b-47be-b3aa-451e744688bb]: ⏳ 进入等待循环 (DB Polling)...
 创建了一个新的 *同步* session。
 [01/19/26 14:56:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(5) | 文稿(5) ✓
-处理 2_1.py:  67%|██████▋   | 2/3 [01:38<00:51, 51.26s/pair]处理 2_2.py:  67%|██████▋   | 2/3 [01:40<00:51, 51.26s/pair]  正在处理: 2_2.py ↔ 2_2.txt
+
+处理 2_1.py:  67%|██████▋   | 2/3 [01:38<00:51, 51.26s/pair]
+处理 2_2.py:  67%|██████▋   | 2/3 [01:40<00:51, 51.26s/pair]  正在处理: 2_2.py ↔ 2_2.txt
 [01/19/26 14:57:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(4) | 文稿(4) ✓
-处理 2_2.py: 100%|██████████| 3/3 [02:19<00:00, 46.17s/pair]处理 2_2.py: 100%|██████████| 3/3 [02:19<00:00, 46.34s/pair]
+
+处理 2_2.py: 100%|██████████| 3/3 [02:19<00:00, 46.17s/pair]
+处理 2_2.py: 100%|██████████| 3/3 [02:19<00:00, 46.34s/pair]
 
 ============================================================
 MANIM断点插入处理完成
@@ -466,7 +474,8 @@ Manim自动Wait语句生成器
 
 开始处理 3 对文件...
 ------------------------------------------------------------
-处理文件:   0%|          | 0/3 [00:00<?, ?pair/s]  正在处理: 1_1.py ↔ 1_1.txt
+
+处理文件:   0%|          | 0/3 [00:00<?, ?pair/s]  正在处理: 1_1.py ↔ 1_1.txt
     讲稿分析: 7个段落, 201字, 6.1字/秒, 预计33.1秒
     插入了 7 个 wait 语句
     生成文件: 1_1.py
@@ -478,7 +487,8 @@ Manim自动Wait语句生成器
     讲稿分析: 4个段落, 237字, 5.3字/秒, 预计44.3秒
     插入了 4 个 wait 语句
     生成文件: 2_2.py
-处理文件: 100%|██████████| 3/3 [00:00<00:00, 1303.25pair/s]
+
+处理文件: 100%|██████████| 3/3 [00:00<00:00, 1303.25pair/s]
 
 ============================================================
 自动Wait语句生成完成
@@ -615,7 +625,8 @@ Job [cd89780b-2f1b-47be-b3aa-451e744688bb]: ▶️ 发现状态变为 CONFIRMED
 关闭同步数据库 session。
 读取大纲文件：uploads/md/43491d0e-802c-4f03-9a57-38ba8ca7dc12_社会语言学第一课.md
 本次生成对象层级：H2，共 13 个目标节点
-生成章节内容:   0%|          | 0/13 [00:00<?, ?节/s]14:58:18:   0.29s → 46e5a5ed025944268d16f871d392f9b5:generate_content_task(GenerationJob(id='f8c104c4-6247-492a-95d2-2cd2c0bbdd5e', progress=0, error_mess…)
+
+生成章节内容:   0%|          | 0/13 [00:00<?, ?节/s]14:58:18:   0.29s → 46e5a5ed025944268d16f871d392f9b5:generate_content_task(GenerationJob(id='f8c104c4-6247-492a-95d2-2cd2c0bbdd5e', progress=0, error_mess…)
 [01/19/26 14:58:18] INFO       0.29s →                               worker.py:589
                              46e5a5ed025944268d16f871d392f9b5:genera              
                              te_content_task(GenerationJob(id='f8c10              
@@ -684,9 +695,10 @@ WHERE generationjob.id = %s
 关闭同步数据库 session。
 🚀 开始加载 Whisper 模型...
 [01/19/26 14:58:23] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:   8%|▊         | 1/13 [00:31<06:14, 31.20s/节]✅ Whisper 模型加载完毕。
+
+生成章节内容:   8%|▊         | 1/13 [00:31<06:14, 31.20s/节]✅ Whisper 模型加载完毕。
 🔊 正在识别音频文件: uploads/audios/f95f0a0c-0f67-43ae-8c19-791afcbac4bf_高云.wav
 🔊 识别到的文本: 大家好,今天我们要给大家上的一门课程是抽象代数。首先我们给大家解释一下什么叫抽象。抽象是指在一堆具体的事物里面,体验出它本质的东西,保留它的本质而舍弃那些非本质的特征。其次我们给大家解释一下什么是代数。
 🔊 保存识别的文本到文件: uploads/texts/85601d9b-6f90-4a4b-bdc0-e96c1aaa2847.txt
@@ -735,9 +747,10 @@ Job [f8c104c4-6247-492a-95d2-2cd2c0bbdd5e]: ▶️ 发现状态变为 CONFIRMED
 同步操作完成，正在提交...
 关闭同步数据库 session。
 [01/19/26 14:58:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  15%|█▌        | 2/13 [01:06<06:07, 33.44s/节]命令输出: 🎬 视频音频合并填充工具
+
+生成章节内容:  15%|█▌        | 2/13 [01:06<06:07, 33.44s/节]命令输出: 🎬 视频音频合并填充工具
 ==================================================
 🎵 音频目录: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/speech_audio
 📁 视频目录: generated_content/963b57de-843d-4c30-8c37-c104f79cf144/63979fd6-4dbb-4da5-9430-1a9f7477003a/video_wo_audio
@@ -853,7 +866,7 @@ Worker: generate_content 任务 63979fd6-4dbb-4da5-9430-1a9f7477003a 已完成�
                              61a3ba268a9843f18ed3fd0d689c08ac:genera              
                              te_content_task ●                                    
 [01/19/26 14:59:34] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 创建了一个新的 *同步* session。
 [DB Update] Job f8c104c4-6247-492a-95d2-2cd2c0bbdd5e: script_splitting (16%) - 构建内容大纲...
@@ -864,31 +877,34 @@ Worker: generate_content 任务 63979fd6-4dbb-4da5-9430-1a9f7477003a 已完成�
 同步操作完成，正在提交...
 关闭同步数据库 session。
 [01/19/26 14:59:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  23%|██▎       | 3/13 [01:49<06:20, 38.07s/节][01/19/26 14:59:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  23%|██▎       | 3/13 [01:49<06:20, 38.07s/节][01/19/26 14:59:55] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:00:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:00:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  31%|███       | 4/13 [02:18<05:10, 34.51s/节][01/19/26 15:00:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  31%|███       | 4/13 [02:18<05:10, 34.51s/节][01/19/26 15:00:26] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:00:45] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:00:49] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  38%|███▊      | 5/13 [02:57<04:48, 36.05s/节][01/19/26 15:01:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  38%|███▊      | 5/13 [02:57<04:48, 36.05s/节][01/19/26 15:01:10] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:01:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 创建了一个新的 *同步* session。
 [DB Update] Job f8c104c4-6247-492a-95d2-2cd2c0bbdd5e: awaiting_pagination_review (27%) - 课程页面规划完成，等待用户确认...
@@ -897,9 +913,10 @@ Worker: generate_content 任务 63979fd6-4dbb-4da5-9430-1a9f7477003a 已完成�
 Job [f8c104c4-6247-492a-95d2-2cd2c0bbdd5e]: ⏳ 进入等待循环 (DB Polling)...
 创建了一个新的 *同步* session。
 [01/19/26 15:01:30] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  46%|████▌     | 6/13 [03:38<04:24, 37.74s/节]Job [f8c104c4-6247-492a-95d2-2cd2c0bbdd5e]: ⏰ 截止时间已过 (1768806096.891639)
+
+生成章节内容:  46%|████▌     | 6/13 [03:38<04:24, 37.74s/节]Job [f8c104c4-6247-492a-95d2-2cd2c0bbdd5e]: ⏰ 截止时间已过 (1768806096.891639)
 同步操作完成，正在提交...
 关闭同步数据库 session。
 创建了一个新的 *同步* session。
@@ -958,139 +975,147 @@ Files to be processed:
 Starting parallel processing with 4 workers...
 📤 Submitted 16 tasks to thread pool (max 4 concurrent workers)
 [01/19/26 15:01:52] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:01:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:02:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  54%|█████▍    | 7/13 [04:13<03:40, 36.72s/节]                    INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  54%|█████▍    | 7/13 [04:13<03:40, 36.72s/节]                    INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:02:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_2.py
 [01/19/26 15:02:33] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 🔄 Progress: 1/16 completed, 15 remaining, ~4 active workers
 [01/19/26 15:02:36] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  62%|██████▏   | 8/13 [04:44<02:54, 34.88s/节][01/19/26 15:02:44] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  62%|██████▏   | 8/13 [04:44<02:54, 34.88s/节][01/19/26 15:02:44] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_1.py
 🔄 Progress: 2/16 completed, 14 remaining, ~4 active workers
 [01/19/26 15:02:46] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:03:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:03:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_4.py
 🔄 Progress: 3/16 completed, 13 remaining, ~4 active workers
 [01/19/26 15:03:12] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  69%|██████▉   | 9/13 [05:20<02:20, 35.23s/节][01/19/26 15:03:17] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  69%|██████▉   | 9/13 [05:20<02:20, 35.23s/节][01/19/26 15:03:17] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_3.py
 🔄 Progress: 4/16 completed, 12 remaining, ~4 active workers
 [01/19/26 15:03:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:03:28] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:03:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_5.py
 🔄 Progress: 5/16 completed, 11 remaining, ~4 active workers
 [01/19/26 15:03:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  77%|███████▋  | 10/13 [05:48<01:39, 33.09s/节][01/19/26 15:03:48] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  77%|███████▋  | 10/13 [05:48<01:39, 33.09s/节][01/19/26 15:03:48] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:04:00] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_6.py
 [01/19/26 15:04:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_7.py
 🔄 Progress: 6/16 completed, 10 remaining, ~4 active workers
 🔄 Progress: 7/16 completed, 9 remaining, ~4 active workers
 [01/19/26 15:04:08] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_8.py
 🔄 Progress: 8/16 completed, 8 remaining, ~4 active workers
 [01/19/26 15:04:13] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:04:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  85%|████████▍ | 11/13 [06:30<01:11, 35.82s/节]                    INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  85%|████████▍ | 11/13 [06:30<01:11, 35.82s/节]                    INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:04:23] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:04:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_9.py
 🔄 Progress: 9/16 completed, 7 remaining, ~4 active workers
 [01/19/26 15:04:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:04:57] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_11.py
 🔄 Progress: 10/16 completed, 6 remaining, ~4 active workers
 [01/19/26 15:05:08] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_12.py
 🔄 Progress: 11/16 completed, 5 remaining, ~4 active workers
 [01/19/26 15:05:11] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:05:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容:  92%|█████████▏| 12/13 [07:26<00:41, 41.98s/节][01/19/26 15:05:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  92%|█████████▏| 12/13 [07:26<00:41, 41.98s/节][01/19/26 15:05:20] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:05:33] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_13.py
 🔄 Progress: 12/16 completed, 4 remaining, ~4 active workers
 [01/19/26 15:05:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:05:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
   Coder response is empty. Retrying (1/5)...
 [01/19/26 15:06:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-生成章节内容: 100%|██████████| 13/13 [08:10<00:00, 42.60s/节]生成章节内容: 100%|██████████| 13/13 [08:10<00:00, 37.74s/节]
+
+生成章节内容: 100%|██████████| 13/13 [08:10<00:00, 42.60s/节]
+生成章节内容: 100%|██████████| 13/13 [08:10<00:00, 37.74s/节]
 完整教学内容已保存到：generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/scripts/full/script_full.md
 创建了一个新的 *同步* session。
 [DB Update] Job cd89780b-2f1b-47be-b3aa-451e744688bb: script_splitting (16%) - 构建内容大纲...
@@ -1101,20 +1126,20 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
 同步操作完成，正在提交...
 关闭同步数据库 session。
 [01/19/26 15:06:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_15.py
 🔄 Progress: 13/16 completed, 3 remaining, ~4 active workers
 [01/19/26 15:06:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_16.py
 🔄 Progress: 14/16 completed, 2 remaining, ~3 active workers
 [01/19/26 15:06:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:06:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
   Coder response is empty. Retrying (1/5)...
 15:06:58:   0.11s → 1ed3e53927b9463288b0639df94b14f5:regenerate_video_segment_task(GenerationJob(id='0d12504e-9d4f-4173-b355-dee4dd06fbfb', progress=100, error_me…)
@@ -1149,15 +1174,15 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 running
 🔧 修复背景图片路径: generated_content/2d420861-da71-474e-b5d0-92a9e702d1ee/0d12504e-9d4f-4173-b355-dee4dd06fbfb/manim_codes_final/999_1_copy_74f4_copy_3f70.py
 📁 无需修复背景图片路径
 [01/19/26 15:07:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_10.py
 🔄 Progress: 15/16 completed, 1 remaining, ~2 active workers
 [01/19/26 15:07:21] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:07:53] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_14.py
 🔄 Progress: 16/16 completed, 0 remaining, ~0 active workers
@@ -1554,7 +1579,7 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 failed
                              1ed3e53927b9463288b0639df94b14f5:regene              
                              rate_video_segment_task ●                            
 [01/19/26 15:08:53] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 命令输出: 开始时间: 2026-01-19 15:07:55.043611
 共 16 个文件，使用 4 个并发任务进行调试
@@ -1605,10 +1630,10 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 failed
 
 === 开始调试 888_5.py ===
 [01/19/26 15:08:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [FAIL] 修复后仍报错，第 1 次失败。
 [INFO] 第 2 次 GPT 修复中…
@@ -1639,12 +1664,12 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 failed
 [OK] 初次渲染成功
 [OK] 888_9.py 调试完成
 [01/19/26 15:09:07] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [OK] 修复成功（已覆盖原文件）：generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_12.py
 [OK] 888_12.py 调试完成
 [01/19/26 15:09:17] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [OK] 修复成功（已覆盖原文件）：generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/manim_codes/888_11.py
 [OK] 888_11.py 调试完成
@@ -1686,10 +1711,10 @@ Files to be processed:
   Loaded MD: 224 chars, PY: 3297 chars
   Calling LLM API...
 [01/19/26 15:09:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:09:52] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_1.txt
   Generated speech: 387 chars
@@ -1699,10 +1724,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 271 chars, PY: 3500 chars
   Calling LLM API...
 [01/19/26 15:10:11] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:10:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_2.txt
   Generated speech: 386 chars
@@ -1712,7 +1737,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 434 chars, PY: 4048 chars
   Calling LLM API...
 [01/19/26 15:10:46] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_3.txt
   Generated speech: 438 chars
@@ -1722,10 +1747,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 240 chars, PY: 5378 chars
   Calling LLM API...
 [01/19/26 15:10:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:11:12] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_4.txt
   Generated speech: 372 chars
@@ -1735,10 +1760,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 407 chars, PY: 2762 chars
   Calling LLM API...
 [01/19/26 15:11:34] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:11:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_5.txt
   Generated speech: 351 chars
@@ -1748,7 +1773,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 264 chars, PY: 3471 chars
   Calling LLM API...
 [01/19/26 15:12:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_6.txt
   Generated speech: 393 chars
@@ -1758,7 +1783,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 422 chars, PY: 3642 chars
   Calling LLM API...
 [01/19/26 15:12:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_7.txt
   Generated speech: 482 chars
@@ -1768,10 +1793,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 231 chars, PY: 3439 chars
   Calling LLM API...
 [01/19/26 15:12:42] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:12:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_8.txt
   Generated speech: 392 chars
@@ -1781,10 +1806,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 230 chars, PY: 3369 chars
   Calling LLM API...
 [01/19/26 15:13:19] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:13:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_9.txt
   Generated speech: 328 chars
@@ -1794,10 +1819,10 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 422 chars, PY: 3985 chars
   Calling LLM API...
 [01/19/26 15:13:47] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:13:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_10.txt
   Generated speech: 401 chars
@@ -1807,7 +1832,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 270 chars, PY: 3817 chars
   Calling LLM API...
 [01/19/26 15:14:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_11.txt
   Generated speech: 424 chars
@@ -1817,23 +1842,23 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 227 chars, PY: 3503 chars
   Calling LLM API...
 [01/19/26 15:14:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:15:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_12.txt
   Generated speech: 357 chars
   Waiting 1.0s...
 [01/19/26 15:15:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
 [13/16] Processing: 888_13
   Loaded MD: 238 chars, PY: 2333 chars
   Calling LLM API...
 [01/19/26 15:15:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_13.txt
   Generated speech: 379 chars
@@ -1843,7 +1868,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 415 chars, PY: 3811 chars
   Calling LLM API...
 [01/19/26 15:15:49] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 创建了一个新的 *同步* session。
 [DB Update] Job cd89780b-2f1b-47be-b3aa-451e744688bb: awaiting_pagination_review (27%) - 课程页面规划完成，等待用户确认...
@@ -1852,7 +1877,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
 Job [cd89780b-2f1b-47be-b3aa-451e744688bb]: ⏳ 进入等待循环 (DB Polling)...
 创建了一个新的 *同步* session。
 [01/19/26 15:16:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_14.txt
   Generated speech: 505 chars
@@ -1862,7 +1887,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 243 chars, PY: 4699 chars
   Calling LLM API...
 [01/19/26 15:16:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_15.txt
   Generated speech: 344 chars
@@ -1872,7 +1897,7 @@ Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a
   Loaded MD: 188 chars, PY: 2456 chars
   Calling LLM API...
 [01/19/26 15:17:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/42297554-2370-4895-80b4-92119e4b1cd9/f8c104c4-6247-492a-95d2-2cd2c0bbdd5e/speech/888_16.txt
   Generated speech: 239 chars
@@ -2244,160 +2269,160 @@ Files to be processed:
 Starting parallel processing with 4 workers...
 📤 Submitted 92 tasks to thread pool (max 4 concurrent workers)
 [01/19/26 15:18:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:18:25] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:18:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:18:39] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:18:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_2.py
 🔄 Progress: 1/92 completed, 91 remaining, ~4 active workers
 [01/19/26 15:19:16] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:19:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_1.py
 [01/19/26 15:19:19] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 🔄 Progress: 2/92 completed, 90 remaining, ~4 active workers
 [01/19/26 15:19:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_3.py
 🔄 Progress: 3/92 completed, 89 remaining, ~4 active workers
 [01/19/26 15:19:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:19:46] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:20:04] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:20:14] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:20:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:20:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:22:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:22:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/1_1.py
 🔄 Progress: 4/92 completed, 88 remaining, ~4 active workers
 [01/19/26 15:22:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:23:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_6.py
 🔄 Progress: 5/92 completed, 87 remaining, ~4 active workers
 [01/19/26 15:23:28] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:23:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:23:42] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:24:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_8.py
 🔄 Progress: 6/92 completed, 86 remaining, ~4 active workers
 [01/19/26 15:24:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:25:23] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:25:45] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:26:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:26:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_9.py
 🔄 Progress: 7/92 completed, 85 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_5.py
 🔄 Progress: 8/92 completed, 84 remaining, ~4 active workers
 [01/19/26 15:26:46] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:26:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:26:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:26:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_4.py
 🔄 Progress: 9/92 completed, 83 remaining, ~4 active workers
 [01/19/26 15:27:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:27:28] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_11.py
 🔄 Progress: 10/92 completed, 82 remaining, ~4 active workers
 [01/19/26 15:27:34] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:27:48] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:27:52] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:28:03] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/11_1.py
 🔄 Progress: 11/92 completed, 81 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_7.py
 🔄 Progress: 12/92 completed, 80 remaining, ~4 active workers
 [01/19/26 15:28:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:28:28] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:28:42] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:29:04] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 15:29:43:   0.37s → 39d098095be849708b6e33e4ea372201:regenerate_audio_segment_task(GenerationJob(id='0d12504e-9d4f-4173-b355-dee4dd06fbfb', progress=100, error_me…)
 [01/19/26 15:29:43] INFO       0.37s →                               worker.py:589
@@ -2430,38 +2455,38 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 running
 🎵 开始重新生成音频片段: 999_1_copy_74f4_copy_3f70
 正在执行: 生成999_1_copy_74f4_copy_3f70语音
 [01/19/26 15:30:00] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:30:12] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:30:13] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:31:16] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/11_2.py
 🔄 Progress: 13/92 completed, 79 remaining, ~4 active workers
 [01/19/26 15:31:42] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:32:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:32:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/10_10.py
 🔄 Progress: 14/92 completed, 78 remaining, ~4 active workers
 [01/19/26 15:33:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:33:07] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:33:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/11_4.py
 🔄 Progress: 15/92 completed, 77 remaining, ~4 active workers
@@ -2531,53 +2556,53 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 completed
                              39d098095be849708b6e33e4ea372201:regene              
                              rate_audio_segment_task ●                            
 [01/19/26 15:33:45] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/12_1.py
 🔄 Progress: 16/92 completed, 76 remaining, ~4 active workers
 [01/19/26 15:33:49] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:33:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:34:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/12_2.py
 🔄 Progress: 17/92 completed, 75 remaining, ~4 active workers
 [01/19/26 15:34:31] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/12_3.py
 🔄 Progress: 18/92 completed, 74 remaining, ~4 active workers
 [01/19/26 15:34:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/11_3.py
 🔄 Progress: 19/92 completed, 73 remaining, ~4 active workers
 [01/19/26 15:34:46] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:34:51] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:34:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:35:13] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/11_5.py
 🔄 Progress: 20/92 completed, 72 remaining, ~4 active workers
 [01/19/26 15:35:21] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:35:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/12_4.py
 🔄 Progress: 21/92 completed, 71 remaining, ~4 active workers
@@ -2613,32 +2638,32 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 running
 🔧 修复背景图片路径: generated_content/2d420861-da71-474e-b5d0-92a9e702d1ee/0d12504e-9d4f-4173-b355-dee4dd06fbfb/manim_codes_final/999_1_copy_74f4_copy_3f70.py
 📁 无需修复背景图片路径
 [01/19/26 15:35:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:35:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_1.py
 🔄 Progress: 22/92 completed, 70 remaining, ~4 active workers
 [01/19/26 15:35:48] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:36:00] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:36:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_2.py
 🔄 Progress: 23/92 completed, 69 remaining, ~4 active workers
 [01/19/26 15:36:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:36:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:36:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 ❌ 渲染失败: /home/EduAgent/miniconda3/envs/manim_env/lib/python3.10/runpy.py:126: RuntimeWarning: 'manim.__main__' found in sys.modules after import of package 'manim', but prior to execution of 'manim.__main__'; this may result in unpredictable behaviour
   warn(RuntimeWarning(msg))
@@ -3031,10 +3056,10 @@ Worker: 片段 999_1_copy_74f4_copy_3f70 状态已更新为 failed
                              7f9045fa115e470799898743896f91f3:regene              
                              rate_video_segment_task ●                            
 [01/19/26 15:36:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:37:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 15:37:57:   0.07s → 0572c9d08ac54dda939db823b1c31eb9:regenerate_audio_segment_task(GenerationJob(id='0d12504e-9d4f-4173-b355-dee4dd06fbfb', progress=100, error_me…)
 [01/19/26 15:37:57] INFO       0.07s →                               worker.py:589
@@ -3067,32 +3092,32 @@ Worker: 片段 999_1_copy_74f4_copy_8ee2_copy_492d_copy_7ccb_copy_cfe7 状态已
 🎵 开始重新生成音频片段: 999_1_copy_74f4_copy_8ee2_copy_492d_copy_7ccb_copy_cfe7
 正在执行: 生成999_1_copy_74f4_copy_8ee2_copy_492d_copy_7ccb_copy_cfe7语音
 [01/19/26 15:38:04] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_3.py
 🔄 Progress: 24/92 completed, 68 remaining, ~4 active workers
 [01/19/26 15:38:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:38:59] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:39:07] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:39:31] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_6.py
 🔄 Progress: 25/92 completed, 67 remaining, ~4 active workers
 [01/19/26 15:39:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:39:35] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:39:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/12_5.py
 🔄 Progress: 26/92 completed, 66 remaining, ~4 active workers
@@ -3297,34 +3322,38 @@ Manim断点插入工具
 
 开始处理 16 对文件...
 ------------------------------------------------------------
-断点插入:   0%|          | 0/16 [00:00<?, ?pair/s]处理 888_1.py:   0%|          | 0/16 [00:00<?, ?pair/s]  正在处理: 888_1.py ↔ 888_1.txt
+
+断点插入:   0%|          | 0/16 [00:00<?, ?pair/s]
+处理 888_1.py:   0%|          | 0/16 [00:00<?, ?pair/s]  正在处理: 888_1.py ↔ 888_1.txt
 [01/19/26 15:40:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:40:14] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_1.py
 🔄 Progress: 27/92 completed, 65 remaining, ~4 active workers
 [01/19/26 15:40:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:40:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:41:03] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:41:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:41:11] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(8) | 文稿(8) ✓
-处理 888_1.py:   6%|▋         | 1/16 [01:13<18:22, 73.51s/pair]处理 888_10.py:   6%|▋         | 1/16 [01:15<18:22, 73.51s/pair]  正在处理: 888_10.py ↔ 888_10.txt
+
+处理 888_1.py:   6%|▋         | 1/16 [01:13<18:22, 73.51s/pair]
+处理 888_10.py:   6%|▋         | 1/16 [01:15<18:22, 73.51s/pair]  正在处理: 888_10.py ↔ 888_10.txt
 [01/19/26 15:41:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 命令输出: [*] use_existing_voice = True, skip cloning.
 [+] voice_id saved to generated_content/2d420861-da71-474e-b5d0-92a9e702d1ee/0d12504e-9d4f-4173-b355-dee4dd06fbfb/temp_output_999_1_copy_74f4_copy_8ee2_copy_492d_copy_7ccb_copy_cfe7/voice_id.txt
@@ -3392,228 +3421,250 @@ Worker: 片段 999_1_copy_74f4_copy_8ee2_copy_492d_copy_7ccb_copy_cfe7 状态已
                              0572c9d08ac54dda939db823b1c31eb9:regene              
                              rate_audio_segment_task ●                            
 [01/19/26 15:41:21] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_5.py
 🔄 Progress: 28/92 completed, 64 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/13_4.py
 🔄 Progress: 29/92 completed, 63 remaining, ~4 active workers
 [01/19/26 15:41:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:41:52] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:41:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:42:08] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:42:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(8) | 文稿(8) ✓
-处理 888_10.py:  12%|█▎        | 2/16 [02:11<15:02, 64.48s/pair]Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_2.py
-处理 888_11.py:  12%|█▎        | 2/16 [02:13<15:02, 64.48s/pair]  正在处理: 888_11.py ↔ 888_11.txt
+
+处理 888_10.py:  12%|█▎        | 2/16 [02:11<15:02, 64.48s/pair]Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_2.py
+
+处理 888_11.py:  12%|█▎        | 2/16 [02:13<15:02, 64.48s/pair]  正在处理: 888_11.py ↔ 888_11.txt
 🔄 Progress: 30/92 completed, 62 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_3.py
 🔄 Progress: 31/92 completed, 61 remaining, ~4 active workers
 [01/19/26 15:42:19] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_4.py
 🔄 Progress: 32/92 completed, 60 remaining, ~4 active workers
 [01/19/26 15:42:29] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:42:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:42:48] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:43:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(7) | 文稿(7) ✓
-处理 888_11.py:  19%|█▉        | 3/16 [03:04<12:47, 59.02s/pair]处理 888_12.py:  19%|█▉        | 3/16 [03:06<12:47, 59.02s/pair]  正在处理: 888_12.py ↔ 888_12.txt
+
+处理 888_11.py:  19%|█▉        | 3/16 [03:04<12:47, 59.02s/pair]
+处理 888_12.py:  19%|█▉        | 3/16 [03:06<12:47, 59.02s/pair]  正在处理: 888_12.py ↔ 888_12.txt
 15:43:07: recording health: Jan-19 15:43:07 j_complete=5 j_failed=0 j_retried=0 j_ongoing=2 queued=2
 [01/19/26 15:43:07] INFO     recording health: Jan-19 15:43:07       worker.py:784
                              j_complete=5 j_failed=0 j_retried=0                  
                              j_ongoing=2 queued=2                                 
 [01/19/26 15:43:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_1.py
 🔄 Progress: 33/92 completed, 59 remaining, ~4 active workers
 [01/19/26 15:43:13] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:43:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:43:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_2.py
 🔄 Progress: 34/92 completed, 58 remaining, ~4 active workers
 [01/19/26 15:43:42] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:43:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/14_5.py
 🔄 Progress: 35/92 completed, 57 remaining, ~4 active workers
 [01/19/26 15:43:49] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:44:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:44:17] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:44:23] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:44:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(0) | 文稿(0) ✓
-处理 888_12.py:  25%|██▌       | 4/16 [04:28<13:47, 68.97s/pair][01/19/26 15:44:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+处理 888_12.py:  25%|██▌       | 4/16 [04:28<13:47, 68.97s/pair][01/19/26 15:44:27] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-处理 888_13.py:  25%|██▌       | 4/16 [04:30<13:47, 68.97s/pair]  正在处理: 888_13.py ↔ 888_13.txt
+
+处理 888_13.py:  25%|██▌       | 4/16 [04:30<13:47, 68.97s/pair]  正在处理: 888_13.py ↔ 888_13.txt
 [01/19/26 15:44:50] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:44:59] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:45:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(5) | 文稿(5) ✓
-处理 888_13.py:  31%|███▏      | 5/16 [05:06<10:37, 57.92s/pair]处理 888_14.py:  31%|███▏      | 5/16 [05:08<10:37, 57.92s/pair]  正在处理: 888_14.py ↔ 888_14.txt
+
+处理 888_13.py:  31%|███▏      | 5/16 [05:06<10:37, 57.92s/pair]
+处理 888_14.py:  31%|███▏      | 5/16 [05:08<10:37, 57.92s/pair]  正在处理: 888_14.py ↔ 888_14.txt
 [01/19/26 15:45:18] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:45:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_4.py
 🔄 Progress: 36/92 completed, 56 remaining, ~4 active workers
 [01/19/26 15:45:50] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(7) | 文稿(7) ✓
-处理 888_14.py:  38%|███▊      | 6/16 [05:52<08:57, 53.75s/pair]处理 888_15.py:  38%|███▊      | 6/16 [05:54<08:57, 53.75s/pair]  正在处理: 888_15.py ↔ 888_15.txt
+
+处理 888_14.py:  38%|███▊      | 6/16 [05:52<08:57, 53.75s/pair]
+处理 888_15.py:  38%|███▊      | 6/16 [05:54<08:57, 53.75s/pair]  正在处理: 888_15.py ↔ 888_15.txt
 [01/19/26 15:45:53] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_5.py
 [01/19/26 15:45:57] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 🔄 Progress: 37/92 completed, 55 remaining, ~4 active workers
 [01/19/26 15:45:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_3.py
 🔄 Progress: 38/92 completed, 54 remaining, ~4 active workers
 [01/19/26 15:46:16] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:46:30] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:46:36] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_7.py
 [01/19/26 15:46:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 🔄 Progress: 39/92 completed, 53 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_6.py
 🔄 Progress: 40/92 completed, 52 remaining, ~4 active workers
 [01/19/26 15:46:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:47:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(6) | 文稿(6) ✓
-处理 888_15.py:  44%|████▍     | 7/16 [07:03<08:54, 59.38s/pair]处理 888_16.py:  44%|████▍     | 7/16 [07:05<08:54, 59.38s/pair]  正在处理: 888_16.py ↔ 888_16.txt
+
+处理 888_15.py:  44%|████▍     | 7/16 [07:03<08:54, 59.38s/pair]
+处理 888_16.py:  44%|████▍     | 7/16 [07:05<08:54, 59.38s/pair]  正在处理: 888_16.py ↔ 888_16.txt
 [01/19/26 15:47:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:47:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:47:39] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(5) | 文稿(5) ✓
-处理 888_16.py:  50%|█████     | 8/16 [07:40<06:59, 52.45s/pair]处理 888_2.py:  50%|█████     | 8/16 [07:42<06:59, 52.45s/pair]   正在处理: 888_2.py ↔ 888_2.txt
+
+处理 888_16.py:  50%|█████     | 8/16 [07:40<06:59, 52.45s/pair]
+处理 888_2.py:  50%|█████     | 8/16 [07:42<06:59, 52.45s/pair]   正在处理: 888_2.py ↔ 888_2.txt
 [01/19/26 15:47:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:48:00] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:48:45] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(10) | 文稿(10) ✓
-处理 888_2.py:  56%|█████▋    | 9/16 [08:47<06:37, 56.77s/pair]处理 888_3.py:  56%|█████▋    | 9/16 [08:49<06:37, 56.77s/pair]  正在处理: 888_3.py ↔ 888_3.txt
+
+处理 888_2.py:  56%|█████▋    | 9/16 [08:47<06:37, 56.77s/pair]
+处理 888_3.py:  56%|█████▋    | 9/16 [08:49<06:37, 56.77s/pair]  正在处理: 888_3.py ↔ 888_3.txt
 [01/19/26 15:49:19] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:49:48] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(5) | 文稿(5) ✓
-处理 888_3.py:  62%|██████▎   | 10/16 [09:50<05:52, 58.69s/pair]处理 888_4.py:  62%|██████▎   | 10/16 [09:52<05:52, 58.69s/pair]  正在处理: 888_4.py ↔ 888_4.txt
+
+处理 888_3.py:  62%|██████▎   | 10/16 [09:50<05:52, 58.69s/pair]
+处理 888_4.py:  62%|██████▎   | 10/16 [09:52<05:52, 58.69s/pair]  正在处理: 888_4.py ↔ 888_4.txt
 [01/19/26 15:49:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:50:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:50:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(5) | 文稿(5) ✓
-处理 888_4.py:  69%|██████▉   | 11/16 [10:33<04:30, 54.08s/pair]处理 888_5.py:  69%|██████▉   | 11/16 [10:35<04:30, 54.08s/pair]  正在处理: 888_5.py ↔ 888_5.txt
+
+处理 888_4.py:  69%|██████▉   | 11/16 [10:33<04:30, 54.08s/pair]
+处理 888_5.py:  69%|██████▉   | 11/16 [10:35<04:30, 54.08s/pair]  正在处理: 888_5.py ↔ 888_5.txt
 [01/19/26 15:50:57] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:51:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(9) | 文稿(9) ✓
-处理 888_5.py:  75%|███████▌  | 12/16 [11:22<03:29, 52.39s/pair]处理 888_6.py:  75%|███████▌  | 12/16 [11:24<03:29, 52.39s/pair]  正在处理: 888_6.py ↔ 888_6.txt
+
+处理 888_5.py:  75%|███████▌  | 12/16 [11:22<03:29, 52.39s/pair]
+处理 888_6.py:  75%|███████▌  | 12/16 [11:24<03:29, 52.39s/pair]  正在处理: 888_6.py ↔ 888_6.txt
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_10.py
 🔄 Progress: 41/92 completed, 51 remaining, ~4 active workers
 [01/19/26 15:51:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:51:33] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_9.py
 🔄 Progress: 42/92 completed, 50 remaining, ~4 active workers
 [01/19/26 15:51:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 15:51:57:   0.46s → 2a9be0ca563f4e65af0d8b6c2fd8c11f:generate_content_task(GenerationJob(id='839bfbc6-799e-4a02-8ff3-51553462be4c', progress=0, error_mess…)
 [01/19/26 15:51:57] INFO       0.46s →                               worker.py:589
@@ -3684,17 +3735,19 @@ WHERE generationjob.id = %s
 关闭同步数据库 session。
 🚀 开始加载 Whisper 模型...
 [01/19/26 15:52:01] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(8) | 文稿(8) ✓
-处理 888_6.py:  81%|████████▏ | 13/16 [12:03<02:26, 48.93s/pair]处理 888_7.py:  81%|████████▏ | 13/16 [12:05<02:26, 48.93s/pair]  正在处理: 888_7.py ↔ 888_7.txt
+
+处理 888_6.py:  81%|████████▏ | 13/16 [12:03<02:26, 48.93s/pair]
+处理 888_7.py:  81%|████████▏ | 13/16 [12:05<02:26, 48.93s/pair]  正在处理: 888_7.py ↔ 888_7.txt
 ✅ Whisper 模型加载完毕。
 🔊 正在识别音频文件: uploads/audios/0c406b27-7f8f-45f5-b322-b8777a1fdd10_recording_1768805681234.wav
 [01/19/26 15:52:08] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:52:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 🔊 识别到的文本: 这几天心里颇不宁静,今晚在院子里坐着乘凉,忽然想起日日走过的河塘。在这满月的光里总该另有一番样子吧,月亮渐渐的升高了。墙外马路上孩子们的欢笑已经听不见了,妻在屋里拍着润耳,迷迷乎乎地哼着绵歌。我悄悄地披上大衫,带上门出去。连着河塘是一条曲折的小梅械路,这是一条优僻的路,白天也少有人走,夜晚更加寂寞。河塘四面长着许多树,郁郁翁翁的,树的一旁是些洋柳和一些不知道名字的树。没有月光的晚上,这路上阴森森的,有些怕人,今晚却很好,虽然月光也还是淡淡的。路上只我一个人,背着手。这一片天地好像是我的,我也像超出了平常的自己,到了另一个世界。我爱热闹,也爱冷静,爱群居,也爱独处。
 🔊 保存识别的文本到文件: uploads/texts/ec1e9e19-6783-41d8-b58d-74b1786e1595.txt
@@ -3715,10 +3768,10 @@ Job [839bfbc6-799e-4a02-8ff3-51553462be4c]: ⏳ 进入等待循环 (DB Polling).
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_11.py
 🔄 Progress: 43/92 completed, 49 remaining, ~4 active workers
 [01/19/26 15:52:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:52:39] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Job [839bfbc6-799e-4a02-8ff3-51553462be4c]: ▶️ 发现状态变为 CONFIRMED
 同步操作完成，正在提交...
@@ -3731,61 +3784,71 @@ Job [839bfbc6-799e-4a02-8ff3-51553462be4c]: ▶️ 发现状态变为 CONFIRMED
 读取大纲文件：uploads/md/43491d0e-802c-4f03-9a57-38ba8ca7dc12_社会语言学第一课.md
 本次生成对象层级：H2，共 13 个目标节点
 
-生成章节内容:   0%|          | 0/13 [00:00<?, ?节/s][A[01/19/26 15:52:49] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:   0%|          | 0/13 [00:00<?, ?节/s][A[01/19/26 15:52:49] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:52:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/2_8.py
 🔄 Progress: 44/92 completed, 48 remaining, ~4 active workers
 [01/19/26 15:53:15] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:   8%|▊         | 1/13 [00:27<05:29, 27.43s/节][A[01/19/26 15:53:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:   8%|▊         | 1/13 [00:27<05:29, 27.43s/节][A[01/19/26 15:53:24] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(8) | 文稿(8) ✓
-处理 888_7.py:  88%|████████▊ | 14/16 [13:26<01:58, 59.22s/pair][01/19/26 15:53:26] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+处理 888_7.py:  88%|████████▊ | 14/16 [13:26<01:58, 59.22s/pair][01/19/26 15:53:26] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
-处理 888_8.py:  88%|████████▊ | 14/16 [13:28<01:58, 59.22s/pair]  正在处理: 888_8.py ↔ 888_8.txt
+
+处理 888_8.py:  88%|████████▊ | 14/16 [13:28<01:58, 59.22s/pair]  正在处理: 888_8.py ↔ 888_8.txt
 [01/19/26 15:53:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:53:31] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:53:51] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  15%|█▌        | 2/13 [01:03<05:55, 32.29s/节][A[01/19/26 15:54:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  15%|█▌        | 2/13 [01:03<05:55, 32.29s/节][A[01/19/26 15:54:06] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:54:10] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(7) | 文稿(7) ✓
-处理 888_8.py:  94%|█████████▍| 15/16 [14:11<00:55, 55.07s/pair]                    INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
-                             s "HTTP/1.1 200 OK"                                  
-处理 888_9.py:  94%|█████████▍| 15/16 [14:13<00:55, 55.07s/pair]  正在处理: 888_9.py ↔ 888_9.txt
-[01/19/26 15:54:19] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
-                             s "HTTP/1.1 200 OK"                                  
-[01/19/26 15:54:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+处理 888_8.py:  94%|█████████▍| 15/16 [14:11<00:55, 55.07s/pair]                    INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  23%|██▎       | 3/13 [01:32<05:10, 31.03s/节][ASaved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_1.py
+处理 888_9.py:  94%|█████████▍| 15/16 [14:13<00:55, 55.07s/pair]  正在处理: 888_9.py ↔ 888_9.txt
+[01/19/26 15:54:19] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
+                             s "HTTP/1.1 200 OK"                                  
+[01/19/26 15:54:20] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
+                             s "HTTP/1.1 200 OK"                                  
+
+
+生成章节内容:  23%|██▎       | 3/13 [01:32<05:10, 31.03s/节][ASaved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_1.py
 🔄 Progress: 45/92 completed, 47 remaining, ~4 active workers
 [01/19/26 15:54:50] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
     断点统计: 代码(4) | 文稿(4) ✓
-处理 888_9.py: 100%|██████████| 16/16 [14:52<00:00, 50.66s/pair]处理 888_9.py: 100%|██████████| 16/16 [14:52<00:00, 55.76s/pair]
+
+处理 888_9.py: 100%|██████████| 16/16 [14:52<00:00, 50.66s/pair]
+处理 888_9.py: 100%|██████████| 16/16 [14:52<00:00, 55.76s/pair]
 
 ============================================================
 MANIM断点插入处理完成
@@ -3863,7 +3926,8 @@ Manim自动Wait语句生成器
 
 开始处理 16 对文件...
 ------------------------------------------------------------
-处理文件:   0%|          | 0/16 [00:00<?, ?pair/s]  正在处理: 888_1.py ↔ 888_1.txt
+
+处理文件:   0%|          | 0/16 [00:00<?, ?pair/s]  正在处理: 888_1.py ↔ 888_1.txt
     讲稿分析: 9个段落, 329字, 5.5字/秒, 预计59.6秒
     插入了 7 个 wait 语句
     生成文件: 888_1.py
@@ -3927,7 +3991,8 @@ Manim自动Wait语句生成器
     讲稿分析: 4个段落, 303字, 5.0字/秒, 预计60.6秒
     插入了 4 个 wait 语句
     生成文件: 888_9.py
-处理文件: 100%|██████████| 16/16 [00:00<00:00, 3908.72pair/s]
+
+处理文件: 100%|██████████| 16/16 [00:00<00:00, 3908.72pair/s]
 
 ============================================================
 自动Wait语句生成完成
@@ -4356,62 +4421,67 @@ Manim自动Wait语句生成器
 关闭同步数据库 session。
 正在执行: 渲染Manim视频
 [01/19/26 15:54:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  31%|███       | 4/13 [02:08<04:57, 33.07s/节][A[01/19/26 15:55:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  31%|███       | 4/13 [02:08<04:57, 33.07s/节][A[01/19/26 15:55:02] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:55:25] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  38%|███▊      | 5/13 [02:37<04:12, 31.55s/节][A[01/19/26 15:55:28] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  38%|███▊      | 5/13 [02:37<04:12, 31.55s/节][A[01/19/26 15:55:28] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_2.py
 🔄 Progress: 46/92 completed, 46 remaining, ~4 active workers
 [01/19/26 15:55:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_5.py
 🔄 Progress: 47/92 completed, 45 remaining, ~4 active workers
 [01/19/26 15:55:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:56:05] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  46%|████▌     | 6/13 [03:17<04:01, 34.44s/节][A[01/19/26 15:56:20] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  46%|████▌     | 6/13 [03:17<04:01, 34.44s/节][A[01/19/26 15:56:20] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:56:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:56:33] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:56:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:56:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  54%|█████▍    | 7/13 [03:52<03:26, 34.48s/节][ASaved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_3.py
+
+生成章节内容:  54%|█████▍    | 7/13 [03:52<03:26, 34.48s/节][ASaved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_3.py
 🔄 Progress: 48/92 completed, 44 remaining, ~4 active workers
 [01/19/26 15:56:59] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
                     INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:57:14] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  62%|██████▏   | 8/13 [04:25<02:50, 34.19s/节][A命令执行失败: 渲染Manim视频
+
+生成章节内容:  62%|██████▏   | 8/13 [04:25<02:50, 34.19s/节][A命令执行失败: 渲染Manim视频
 返回码: 1
 标准输出: 找到 18 个文件，使用 12 线并发渲染任务
 未找到 Scene 类: 888_12.py
@@ -4646,59 +4716,62 @@ e3f75_蓝.png at either of these locations:
 存在视频渲染失败
 正在执行: 合并音频与视频片段
 [01/19/26 15:57:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/4_1.py
 🔄 Progress: 49/92 completed, 43 remaining, ~4 active workers
 [01/19/26 15:57:41] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  69%|██████▉   | 9/13 [04:53<02:08, 32.11s/节][A[01/19/26 15:57:54] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  69%|██████▉   | 9/13 [04:53<02:08, 32.11s/节][A[01/19/26 15:57:54] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:57:58] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_4.py
 🔄 Progress: 50/92 completed, 42 remaining, ~4 active workers
 [01/19/26 15:58:11] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  77%|███████▋  | 10/13 [05:23<01:33, 31.33s/节][A[01/19/26 15:58:33] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  77%|███████▋  | 10/13 [05:23<01:33, 31.33s/节][A[01/19/26 15:58:33] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:58:38] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/4_2.py
 🔄 Progress: 51/92 completed, 41 remaining, ~4 active workers
 [01/19/26 15:58:56] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:58:59] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  85%|████████▍ | 11/13 [06:11<01:13, 36.54s/节][A[01/19/26 15:59:03] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  85%|████████▍ | 11/13 [06:11<01:13, 36.54s/节][A[01/19/26 15:59:03] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:59:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_7.py
 🔄 Progress: 52/92 completed, 40 remaining, ~4 active workers
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/3_6.py
 🔄 Progress: 53/92 completed, 39 remaining, ~4 active workers
 [01/19/26 15:59:12] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:59:24] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 15:59:27] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 命令输出: 🎬 视频音频合并填充工具
 ==================================================
@@ -4889,27 +4962,30 @@ Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be
 🎬 Generating subtitles...
 正在执行: Generating subtitles
 [01/19/26 15:59:40] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容:  92%|█████████▏| 12/13 [06:52<00:37, 37.79s/节][A[01/19/26 15:59:43] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+
+生成章节内容:  92%|█████████▏| 12/13 [06:52<00:37, 37.79s/节][A[01/19/26 15:59:43] INFO     HTTP Request: POST                    _client.py:1027
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/4_4.py
 🔄 Progress: 54/92 completed, 38 remaining, ~4 active workers
 [01/19/26 16:00:02] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:06] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/4_6.py
 🔄 Progress: 55/92 completed, 37 remaining, ~4 active workers
 [01/19/26 16:00:13] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 
-生成章节内容: 100%|██████████| 13/13 [07:25<00:00, 36.39s/节][A生成章节内容: 100%|██████████| 13/13 [07:25<00:00, 34.24s/节]
+
+生成章节内容: 100%|██████████| 13/13 [07:25<00:00, 36.39s/节][A
+生成章节内容: 100%|██████████| 13/13 [07:25<00:00, 34.24s/节]
 完整教学内容已保存到：generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/839bfbc6-799e-4a02-8ff3-51553462be4c/scripts/full/script_full.md
 创建了一个新的 *同步* session。
 [DB Update] Job 839bfbc6-799e-4a02-8ff3-51553462be4c: script_splitting (16%) - 构建内容大纲...
@@ -4920,7 +4996,7 @@ Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be
 同步操作完成，正在提交...
 关闭同步数据库 session。
 [01/19/26 16:00:16] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 命令输出: [WARN] 找不到 0_1 对应的视频，跳过
 [WARN] 找不到 888_12 对应的视频，跳过
@@ -4983,25 +5059,25 @@ Worker: generate_content 任务 f8c104c4-6247-492a-95d2-2cd2c0bbdd5e 已完成�
                              46e5a5ed025944268d16f871d392f9b5:genera              
                              te_content_task ●                                    
 [01/19/26 16:00:22] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:32] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:37] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:53] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:55] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 [01/19/26 16:00:57] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  
 Saved: generated_content/a6c6e85f-5d26-4c3a-af39-8d247e1020b4/cd89780b-2f1b-47be-b3aa-451e744688bb/manim_codes/4_5.py
 🔄 Progress: 56/92 completed, 36 remaining, ~4 active workers
 [01/19/26 16:01:09] INFO     HTTP Request: POST                    _client.py:1027
-                             https://yeysai.com/v1/chat/completion                
+                             https://xxx.com/v1/chat/completion                
                              s "HTTP/1.1 200 OK"                                  

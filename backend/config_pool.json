@@ -3,7 +3,7 @@
   "settings": {
     "llm_settings": {
       "model": "gpt-5-chat-2025-08-07",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -11,7 +11,7 @@
     },
     "pptx_settings": {
       "model": "gpt-5-chat-2025-08-07",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -19,7 +19,7 @@
     },
     "debug_settings": {
       "model": "gemini-3-pro-preview",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -27,7 +27,7 @@
     },
     "convert2markdown_settings": {
       "model": "claude-sonnet-4-20250514",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -35,7 +35,7 @@
     },
     "summary_settings": {
       "model": "gpt-5-chat-2025-08-07",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -43,7 +43,7 @@
     },
     "decision_settings": {
       "model": "gpt-5-chat-2025-08-07",
-      "base_url": "https://yeysai.com/v1/",
+      "base_url": "https://xxx.com/v1/",
       "max_tokens": 10000,
       "temperature": 0.8,
       "max_retries": 3,
@@ -51,8 +51,8 @@
     }
   },
   "keys": [
-    { "key": "c80f236fc1be4400bdbf006714f4d3bc.e7mwu3ZYZ2wlhC5P", "vendor": "bigmodel", "weight": 3, "rpm": 60 },
-    { "key": "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR", "vendor": "openai", "weight": 3, "rpm": 60 ,"base_url": "https://yeysai.com/v1/"}
+    { "key": "", "vendor": "bigmodel", "weight": 3, "rpm": 60 },
+    { "key": "", "vendor": "openai", "weight": 3, "rpm": 60 ,"base_url": "https://xxx.com/v1/"}
   ],
-  "llm_key": "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR"
+  "llm_key": ""
 }

@@ -162,13 +162,10 @@ def load_keypool_from_config(path: str = "config_pool.json") -> List[APIKey]:
        {
          "defaults": { "rpm": 60, "capacity": 60 },
          "keys": [
-           {"key": "sk-xxx", "vendor": "openai", "weight": 3, "rpm": 90, "base_url": "https://yeysai.com/v1/"},
+           {"key": "sk-xxx", "vendor": "openai", "weight": 3, "rpm": 90, "base_url": ""},
            {"key": "gm-yyy", "vendor": "gemini", "weight": 2}
          ]
        }
-    B) 向下相容（旧单 key）：
-       { "llm_key": "sk-xxx", "llm_settings": { "base_url": "https://yeysai.com/v1/" } }
-       或 { "llm_key": "sk-xxx", "debug_settings": { "base_url": "..." } }
     """
     p = pathlib.Path(path)
     if not p.exists():

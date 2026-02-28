@@ -265,7 +265,7 @@ def main():
     args = parser.parse_args()
 
     # 固定 MiniMax API Key（后面不能公布啊
-    api_key = "eyJhbGciOiJSUzI1NiIsInR5cCI6IkpXVCJ9.eyJHcm91cE5hbWUiOiJBbmRyZXcgQWxsZW5kZXIiLCJVc2VyTmFtZSI6IkFuZHJldyBBbGxlbmRlciIsIkFjY291bnQiOiIiLCJTdWJqZWN0SUQiOiIxOTg3NzkwNDY2MzM4MjYzMjMxIiwiUGhvbmUiOiIiLCJHcm91cElEIjoiMTk4Nzc5MDQ2NjMzNDA3MzAyMyIsIlBhZ2VOYW1lIjoiIiwiTWFpbCI6InlhbmdydW5kZW1kakBnbWFpbC5jb20iLCJDcmVhdGVUaW1lIjoiMjAyNS0xMS0xMCAxNjoyMzoxNyIsIlRva2VuVHlwZSI6MSwiaXNzIjoibWluaW1heCJ9.TMAZ6NmJZU_H1E0XcUA1G5mmMrZ1ahTJO9_VZaYh_jgSlxLuwoTk7rgwmXoo0hu1xZbeAn9zGH0_um3y9zuLI9faoiKN1BGSDqeXX9HYUBWbbTmvckY1BDpr0tZvy7sJHdwkauOD91XUChjERlUBMbSj_FtogMpSukvSj5Vh680FZmvDgEICBwEcRIQJD_ypeBP7ICQqMJEghOM5Qki0-qa92QJFc0YhprT9QtvS3Cgq8uSQTzUK-c2aCS9WVEYHbs6i3U2fneaMHodtYrUfjD2cpaA8oryUSC-rJmROWwEFyFVk1dtxExI4Fm5v0Pb-pyLZ2dJr8AO4TsNgrFTmRQ"  # ← 这里换成你自己的 key
+    api_key = ""  # ← 这里换成你自己的 key
 
     if not api_key:
         raise RuntimeError("未设置 MiniMax API Key，请在代码中填写或通过环境变量提供")

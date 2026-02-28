@@ -8,10 +8,10 @@ from datetime import datetime, timedelta
 # ================== 配置区 ==================
 
 # 余额查询接口
-API_URL = "https://yeysai.com/api/usage/token/"
+API_URL = ""
 
 # 你的 Bearer Token（建议改成从环境变量读取，这里先写死）
-API_TOKEN = "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR"
+API_TOKEN = ""
 
 # 飞书自建机器人 Webhook 地址
 FEISHU_WEBHOOK_URL = (

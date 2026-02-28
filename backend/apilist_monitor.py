@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 # ================== 配置区 ==================
 
 # 余额查询接口
-API_URL = "https://yeysai.com/api/usage/token/"
+API_URL = "https://xxx.com/api/usage/token/"
 
 # 历史数据存储文件
 HISTORY_FILE = "api_usage_history.json"
@@ -19,17 +19,11 @@ HISTORY_FILE = "api_usage_history.json"
 # API Key 列表
 # 格式：{"name": "账户名称", "apikey": "sk-..."}
 API_KEYS = [
-    {"name": "MAC", "apikey": "sk-RFVW2mPV4qEe25RyVR8FOCEmBoZXqAYdlxvWdjE4zAMlrRdA"},
-    {"name": "TeachMaster", "apikey": "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR"},
-    {"name": "时瑞杰", "apikey": "sk-YDWCAIw0YBPCJnNV0JXJo64bOrzZeVlPc9wp9T2xzjxs8WaF"},
-    {"name": "李易韩", "apikey": "sk-v0WeH7HCUSnHfSPREOSLfi61ErpjOOwe24aSOtzuBRbQJBv6"},
-    {"name": "范静如", "apikey": "sk-cBfIwZxU2UbT9eI31Vw97uI5QW5N5oIJrMlQgdRRPuETiugA"},
-    {"name": "党余凡", "apikey": "sk-4WGRXEgtSnBBfMZAsSgYQuUAQJEud9w0WvsCnk2lfqNEekTm"},
     # 在此处添加更多账户
 ]
 
 # 飞书机器人 Webhook 地址
-FEISHU_WEBHOOK_URL = "https://open.feishu.cn/open-apis/bot/v2/hook/caa3b884-d860-4026-8191-e903fb0d0d43"
+FEISHU_WEBHOOK_URL = ""
 
 # 每天固定两个发送时间（24 小时制）
 SEND_HOURS = [8]  # 早上8点

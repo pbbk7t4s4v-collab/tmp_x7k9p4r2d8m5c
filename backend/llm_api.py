@@ -30,7 +30,7 @@ class LLMAPIClient:
         llm_settings = self.config.get('llm_settings', {})
         self.api_key = self.config['llm_key']
         self.model = llm_settings.get('model', 'gpt-5-chat')
-        self.base_url = llm_settings.get('base_url', 'https://yeysai.com/v1/')
+        self.base_url = llm_settings.get('base_url', 'https://xxx.com/v1/')
         self.max_tokens = llm_settings.get('max_tokens', 3200)
         self.temperature = llm_settings.get('temperature', 1)
         self.max_retries = llm_settings.get('max_retries', 3)

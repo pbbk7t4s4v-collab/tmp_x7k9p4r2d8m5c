@@ -7,8 +7,8 @@ from pathlib import Path
 import openai
 
 
-BASE_URL = "https://yeysai.com/v1/"
-LLM_KEY = "sk-csrmNpXBGfxgiv5aY2DB9LMX8lnMedzHhvxIdsz93YwoPBvR"
+BASE_URL = "https://xxx.com/v1/"
+LLM_KEY = ""
 MODEL_NAME = "gemini-3-pro-image-preview"
 
 
